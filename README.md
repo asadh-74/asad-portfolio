@@ -1,0 +1,131 @@
+# Asad Hussain — Portfolio (Frontend + Backend)
+
+Personal portfolio site for Asad Hussain, Electrical Engineering student at SEECS, NUST.
+Built as a static frontend plus a small Node/Express API that powers the projects grid
+and the contact form.
+
+```
+asad-portfolio/
+├── frontend/            # Static site (HTML/CSS/JS, no build step needed)
+│   ├── index.html
+│   └── assets/
+│       ├── style.css
+│       ├── main.js        # animations, nav, contact form submit logic
+│       ├── projects.js    # fetches project cards from the API
+│       ├── config.js      # points the frontend at the right API URL
+│       └── images/
+└── backend/              # Express API
+    ├── server.js
+    ├── routes/
+    │   ├── projects.js   # GET  /api/projects
+    │   └── contact.js    # POST /api/contact
+    └── data/
+        ├── projects.json  # <- add new projects here
+        └── messages.json  # contact form submissions land here
+```
+
+## Why a backend at all?
+
+Two things needed to be real instead of fake:
+
+1. **The contact form** used to just show a JS `alert()` — messages went nowhere.
+   Now it POSTs to `/api/contact`, which validates the input, saves it to
+   `backend/data/messages.json`, and (optionally) emails it to you if you set
+   SMTP credentials.
+2. **The projects grid** is now data-driven. Add a new project by editing
+   `backend/data/projects.json` — no HTML editing required. If the API is
+   unreachable, the page falls back to the static cards already in `index.html`,
+   so the site still works with zero backend (e.g. GitHub Pages only).
+
+## Run it locally
+
+**Backend**
+```bash
+cd backend
+cp .env.example .env      # fill in SMTP details if you want emailed messages
+npm install
+npm start                 # http://localhost:5000
+```
+This also serves the frontend at `http://localhost:5000`, so for local dev you
+usually only need this one command.
+
+**Frontend only** (if you want to edit without restarting the backend)
+Open `frontend/index.html` directly, or serve it with any static server, e.g.
+```bash
+cd frontend
+npx serve .                # http://localhost:3000
+```
+The frontend auto-detects `localhost` and calls `http://localhost:5000` — no
+extra config needed for local dev. `frontend/assets/config.js` falls back to a
+same-origin `/api` call on localhost, which matches the single-command backend
+setup above.
+
+## Adding a new project
+
+Edit `backend/data/projects.json` and add an object like:
+```json
+{
+  "id": "my-new-project",
+  "title": "My New Project",
+  "description": "One or two sentences on what it does and how.",
+  "tags": ["Embedded", "C++"],
+  "icon": "fa-microchip",
+  "codeUrl": "https://github.com/asadh-74/my-new-project",
+  "demoUrl": ""
+}
+```
+`icon` is any [Font Awesome](https://fontawesome.com/icons) solid icon name.
+No frontend changes needed — the grid re-renders from this file on page load.
+
+## Deploying for real
+
+You have two options:
+
+### Option A — one Node service (simplest)
+Deploy the whole `backend/` folder (it serves `frontend/` too) to a Node host:
+- **Render** (free tier): New → Web Service → connect this repo → root
+  directory `backend` → build command `npm install` → start command `npm start`.
+- **Railway**, **Fly.io**, or a VPS work the same way.
+
+Set the environment variables from `backend/.env.example` in the host's
+dashboard (SMTP is optional — without it, messages are still saved to
+`messages.json`, just not emailed).
+
+### Option B — separate frontend/backend (matches the Azure Static Web Apps
+setup already used for the site)
+1. Deploy `backend/` to Render/Railway as above — note the public URL.
+2. In `frontend/assets/config.js`, set `PRODUCTION_API_URL` to that URL.
+3. Deploy `frontend/` as a static site:
+   ```bash
+   az staticwebapp create \
+     --name asad-portfolio \
+     --resource-group <your-resource-group> \
+     --source frontend \
+     --location "eastus2" \
+     --branch main \
+     --app-location "/" \
+     --output-location "."
+   ```
+   (Or connect the GitHub repo to Static Web Apps in the Azure portal for
+   automatic deploys on every push.)
+4. In `backend/.env` (or the host's env settings), set `ALLOWED_ORIGINS` to
+   your Static Web App's URL so CORS allows the contact form to reach the API.
+
+## Pushing this to GitHub
+
+```bash
+cd asad-portfolio
+git init
+git add .
+git commit -m "Portfolio: add backend API, wire up contact form and dynamic projects"
+git branch -M main
+git remote add origin https://github.com/asadh-74/asad-portfolio.git
+git push -u origin main
+```
+
+## Stack
+
+- **Frontend:** HTML5, CSS3 (custom, no framework), vanilla JS
+- **Backend:** Node.js, Express, Nodemailer (optional email), express-rate-limit
+- **Data:** flat JSON files (no database needed for this scale — easy to swap
+  for a real DB later if the message volume grows)
