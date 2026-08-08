@@ -27,11 +27,13 @@ async function sendEmail(message) {
     return false; // no SMTP configured - message was still saved locally
   }
 
+  const port = Number(SMTP_PORT) || 465;
   const transporter = nodemailer.createTransport({
     host: SMTP_HOST,
-    port: Number(SMTP_PORT) || 465,
-    secure: Number(SMTP_PORT) !== 587,
+    port,
+    secure: port === 465, // true for 465 (implicit TLS), false for 587/others (STARTTLS)
     auth: { user: SMTP_USER, pass: SMTP_PASS },
+    connectionTimeout: 10000,
   });
 
   await transporter.sendMail({

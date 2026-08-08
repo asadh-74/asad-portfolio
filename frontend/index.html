@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <meta name="description" content="Asad Hussain — Electrical Engineering student at SEECS NUST specializing in Machine Learning, PCB Design, IoT, and Embedded Systems. Explore projects, experience, and get in touch.">
+    <meta name="description" content="Asad Hussain — Electrical Engineering student at NUST specializing in Machine Learning, PCB Design, IoT, and Embedded Systems. Explore projects, experience, and get in touch.">
     <meta name="theme-color" content="#050508">
     <meta property="og:title" content="Asad Hussain | Electrical Engineer & ML Developer">
     <meta property="og:description" content="Portfolio of Asad Hussain — EE student building ML models, IoT systems, and embedded solutions.">
@@ -51,7 +51,7 @@
                     I build <span id="typing-text"></span><span class="cursor"></span>
                 </div>
                 <p class="hero-desc">
-                    Electrical Engineering student at SEECS NUST with hands-on experience in Machine Learning, 
+                    Electrical Engineering student at NUST with hands-on experience in Machine Learning, 
                     PCB Design, and Embedded Systems. I turn complex problems into elegant, working solutions.
                 </p>
                 <div class="hero-buttons">
@@ -78,7 +78,7 @@
                     <div class="floating-card fc-2">
                         <i class="fas fa-code-branch"></i>
                         <div>
-                            <strong>15+ Projects</strong>
+                            <strong>40+ Projects</strong>
                             <span>Hands-on Experience</span>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
         <div class="section-header reveal">
             <span class="section-label">Introduction</span>
             <h2 class="section-title">Overview.</h2>
-            <p class="section-subtitle">A passionate engineer who loves building things that matter.</p>
+            <p class="section-subtitle">Electrical engineering student building systems from hardware up.</p>
         </div>
         <div class="about-grid">
             <div class="about-photo reveal">
@@ -103,18 +103,20 @@
             <div class="about-text reveal">
                 <h3>Electrical Engineer & ML Developer</h3>
                 <p>
-                    I'm a motivated Electrical Engineering student at SEECS, NUST, with a strong foundation in 
-                    circuit design, signal processing, and machine learning. My journey spans from designing 
-                    PCBs in Altium to building predictive ML models during my internship at CodeAlpha.
+                    I'm a third-year Electrical Engineering student at NUST, with hands-on experience across
+                    embedded systems, RF/signal processing, and machine learning. As an engineering intern at
+                    RDC &amp; CEAI, I built a real-time IoT fleet management system for a Pakistan Army deployment —
+                    integrating ESP32 hardware, MQTT telemetry, and a Flask backend into a live production system.
                 </p>
                 <p>
-                    I believe in learning by doing. Whether it's cleaning EEG signals for medical applications, 
-                    tracking solar panels for maximum efficiency, or designing a complete IoT fleet management 
-                    system — I approach every project with curiosity and precision.
+                    My final year project is an autonomous UAV detection system combining a custom SDR
+                    receiver front-end, STM32-based RF control firmware, and a MATLAB machine learning pipeline
+                    for signal classification. I work across the full stack of a system — from PCB and antenna
+                    design up to the software that makes sense of the data.
                 </p>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <h3>15+</h3>
+                        <h3>40+</h3>
                         <p>Projects Completed</p>
                     </div>
                     <div class="stat-card">
@@ -139,6 +141,23 @@
             <div class="timeline-item reveal">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
+                    <div class="timeline-date">Jun 2025 – Aug 2025</div>
+                    <div class="timeline-title">Engineering Intern &mdash; Full-Stack Systems Development</div>
+                    <div class="timeline-company">Research &amp; Indigenous Development Centre (RDC) &amp; CEAI</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Integrated core hardware modules (LilyGO T-SIM7670E ESP32/LTE, GPS, RFID) with a TP4056 charge controller</li>
+                            <li>Wrote embedded C/C++ firmware and state machines for GPS capture, RFID authentication, and audio feedback</li>
+                            <li>Implemented MQTT telemetry over cellular GPRS with QoS 1 guarantees and 50ms server-side callback processing</li>
+                            <li>Built an asynchronous Flask backend using multithreading to process analytics without blocking live telemetry</li>
+                            <li>Delivered a live IoT fleet management system deployed for a Pakistan Army operational use case</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
                     <div class="timeline-date">Jun 2026 – Jul 2026</div>
                     <div class="timeline-title">Machine Learning Intern</div>
                     <div class="timeline-company">CodeAlpha (Virtual Internship)</div>
@@ -148,22 +167,6 @@
                             <li>Performed data preprocessing, feature engineering, and model evaluation</li>
                             <li>Collaborated with mentors on end-to-end ML pipeline development</li>
                             <li>Received Letter of Recommendation for exceptional performance</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">Jul 2026</div>
-                    <div class="timeline-title">PCB Design Trainee</div>
-                    <div class="timeline-company">Altium Education</div>
-                    <div class="timeline-desc">
-                        <ul>
-                            <li>Completed comprehensive PCB Basic Design Course</li>
-                            <li>Learned schematic capture, component placement, and routing</li>
-                            <li>Gained hands-on experience with Altium Designer toolchain</li>
-                            <li>Designed multi-layer boards with proper DRC and manufacturing checks</li>
                         </ul>
                     </div>
                 </div>
@@ -408,30 +411,37 @@
             <h2 class="section-title">Certifications.</h2>
             <p class="section-subtitle">Professional certifications and achievements.</p>
         </div>
-        <div class="certs-grid">
+        <div class="certs-grid" id="certs-grid">
             <div class="cert-card reveal">
-                <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                <div class="cert-thumb"><img src="assets/images/certs/codealpha-ml.jpg" alt="Machine Learning Internship certificate" loading="lazy"></div>
                 <div class="cert-title">Machine Learning Internship</div>
                 <div class="cert-org">CodeAlpha</div>
-                <div class="cert-date">June – July 2026</div>
+                <div class="cert-date">20 Jun 2026 – 20 Jul 2026</div>
                 <div class="cert-id">ID: CA/DF1/160558</div>
             </div>
             <div class="cert-card reveal">
-                <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+                <div class="cert-thumb"><img src="assets/images/certs/altium-pcb.jpg" alt="PCB Basic Design Course certificate" loading="lazy"></div>
                 <div class="cert-title">PCB Basic Design Course</div>
                 <div class="cert-org">Altium Education</div>
-                <div class="cert-date">July 2026</div>
+                <div class="cert-date">August 2026</div>
                 <div class="cert-id">ID: cert_lypgb5lw</div>
             </div>
             <div class="cert-card reveal">
-                <div class="cert-icon"><i class="fas fa-flask"></i></div>
-                <div class="cert-title">Research & Development</div>
-                <div class="cert-org">Certified Program</div>
-                <div class="cert-date">2026</div>
-                <div class="cert-id">R&D Certified</div>
+                <div class="cert-thumb"><img src="assets/images/certs/rdc-internship.jpg" alt="RDC internship certificate" loading="lazy"></div>
+                <div class="cert-title">Internship — Designing & Testing of Driver Logging Device</div>
+                <div class="cert-org">Research & Indigenous Development Centre (RDC)</div>
+                <div class="cert-date">24 Jun 2025 – 08 Aug 2025</div>
+                <div class="cert-id">RDC Internship Certificate</div>
             </div>
         </div>
     </section>
+    <div class="cert-modal" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" id="cert-modal-close" aria-label="Close">&times;</button>
+            <div class="cert-modal-body" id="cert-modal-body"></div>
+        </div>
+    </div>
     <section class="testimonials" id="testimonials">
         <div class="section-header reveal">
             <span class="section-label">What Others Say</span>
@@ -475,7 +485,7 @@
                     <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="contact-item-info">
                         <h4>Location</h4>
-                        <p>SEECS, NUST, Islamabad, Pakistan</p>
+                        <p>NUST, Islamabad &middot; Based in Lahore, Pakistan</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -518,6 +528,7 @@
     </footer>
     <script src="assets/config.js"></script>
     <script src="assets/projects.js"></script>
+    <script src="assets/certificates.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

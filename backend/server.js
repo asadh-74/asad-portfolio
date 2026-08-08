@@ -5,6 +5,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 
 const projectsRouter = require('./routes/projects');
+const certificatesRouter = require('./routes/certificates');
 const contactRouter = require('./routes/contact');
 
 const app = express();
@@ -45,6 +46,7 @@ app.get('/api/health', (req, res) => {
 });
 
 app.use('/api/projects', projectsRouter);
+app.use('/api/certificates', certificatesRouter);
 app.use('/api/contact', contactRouter);
 
 // Serve the built frontend as well, so the whole site can be deployed as a

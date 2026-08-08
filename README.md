@@ -60,6 +60,62 @@ extra config needed for local dev. `frontend/assets/config.js` falls back to a
 same-origin `/api` call on localhost, which matches the single-command backend
 setup above.
 
+## Making the contact form actually send email
+
+Right now the form saves every message to `backend/data/messages.json` on the
+server no matter what — nothing is ever lost. To also get an email the moment
+someone submits, set these environment variables (in Render's dashboard, or
+in a local `.env` copied from `.env.example`):
+
+```
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=your.email@gmail.com
+SMTP_PASS=your_16_character_app_password
+CONTACT_TO_EMAIL=your.email@gmail.com
+```
+
+`SMTP_PASS` is **not** your regular Gmail password — Google blocks that.
+Generate an "App Password" instead:
+1. Turn on 2-Step Verification on the Google account: myaccount.google.com/security
+2. Go to myaccount.google.com/apppasswords
+3. Create one for "Mail" / "Other" — Google gives you a 16-character code
+4. Use that code as `SMTP_PASS`
+
+On Render: open your service → **Environment** tab → add each variable →
+save. Render redeploys automatically. Watch the Logs tab; a successful test
+submission logs a request to `/api/contact` and (if SMTP is configured) sends
+the email with no error in the log.
+
+## Adding certificate images (click-to-view)
+
+Certificate cards under **Certificates** are clickable and open a full-size
+image in a lightbox — once you give them an image. Edit
+`backend/data/certificates.json`:
+
+```json
+{
+  "id": "codealpha-ml",
+  "title": "Machine Learning Internship",
+  "org": "CodeAlpha",
+  "date": "June – July 2026",
+  "credentialId": "CA/DF1/160558",
+  "icon": "fa-brain",
+  "imageUrl": "assets/images/certs/codealpha-ml.jpg",
+  "verifyUrl": ""
+}
+```
+
+1. Drop the certificate image file into `frontend/assets/images/certs/`
+   (create that folder if it doesn't exist)
+2. Set `imageUrl` to that relative path
+3. Optionally set `verifyUrl` to a public verification link if the issuer
+   provides one (it'll show as a "Verify credential" link in the lightbox)
+
+Until an `imageUrl` is set, clicking the card still opens the lightbox with
+the title, org, and credential ID — it just shows a placeholder icon instead
+of an image, so nothing looks broken while you're still collecting the files.
+
 ## Adding a new project
 
 Edit `backend/data/projects.json` and add an object like:
