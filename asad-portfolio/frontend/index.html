@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad Hussain | Electrical Engineer & ML Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="description" content="Asad Hussain, an Electrical Engineering student at NUST focused on embedded systems, intelligent computing, and RF technology. Explore projects, experience, and get in touch.">
+    <meta name="theme-color" content="#050508">
+    <meta property="og:title" content="Asad Hussain | Electrical Engineer & ML Developer">
+    <meta property="og:description" content="Portfolio of Asad Hussain, an Electrical Engineering student building embedded systems, RF technology, and machine learning projects.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-text">Asad Hussain</div>
+        <div class="preloader-bar">
+            <div class="preloader-bar-inner"></div>
+        </div>
+    </div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="particles" id="particles"></div>
+    <nav id="navbar">
+        <div class="nav-logo">AH.</div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certs" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="assets/resume.pdf" class="nav-link" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for Opportunities
+                </div>
+                <h1>Hi, I'm <span class="gradient">Asad Hussain</span></h1>
+                <div class="hero-typing">
+                    I build <span id="typing-text"></span><span class="cursor"></span>
+                </div>
+                <p class="hero-desc">
+                    Electrical Engineering student at NUST focused on building practical solutions at the
+                    intersection of embedded systems, intelligent computing, and RF technology. I turn
+                    complex problems into working, real world systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="assets/resume.pdf" class="btn-secondary" target="_blank" rel="noopener" download>
+                        <i class="fas fa-file-arrow-down"></i> Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo-wrapper">
+                    <div class="hero-photo-glow"></div>
+                    <div class="hero-photo-ring"></div>
+                    <img src="assets/images/hero-photo.jpg" alt="Asad Hussain" class="hero-photo" loading="eager">
+                    <div class="floating-card fc-1">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <strong>4+ Certifications</strong>
+                            <span>Industry Recognized</span>
+                        </div>
+                    </div>
+                    <div class="floating-card fc-2">
+                        <i class="fas fa-code-branch"></i>
+                        <div>
+                            <strong>40+ Projects</strong>
+                            <span>Hands-on Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="section-header reveal">
+            <span class="section-label">Introduction</span>
+            <h2 class="section-title">Overview.</h2>
+            <p class="section-subtitle">Electrical engineering student building systems from hardware up.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-photo reveal">
+                <img src="assets/images/about-photo.jpg" alt="Asad Hussain Professional" loading="lazy">
+            </div>
+            <div class="about-text reveal">
+                <h3>Electrical Engineer & ML Developer</h3>
+                <p>
+                    I am a final year Electrical Engineering student at NUST working across two tracks,
+                    applied machine learning and embedded or RF systems engineering. On the machine learning
+                    side, I am currently building content scoring pipelines as a Machine Learning Intern at
+                    FlyRank AI, and I trained in deep learning, natural language processing, large language
+                    models, and retrieval augmented generation through AtomCamp's AI Bootcamp. On the hardware
+                    side, my experience spans ESP32 based IoT systems, real time telemetry, MQTT
+                    communication, and Flask backend development, built during an engineering internship at
+                    the Research and Indigenous Development Centre, where I helped deliver a live IoT fleet
+                    management system.
+                </p>
+                <p>
+                    My final year project, DroneGuard, is an anti drone surveillance system built as two
+                    circuit boards, an RF detection front end and a jamming board, together covering four
+                    frequency bands with a low noise amplifier that extends detection range from around thirty
+                    meters to over one hundred and fifty meters. A Raspberry Pi running GNU Radio classifies
+                    drone control signals from live RF samples in real time, and a MATLAB front end visualizes
+                    the spectrum and telemetry alongside YOLOv8 based visual confirmation. I am comfortable
+                    moving between training models and designing the circuits and firmware that feed them
+                    real world data.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>40+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3+</h3>
+                        <p>Internships & Certs</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>4+</h3>
+                        <p>Years of Study</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <div class="section-header reveal">
+            <span class="section-label">What I Have Done So Far</span>
+            <h2 class="section-title">Work Experience.</h2>
+            <p class="section-subtitle">My professional journey and hands-on training.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Aug 2026 &ndash; Present</div>
+                    <div class="timeline-title">Machine Learning Intern</div>
+                    <div class="timeline-company">FlyRank AI, Chicago, Illinois (remote)</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Building content opportunity scoring models that flag pages with strong search visibility but low click through rates for prioritized refresh</li>
+                            <li>Built a data contract notebook defining schema and validation rules for the scoring pipeline, plus a baseline notebook establishing reference performance</li>
+                            <li>Worked through a staged ML workflow, from data contracts and EDA to baseline modeling, applied to real SEO and content datasets</li>
+                            <li>Authored case study write ups translating model outputs into content refresh recommendations for stakeholders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Jul 2026 &ndash; Aug 2026</div>
+                    <div class="timeline-title">Intern, IT &amp; Technical Departments</div>
+                    <div class="timeline-company">National Electric Power Regulatory Authority (NEPRA), Islamabad</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Studied NEPRA's regulatory flow from licensing through tariffs to sale across generation, transmission, distribution, and supply</li>
+                            <li>Contributed to a web based document intelligence portal for centralizing and full text searching regulatory filings across PDF, DOCX, XLSX, and PPTX formats</li>
+                            <li>Studied advanced metering infrastructure architecture and power transformer construction, ratings, losses, and protection practices</li>
+                            <li>Reviewed NEPRA's State of the Industry Report and compiled a full internship report and technical reference guide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Jun 2025 &ndash; Aug 2025</div>
+                    <div class="timeline-title">Engineering Intern</div>
+                    <div class="timeline-company">Research &amp; Indigenous Development Centre (RDC), Heavy Industries Taxila</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Integrated core hardware modules including the LilyGO T-SIM7670E ESP32 and LTE modem, a GPS module, and an RFID reader with a TP4056 LiPo charge controller</li>
+                            <li>Programmed low level control logic and state machines in C and C++ for one hertz GPS capture, RFID authentication, and buzzer based audio feedback</li>
+                            <li>Implemented MQTT telemetry over cellular GPRS with QoS level 1, enabling reliable real time updates with fifty millisecond server side callback processing</li>
+                            <li>Built an asynchronous Flask backend using multithreading to process analytics without blocking incoming MQTT streams</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 &ndash; 2027</div>
+                    <div class="timeline-title">B.E. Electrical Engineering</div>
+                    <div class="timeline-company">National University of Sciences and Technology (NUST)</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Coursework in analog electronics, digital signal processing, control systems, communication systems, digital logic design, embedded systems, signals and systems, instrumentation, and microprocessor systems</li>
+                            <li>Completed the AtomCamp AI Bootcamp, covering machine learning, deep learning, NLP, large language models, retrieval augmented generation, and MLOps with Docker, FastAPI, and CI/CD</li>
+                            <li>Technical Lead, NUST Robotics Society, and active member of the NUST Engineering Society</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="section-header reveal">
+            <span class="section-label">My Expertise</span>
+            <h2 class="section-title">Skills.</h2>
+            <p class="section-subtitle">Technologies and tools I work with daily.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">LangChain & RAG</span>
+                    <span class="skill-tag">LLM Fine-tuning</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Docker</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Embedded & Hardware</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">STM32</span>
+                    <span class="skill-tag">AVR</span>
+                    <span class="skill-tag">PIC</span>
+                    <span class="skill-tag">Arduino</span>
+                    <span class="skill-tag">Raspberry Pi</span>
+                    <span class="skill-tag">ESP32</span>
+                    <span class="skill-tag">PCB Design (Proteus)</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon"><i class="fas fa-wave-square"></i></div>
+                    <h3>RF & Signal Processing</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">SDR</span>
+                    <span class="skill-tag">Antenna Design</span>
+                    <span class="skill-tag">GNU Radio</span>
+                    <span class="skill-tag">FFT & Spectrogram Analysis</span>
+                    <span class="skill-tag">MATLAB & Simulink</span>
+                    <span class="skill-tag">Verilog & VHDL</span>
+                    <span class="skill-tag">FPGA</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">C++ / Embedded C</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Tools & Platforms</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Google Cloud</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Weights & Biases</span>
+                    <span class="skill-tag">CI/CD (GitHub Actions)</span>
+                    <span class="skill-tag">n8n Automation</span>
+                    <span class="skill-tag">AutoCAD</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Soft Skills</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Technical Writing</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section-header reveal">
+            <span class="section-label">My Work</span>
+            <h2 class="section-title">Projects.</h2>
+            <p class="section-subtitle">Real-world projects that showcase my skills and creativity.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-satellite-dish"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">RF</span>
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">Embedded</span>
+                    </div>
+                    <h3 class="project-title">DroneGuard: Anti Drone Surveillance System</h3>
+                    <p class="project-desc">
+                        A two board anti drone system built for my final year project. An RF detection front
+                        end covers four bands using CC1101, Si4432, and NRF24L01 with PA and LNA transceivers,
+                        paired with a jamming board built around an ADF4351 PLL synthesizer. A Raspberry Pi 4
+                        with an RTL SDR and GNU Radio classifies FHSS, OFDM, and FSK drone protocols in real
+                        time, while a MATLAB front end shows live spectrum, spectrogram, and GPS data with
+                        YOLOv8 based visual confirmation.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-truck"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Embedded</span>
+                        <span class="project-tag">GPS</span>
+                    </div>
+                    <h3 class="project-title">IoT Fleet Management System</h3>
+                    <p class="project-desc">
+                        A comprehensive IoT-based solution for real-time vehicle tracking, route optimization, 
+                        and fleet analytics using GPS modules and cloud dashboards.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-brain"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Signal Processing</span>
+                        <span class="project-tag">MATLAB</span>
+                        <span class="project-tag">Medical</span>
+                    </div>
+                    <h3 class="project-title">EEG Signal Cleaning & Analysis</h3>
+                    <p class="project-desc">
+                        Advanced signal processing pipeline for cleaning noisy EEG data using adaptive filtering, 
+                        ICA, and spectral analysis for brain-computer interface applications.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-calculator"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Digital Design</span>
+                        <span class="project-tag">Verilog</span>
+                        <span class="project-tag">FPGA</span>
+                    </div>
+                    <h3 class="project-title">4-bit ALU Design</h3>
+                    <p class="project-desc">
+                        Complete Arithmetic Logic Unit designed from gate level up, supporting arithmetic 
+                        and logical operations with carry lookahead for high-speed computation.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-broadcast-tower"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">RF</span>
+                        <span class="project-tag">Analog</span>
+                        <span class="project-tag">PCB</span>
+                    </div>
+                    <h3 class="project-title">FM Receiver Circuit</h3>
+                    <p class="project-desc">
+                        Designed and built a working FM radio receiver from scratch using LC tuning circuits, 
+                        RF amplifiers, and demodulation stages on a custom PCB.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-sun"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Renewable</span>
+                        <span class="project-tag">Control</span>
+                        <span class="project-tag">Arduino</span>
+                    </div>
+                    <h3 class="project-title">Solar Tracker System</h3>
+                    <p class="project-desc">
+                        Dual-axis solar tracking system using LDR sensors and servo motors to maximize 
+                        solar panel efficiency throughout the day with automatic positioning.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-robot"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">ML</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Data</span>
+                    </div>
+                    <h3 class="project-title">ML Predictive Models</h3>
+                    <p class="project-desc">
+                        Built and deployed multiple machine learning models during CodeAlpha internship 
+                        including regression, classification, and clustering solutions.
+                    </p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certs" id="certs">
+        <div class="section-header reveal">
+            <span class="section-label">Credentials</span>
+            <h2 class="section-title">Certifications.</h2>
+            <p class="section-subtitle">Professional certifications and achievements.</p>
+        </div>
+        <div class="certs-grid" id="certs-grid">
+            <div class="cert-card reveal">
+                <div class="cert-thumb"><img src="assets/images/certs/codealpha-ml.jpg" alt="Machine Learning Internship certificate" loading="lazy"></div>
+                <div class="cert-title">Machine Learning Internship</div>
+                <div class="cert-org">CodeAlpha</div>
+                <div class="cert-date">20 Jun 2026 – 20 Jul 2026</div>
+                <div class="cert-id">ID: CA/DF1/160558</div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-thumb"><img src="assets/images/certs/altium-pcb.jpg" alt="PCB Basic Design Course certificate" loading="lazy"></div>
+                <div class="cert-title">PCB Basic Design Course</div>
+                <div class="cert-org">Altium Education</div>
+                <div class="cert-date">August 2026</div>
+                <div class="cert-id">ID: cert_lypgb5lw</div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-thumb"><img src="assets/images/certs/rdc-internship.jpg" alt="RDC internship certificate" loading="lazy"></div>
+                <div class="cert-title">Internship — Designing & Testing of Driver Logging Device</div>
+                <div class="cert-org">Research & Indigenous Development Centre (RDC)</div>
+                <div class="cert-date">24 Jun 2025 – 08 Aug 2025</div>
+                <div class="cert-id">RDC Internship Certificate</div>
+            </div>
+        </div>
+    </section>
+    <div class="cert-modal" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" id="cert-modal-close" aria-label="Close">&times;</button>
+            <div class="cert-modal-body" id="cert-modal-body"></div>
+        </div>
+    </div>
+    <section class="testimonials" id="testimonials">
+        <div class="section-header reveal">
+            <span class="section-label">What Others Say</span>
+            <h2 class="section-title">Testimonials.</h2>
+        </div>
+        <div class="testimonial reveal">
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    Asad exhibited excellent performance during his internship and made a valuable contribution 
+                    to our organization. He has excellent analytical skills, quickly acquired new skills, and 
+                    adeptly adapted to emerging technologies. His dedication and skills make him a valuable asset 
+                    to any prospective employer.
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <h4>CodeAlpha Leadership</h4>
+                        <p>Founder & CEO, CodeAlpha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="section-header reveal">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Contact.</h2>
+            <p class="section-subtitle">Let's build something amazing together.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>Let's Talk</h3>
+                <p>I'm currently open to internship opportunities, freelance projects, and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-item">
+                    <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-item-info">
+                        <h4>Email</h4>
+                        <p>asadh1521@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-item-info">
+                        <h4>Phone</h4>
+                        <p>+92 320 4141092</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-item-info">
+                        <h4>Location</h4>
+                        <p>NUST, Islamabad &middot; Based in Lahore, Pakistan</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="contact-item-info">
+                        <h4>Availability</h4>
+                        <p>Open for Opportunities</p>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="https://linkedin.com/in/asad-hussain92" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/asadh-74" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:asadh1521@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="contact-form reveal">
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="What's your good name?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" name="message" placeholder="What you want to say?" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Built with <span class="heart">♥</span> by Asad Hussain | &copy; 2026 All Rights Reserved</p>
+    </footer>
+
+    <div class="ai-assistant" id="ai-assistant">
+        <button class="ai-toggle" id="ai-toggle" aria-label="Open AI assistant" aria-expanded="false">
+            <i class="fas fa-message" id="ai-toggle-icon"></i>
+        </button>
+        <div class="ai-panel" id="ai-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Ask about Asad">
+            <div class="ai-panel-header">
+                <div>
+                    <h4>Ask about Asad</h4>
+                    <p>An assistant trained on this portfolio</p>
+                </div>
+                <button class="ai-panel-close" id="ai-panel-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="ai-messages" id="ai-messages">
+                <div class="ai-message ai-message-bot">
+                    Hi, I can answer questions about Asad's projects, skills, and experience. Ask me
+                    anything, for example "What is DroneGuard?" or "What is Asad's experience with IoT?"
+                </div>
+            </div>
+            <form class="ai-input-row" id="ai-form">
+                <input type="text" id="ai-input" placeholder="Ask a question..." autocomplete="off" required>
+                <button type="submit" id="ai-send" aria-label="Send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/config.js"></script>
+    <script src="assets/projects.js"></script>
+    <script src="assets/certificates.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

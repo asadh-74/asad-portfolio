@@ -1,0 +1,74 @@
+[
+  {
+    "id": "iot-fleet-management",
+    "title": "IoT Fleet Management System",
+    "description": "Real-time vehicle tracking, route optimization, and fleet analytics using GPS modules and a cloud dashboard. Built for a Pakistan Army deployment during an internship at RDC & CEAI, NUST.",
+    "tags": ["IoT", "Embedded", "GPS"],
+    "icon": "fa-truck",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "eeg-signal-cleaning",
+    "title": "EEG Signal Cleaning & Analysis",
+    "description": "Signal processing pipeline for cleaning noisy EEG data using adaptive filtering, ICA, and spectral analysis for brain-computer interface applications.",
+    "tags": ["Signal Processing", "MATLAB", "Medical"],
+    "icon": "fa-brain",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "4bit-alu",
+    "title": "4-bit ALU Design",
+    "description": "Arithmetic Logic Unit designed from gate level up, supporting arithmetic and logical operations with carry lookahead for high-speed computation.",
+    "tags": ["Digital Design", "Verilog", "FPGA"],
+    "icon": "fa-calculator",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "fm-receiver",
+    "title": "FM Receiver Circuit",
+    "description": "Working FM radio receiver built from scratch using LC tuning circuits, RF amplifiers, and demodulation stages (TDA7000) on a breadboard/custom PCB.",
+    "tags": ["RF", "Analog", "PCB"],
+    "icon": "fa-broadcast-tower",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "solar-tracker",
+    "title": "Dual-Axis Solar Tracker",
+    "description": "Dual-axis solar tracking system using LDR sensors and servo motors to maximize panel efficiency throughout the day with automatic positioning.",
+    "tags": ["Renewable", "Control", "Arduino"],
+    "icon": "fa-sun",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "ml-predictive-models",
+    "title": "ML Predictive Models",
+    "description": "Regression, classification, and clustering models built and deployed during the FlyRank / CodeAlpha ML internships.",
+    "tags": ["ML", "Python", "Data"],
+    "icon": "fa-robot",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "ev-charging-station",
+    "title": "EV Charging Station",
+    "description": "ESP32-based EV charging station with a full state machine, current/temperature sensing, relay control, and energy accumulation, simulated in Proteus ISIS.",
+    "tags": ["Embedded", "ESP32", "Power"],
+    "icon": "fa-charging-station",
+    "codeUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": "uav-detection",
+    "title": "SDR-Based UAV Detection",
+    "description": "Final year project combining RF detection with an ML classifier for identifying UAV signals.",
+    "tags": ["SDR", "RF", "ML"],
+    "icon": "fa-satellite-dish",
+    "codeUrl": "",
+    "demoUrl": ""
+  }
+]
