@@ -12,6 +12,11 @@ const chatRouter = require('./routes/chat');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Required behind a reverse proxy (Vercel, Render, etc.) so Express reads the
+// real client IP from X-Forwarded-For correctly instead of throwing a
+// validation error inside express-rate-limit on every request.
+app.set('trust proxy', 1);
+
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || '')
   .split(',')
   .map((o) => o.trim())
