@@ -69,21 +69,29 @@ router.post('/', async (req, res) => {
     receivedAt: new Date().toISOString(),
   };
 
+  // Saving to a local JSON file only works on a host with a writable,
+  // persistent filesystem (e.g. Render). On serverless hosts like Vercel the
+  // filesystem is read-only, so this is best-effort and must never block the
+  // request — email (below) is the reliable delivery path there.
+  let savedLocally = false;
   try {
     saveMessageLocally(entry);
+    savedLocally = true;
   } catch (err) {
-    console.error('Contact form error (saving message):', err);
-    return res.status(500).json({ error: 'Something went wrong saving your message. Please try emailing directly.' });
+    console.error('Contact form: could not save message locally (expected on read-only hosts like Vercel):', err.message);
   }
 
-  // Email delivery is best-effort: the message is already safely saved above,
-  // so an SMTP problem (bad/placeholder credentials, network issue) should
-  // never turn into a failed request for the visitor.
   let emailed = false;
   try {
     emailed = await sendEmail(entry);
   } catch (err) {
     console.error('Contact form error (sending email):', err.message);
+  }
+
+  if (!savedLocally && !emailed) {
+    return res.status(500).json({
+      error: 'Could not deliver your message right now. Please email directly instead.',
+    });
   }
 
   res.json({

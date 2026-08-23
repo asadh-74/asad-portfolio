@@ -65,6 +65,14 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message || 'Internal server error' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Portfolio API + site running on http://localhost:${PORT}`);
-});
+// On a normal Node host (Render, Railway, local dev) this file is run
+// directly, so it should start listening. On Vercel, this file is imported
+// by the serverless runtime instead, which calls the exported app itself,
+// so app.listen() must be skipped there.
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Portfolio API + site running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

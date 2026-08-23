@@ -2,8 +2,8 @@ const express = require('express');
 
 const router = express.Router();
 
-const ANTHROPIC_API_URL = 'https://api.anthropic.com/v1/messages';
-const MODEL = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-6';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 // Everything the assistant is allowed to know about, kept in one place so it
 // stays accurate as the portfolio content changes.
@@ -82,7 +82,7 @@ projects, and collaborations.
 
 // POST /api/chat  { messages: [{ role: 'user' | 'assistant', content: string }] }
 router.post('/', async (req, res) => {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     return res.status(503).json({
       error: 'The AI assistant is not configured yet. Please use the contact form instead.',
@@ -102,32 +102,33 @@ router.post('/', async (req, res) => {
     .slice(-10)
     .map((m) => ({ role: m.role, content: String(m.content).slice(0, 2000) }));
 
+  // Gemini's generateContent API uses "contents" with role "user" / "model"
+  // instead of Anthropic-style "messages" with role "user" / "assistant".
+  const contents = cleanMessages.map((m) => ({
+    role: m.role === 'assistant' ? 'model' : 'user',
+    parts: [{ text: m.content }],
+  }));
+
   try {
-    const response = await fetch(ANTHROPIC_API_URL, {
+    const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: MODEL,
-        max_tokens: 400,
-        system: SYSTEM_PROMPT,
-        messages: cleanMessages,
+        system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+        contents,
+        generationConfig: { maxOutputTokens: 400 },
       }),
     });
 
     if (!response.ok) {
       const errBody = await response.text();
-      console.error('Anthropic API error:', response.status, errBody);
+      console.error('Gemini API error:', response.status, errBody);
       return res.status(502).json({ error: 'The AI assistant had trouble responding. Please try again.' });
     }
 
     const data = await response.json();
-    const reply = (data.content || [])
-      .filter((block) => block.type === 'text')
-      .map((block) => block.text)
+    const reply = (data.candidates?.[0]?.content?.parts || [])
+      .map((part) => part.text || '')
       .join('\n')
       .trim();
 
