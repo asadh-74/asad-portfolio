@@ -134,3 +134,77 @@ if (contactForm) {
         }
     });
 }
+
+// AI Assistant widget
+const aiToggle = document.getElementById('ai-toggle');
+const aiToggleIcon = document.getElementById('ai-toggle-icon');
+const aiPanel = document.getElementById('ai-panel');
+const aiPanelClose = document.getElementById('ai-panel-close');
+const aiForm = document.getElementById('ai-form');
+const aiInput = document.getElementById('ai-input');
+const aiMessages = document.getElementById('ai-messages');
+const aiSend = document.getElementById('ai-send');
+
+if (aiToggle && aiPanel) {
+    let aiOpen = false;
+    let aiHistory = [];
+
+    function setAiOpen(open) {
+        aiOpen = open;
+        aiPanel.classList.toggle('open', open);
+        aiPanel.setAttribute('aria-hidden', String(!open));
+        aiToggle.setAttribute('aria-expanded', String(open));
+        aiToggleIcon.className = open ? 'fas fa-xmark' : 'fas fa-message';
+        if (open) setTimeout(() => aiInput.focus(), 150);
+    }
+
+    aiToggle.addEventListener('click', () => setAiOpen(!aiOpen));
+    aiPanelClose.addEventListener('click', () => setAiOpen(false));
+
+    function addAiMessage(text, role) {
+        const el = document.createElement('div');
+        el.className = 'ai-message ai-message-' + role;
+        el.textContent = text;
+        aiMessages.appendChild(el);
+        aiMessages.scrollTop = aiMessages.scrollHeight;
+        return el;
+    }
+
+    if (aiForm) {
+        aiForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const question = aiInput.value.trim();
+            if (!question) return;
+
+            addAiMessage(question, 'user');
+            aiHistory.push({ role: 'user', content: question });
+            aiInput.value = '';
+            aiInput.disabled = true;
+            aiSend.disabled = true;
+
+            const thinkingEl = addAiMessage('Thinking...', 'bot');
+
+            try {
+                const res = await fetch(`${window.API_BASE_URL || ''}/api/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ messages: aiHistory })
+                });
+                const data = await res.json();
+                if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+
+                thinkingEl.textContent = data.reply;
+                thinkingEl.classList.remove('ai-message-bot');
+                thinkingEl.classList.add('ai-message-bot');
+                aiHistory.push({ role: 'assistant', content: data.reply });
+            } catch (err) {
+                thinkingEl.textContent = err.message || 'The assistant is unavailable right now. Please use the contact form instead.';
+                thinkingEl.classList.add('ai-message-error');
+            } finally {
+                aiInput.disabled = false;
+                aiSend.disabled = false;
+                aiInput.focus();
+            }
+        });
+    }
+}

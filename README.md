@@ -18,7 +18,8 @@ asad-portfolio/
     ├── server.js
     ├── routes/
     │   ├── projects.js   # GET  /api/projects
-    │   └── contact.js    # POST /api/contact
+    │   ├── contact.js    # POST /api/contact
+    │   └── chat.js       # POST /api/chat  (AI assistant, optional)
     └── data/
         ├── projects.json  # <- add new projects here
         └── messages.json  # contact form submissions land here
@@ -115,6 +116,39 @@ image in a lightbox — once you give them an image. Edit
 Until an `imageUrl` is set, clicking the card still opens the lightbox with
 the title, org, and credential ID — it just shows a placeholder icon instead
 of an image, so nothing looks broken while you're still collecting the files.
+
+## Adding the resume download
+
+The navbar and hero section link to `frontend/assets/resume.pdf`. That file
+is not included in the repo (a resume is personal, so it isn't generated for
+you). To make the link work:
+
+1. Export the resume as a PDF.
+2. Save it as `frontend/assets/resume.pdf`, replacing any existing placeholder.
+3. Commit and push. No code changes are needed since the link already points
+   there.
+
+## AI assistant widget
+
+The chat bubble in the bottom right corner lets visitors ask questions about
+Asad's projects, skills, and experience. It is answered by the small,
+factual system prompt in `backend/routes/chat.js`, which only knows what is
+written in that file, so it will not invent projects or dates that are not
+already on the site.
+
+To turn it on:
+1. Get an API key from the [Anthropic Console](https://console.anthropic.com/).
+2. Set `ANTHROPIC_API_KEY` in `backend/.env` (or the host's environment
+   variables) to that key.
+3. Restart the backend.
+
+If `ANTHROPIC_API_KEY` is not set, the widget still renders but replies with
+a friendly message asking the visitor to use the contact form instead, so
+the rest of the site is unaffected either way.
+
+To keep the assistant's answers accurate, update the `SYSTEM_PROMPT` text in
+`backend/routes/chat.js` whenever the projects, experience, or skills on the
+site change.
 
 ## Adding a new project
 

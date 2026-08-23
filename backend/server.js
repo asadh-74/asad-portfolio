@@ -7,6 +7,7 @@ const rateLimit = require('express-rate-limit');
 const projectsRouter = require('./routes/projects');
 const certificatesRouter = require('./routes/certificates');
 const contactRouter = require('./routes/contact');
+const chatRouter = require('./routes/chat');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -48,6 +49,7 @@ app.get('/api/health', (req, res) => {
 app.use('/api/projects', projectsRouter);
 app.use('/api/certificates', certificatesRouter);
 app.use('/api/contact', contactRouter);
+app.use('/api/chat', chatRouter);
 
 // Serve the built frontend as well, so the whole site can be deployed as a
 // single Node service if you don't want to host frontend/backend separately.
