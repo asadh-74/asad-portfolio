@@ -1,12 +1,7 @@
-// Central place to point the frontend at the backend API.
+﻿// Central place to point the frontend at the backend API.
 //
-// - When the site is opened on localhost, it talks to your local backend.
-// - Otherwise, it uses PRODUCTION_API_URL below - update this once you've
-//   deployed the backend (see backend/README section in the repo README).
-const PRODUCTION_API_URL = 'https://your-backend-service.onrender.com';
-
-const IS_LOCAL = ['localhost', '127.0.0.1', ''].includes(window.location.hostname);
-
-// If the backend is serving the frontend itself (single-deploy setup),
-// same-origin '/api' just works, so we default to that on localhost too.
-window.API_BASE_URL = IS_LOCAL ? '' : PRODUCTION_API_URL;
+// Frontend and backend are deployed together on the same Vercel project
+// (see vercel.json at the repo root), so API calls always use the current
+// origin - no separate backend URL needed. If you ever split them across
+// two hosts again, set an absolute URL here instead of ''.
+window.API_BASE_URL = '';
