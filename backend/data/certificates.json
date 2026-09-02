@@ -3,7 +3,7 @@
     "id": "codealpha-ml",
     "title": "Machine Learning Internship",
     "org": "CodeAlpha",
-    "date": "20 Jun 2026 \u2013 20 Jul 2026",
+    "date": "20 Jun 2026 – 20 Jul 2026",
     "credentialId": "CA/DF1/160558",
     "icon": "fa-brain",
     "imageUrl": "assets/images/certs/codealpha-ml.jpg",
@@ -21,12 +21,72 @@
   },
   {
     "id": "rdc-internship",
-    "title": "Internship \u2014 Designing & Testing of Driver Logging Device",
+    "title": "Internship — Designing & Testing of Driver Logging Device",
     "org": "Research & Indigenous Development Centre (RDC), College of E&ME",
-    "date": "24 Jun 2025 \u2013 08 Aug 2025",
+    "date": "24 Jun 2025 – 08 Aug 2025",
     "credentialId": "RDC Internship Certificate",
     "icon": "fa-flask",
     "imageUrl": "assets/images/certs/rdc-internship.jpg",
     "verifyUrl": ""
+  },
+  {
+    "id": "harvard-cs50x",
+    "title": "CS50x",
+    "org": "Harvard University",
+    "date": "2026",
+    "credentialId": "20f627af-99e6-4f7b-ac0c-ce19076f2aac",
+    "icon": "fa-graduation-cap",
+    "imageUrl": "assets/images/certs/harvard-cs50x.jpg",
+    "verifyUrl": "https://cs50.harvard.edu/certificates/20f627af-99e6-4f7b-ac0c-ce19076f2aac"
+  },
+  {
+    "id": "microsoft-ai-azure",
+    "title": "Develop AI Apps and Agents on Azure (AI-103T00-A)",
+    "org": "Microsoft / edX",
+    "date": "December 2025",
+    "credentialId": "7dsll5d0044dcxfee957ef52bee307045",
+    "icon": "fa-robot",
+    "imageUrl": "assets/images/certs/microsoft-ai-azure.jpg",
+    "verifyUrl": ""
+  },
+  {
+    "id": "ibm-data-analysis",
+    "title": "Data Analysis with Python (DA0101EN)",
+    "org": "IBM",
+    "date": "April 2025",
+    "credentialId": "e5a16f1adc3b42c6bb428a2d631b3337",
+    "icon": "fa-chart-line",
+    "imageUrl": "assets/images/certs/ibm-data-analysis.jpg",
+    "verifyUrl": "https://courses.etrain.skillsnetwork.site/certificates/e5a16f1adc3b42c6bb428a2d631b3337"
+  },
+  {
+    "id": "deloitte-leadership",
+    "title": "Effective Leadership — Scored 90%",
+    "org": "Deloitte WorldClass",
+    "date": "2026",
+    "credentialId": "Deloitte WorldClass Certificate",
+    "icon": "fa-users",
+    "imageUrl": "assets/images/certs/deloitte-leadership.jpg",
+    "verifyUrl": ""
+  },
+  {
+    "id": "google-agile-pm",
+    "title": "Agile Project Management",
+    "org": "Google / Coursera",
+    "date": "2025",
+    "credentialId": "TZQLM8IHK98K",
+    "icon": "fa-tasks",
+    "imageUrl": "assets/images/certs/google-agile-pm.jpg",
+    "verifyUrl": "https://coursera.org/verify/TZQLM8IHK98K"
+  },
+  {
+    "id": "alison-product-mgmt",
+    "title": "Digital Product Management",
+    "org": "Alison",
+    "date": "2024",
+    "credentialId": "Alison Certificate",
+    "icon": "fa-cube",
+    "imageUrl": "assets/images/certs/alison-product-mgmt.jpg",
+    "verifyUrl": "https://alison.com/certificates/007896"
   }
 ]
