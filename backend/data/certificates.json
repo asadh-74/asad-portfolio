@@ -20,9 +20,9 @@
     "verifyUrl": ""
   },
   {
-    "id": "rdc-internship",
+    "id": "rdc-internship HIT",
     "title": "Internship — Designing & Testing of Driver Logging Device",
-    "org": "Research & Indigenous Development Centre (RDC), College of E&ME",
+    "org": "Research & Indigenous Development Centre (RDC), Heavy Industries Taxilla",
     "date": "24 Jun 2025 – 08 Aug 2025",
     "credentialId": "RDC Internship Certificate",
     "icon": "fa-flask",
@@ -31,7 +31,7 @@
   },
   {
     "id": "harvard-cs50x",
-    "title": "CS50x",
+    "title": "CS50 Introduction to Computer Science",
     "org": "Harvard University",
     "date": "2026",
     "credentialId": "20f627af-99e6-4f7b-ac0c-ce19076f2aac",
@@ -50,13 +50,13 @@
     "verifyUrl": ""
   },
   {
-    "id": "ibm-data-analysis",
-    "title": "Data Analysis with Python (DA0101EN)",
+    "id": "ibm- Cloud Computing",
+    "title": "Cloud Computing Advance Coursera ",
     "org": "IBM",
-    "date": "April 2025",
+    "date": "August 2026",
     "credentialId": "e5a16f1adc3b42c6bb428a2d631b3337",
     "icon": "fa-chart-line",
-    "imageUrl": "assets/images/certs/ibm-data-analysis.jpg",
+    "imageUrl": "assets/images/certs/IBM Cloud Computing.jpg",
     "verifyUrl": "https://courses.etrain.skillsnetwork.site/certificates/e5a16f1adc3b42c6bb428a2d631b3337"
   },
   {
