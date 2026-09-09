@@ -320,7 +320,7 @@
         <div class="section-header reveal">
             <span class="section-label">My Work</span>
             <h2 class="section-title">Projects.</h2>
-            <p class="section-subtitle">Real-world projects that showcase my skills and creativity.</p>
+            <p class="section-subtitle">A selection from 30 projects spanning embedded systems, RF, signal processing, IoT, and applied ML.</p>
         </div>
         <div class="projects-grid" id="projects-grid">
             <div class="project-card reveal">
@@ -341,8 +341,8 @@
                         YOLOv8 based visual confirmation.
                     </p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <!-- TODO: replace # with Dropbox link for "DroneGuard" -->
+                        <a href="#" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
                     </div>
                 </div>
             </div>
@@ -351,17 +351,37 @@
                 <div class="project-content">
                     <div class="project-tags">
                         <span class="project-tag">IoT</span>
-                        <span class="project-tag">Embedded</span>
-                        <span class="project-tag">GPS</span>
+                        <span class="project-tag">Full-Stack</span>
+                        <span class="project-tag">Internship</span>
                     </div>
-                    <h3 class="project-title">IoT Fleet Management System</h3>
+                    <h3 class="project-title">IoT Fleet Management & GPS Tracking System</h3>
                     <p class="project-desc">
-                        A comprehensive IoT-based solution for real-time vehicle tracking, route optimization, 
-                        and fleet analytics using GPS modules and cloud dashboards.
+                        Production-grade fleet management system built solo during a full-time internship.
+                        Integrated an ESP32 with LTE, GPS, and RFID authentication, backed by a Flask + SQL
+                        Server pipeline with real-time MQTT telemetry, polygon geofencing, and a live
+                        Leaflet.js/Chart.js dashboard.
                     </p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://www.dropbox.com/scl/fi/q0lw0jxn3ki5r78ncb135/Internship_Report.pdf?rlkey=zkl2ti5sxkxrubfuot5p2jghj&st=hdvbzwi8&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-robot"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Computer Vision</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">Full-Stack</span>
+                    </div>
+                    <h3 class="project-title">Real-Time Object Detection Dashboard</h3>
+                    <p class="project-desc">
+                        Real-time object detection system built on YOLOv8, wrapped in an interactive
+                        Streamlit dashboard for live video upload and detection logging. Packaged with Docker
+                        Compose for one-command deployment. Demoed at NUST Robotics Society's Voltfest 2026.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.dropbox.com/scl/fi/90p47sqej50zhw2o44gzb/Object-Detection.zip?rlkey=ybzgymgpzz2xg5te3ho4ppncm&st=ncgs8ul5&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
                     </div>
                 </div>
             </div>
@@ -375,12 +395,12 @@
                     </div>
                     <h3 class="project-title">EEG Signal Cleaning & Analysis</h3>
                     <p class="project-desc">
-                        Advanced signal processing pipeline for cleaning noisy EEG data using adaptive filtering, 
-                        ICA, and spectral analysis for brain-computer interface applications.
+                        Cleaned raw EEG recordings from a Parkinson's patient using a cascade of notch,
+                        high-pass, and low-pass filters. Built an interactive MATLAB App Designer GUI to
+                        toggle each filter stage and visualize the cleaned signal in real time.
                     </p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://www.dropbox.com/scl/fi/6hx2yv3uql3tqn553inqf/Cleaning-and-Real-Time-Simulation-of-EEG-Data.pdf?rlkey=fb5i671717jlwb03cafwjh63a&st=nqs2l1k0&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
                     </div>
                 </div>
             </div>
@@ -389,17 +409,16 @@
                 <div class="project-content">
                     <div class="project-tags">
                         <span class="project-tag">Digital Design</span>
-                        <span class="project-tag">Verilog</span>
-                        <span class="project-tag">FPGA</span>
+                        <span class="project-tag">Logic Gates</span>
                     </div>
                     <h3 class="project-title">4-bit ALU Design</h3>
                     <p class="project-desc">
-                        Complete Arithmetic Logic Unit designed from gate level up, supporting arithmetic 
-                        and logical operations with carry lookahead for high-speed computation.
+                        Arithmetic Logic Unit designed from discrete logic gates, supporting arithmetic
+                        and logical operations selected via a function-select input, mirroring the core
+                        compute unit inside a processor. Verified across all 256 input combinations.
                     </p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&st=jpwrm9zm&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
                     </div>
                 </div>
             </div>
@@ -411,36 +430,61 @@
                         <span class="project-tag">Analog</span>
                         <span class="project-tag">PCB</span>
                     </div>
-                    <h3 class="project-title">FM Receiver Circuit</h3>
+                    <h3 class="project-title">FM Receiver Using TDA7000 IC</h3>
                     <p class="project-desc">
-                        Designed and built a working FM radio receiver from scratch using LC tuning circuits, 
-                        RF amplifiers, and demodulation stages on a custom PCB.
+                        FM receiver built around the TDA7000 single-chip IC, covering front-end tuning,
+                        local oscillator calculations, and full block-level system design. Verified
+                        demodulation in MATLAB/Simulink before building and testing the physical circuit.
                     </p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&st=lp1mgay0&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
                     </div>
                 </div>
             </div>
             <div class="project-card reveal">
-                <div class="project-image"><i class="fas fa-robot"></i></div>
+                <div class="project-image"><i class="fas fa-chart-line"></i></div>
                 <div class="project-content">
                     <div class="project-tags">
                         <span class="project-tag">ML</span>
                         <span class="project-tag">Python</span>
-                        <span class="project-tag">Data</span>
+                        <span class="project-tag">Scikit-learn</span>
                     </div>
-                    <h3 class="project-title">ML Predictive Models</h3>
+                    <h3 class="project-title">Credit Risk Classification Model</h3>
                     <p class="project-desc">
-                        Built and deployed multiple machine learning models during CodeAlpha internship 
-                        including regression, classification, and clustering solutions.
+                        Credit-scoring classification model comparing Logistic Regression, Decision Trees,
+                        and Random Forest on applicant financial-history data, evaluated with Precision,
+                        Recall, F1-score, and ROC-AUC.
                     </p>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
                     </div>
                 </div>
             </div>
+            <div class="project-card reveal">
+                <div class="project-image"><i class="fas fa-bolt"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Full-Stack</span>
+                        <span class="project-tag">Energy</span>
+                    </div>
+                    <h3 class="project-title">AMI-Based IoT Smart Energy Meter</h3>
+                    <p class="project-desc">
+                        Advanced Metering Infrastructure style smart energy meter built around an ESP32,
+                        paired with a full-stack web dashboard for live energy-consumption monitoring from
+                        raw sensor readings to a utility-facing view.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.dropbox.com/scl/fo/su5peq6dn6a7oh3084ffy/AKwRIv6NDVJscuOgnZBcA4o?rlkey=ubwwjfj3i1cn1nmw9s15z2jrr&st=8sln4fnc&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:48px;">
+            <a href="projects.html" class="btn-secondary">
+                <i class="fas fa-layer-group"></i> View Full Portfolio (30 Projects)
+            </a>
         </div>
     </section>
     <section class="certs" id="certs">
