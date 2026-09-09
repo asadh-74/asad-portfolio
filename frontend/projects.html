@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio | Asad Hussain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="description" content="Full project portfolio of Asad Hussain — 29 projects across embedded systems, RF, signal processing, IoT, power electronics, and applied ML.">
+    <meta name="theme-color" content="#050508">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .portfolio-header {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 140px 24px 40px;
+            text-align: center;
+        }
+        .portfolio-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            color: var(--text-secondary, #9ca3af);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .portfolio-back:hover { color: var(--accent, #7c8cff); }
+        .portfolio-count-bar {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin: 24px 0 8px;
+            color: var(--text-secondary, #9ca3af);
+            font-size: 0.9rem;
+        }
+        .full-projects-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 24px 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .needs-details-badge {
+            background: rgba(255, 255, 255, 0.08);
+            color: #9ca3af;
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 6px;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">AH.</a>
+        <ul class="nav-links">
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="index.html#certs" class="nav-link">Certificates</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <a href="assets/AsadHussain_resume.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-arrow-down"></i> Resume
+            </a>
+        </ul>
+        <a href="index.html#contact" class="nav-cta">Hire Me</a>
+    </nav>
+
+    <div class="portfolio-header">
+        <a href="index.html#projects" class="portfolio-back"><i class="fas fa-arrow-left"></i> Back to homepage</a>
+        <span class="section-label">Complete Archive</span>
+        <h1 class="section-title">Project Portfolio.</h1>
+        <p class="section-subtitle">29 projects across embedded systems, RF & communications, signal processing, full-stack development, IoT, power electronics, and applied machine learning.</p>
+    </div>
+
+    <div class="full-projects-grid" id="full-projects-grid">
+
+        <!-- 01 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">IoT & Full-Stack</span>
+                    <span class="project-tag">Internship Project</span>
+                </div>
+                <h3 class="project-title">IoT Fleet Management & GPS Tracking System</h3>
+                <p class="project-desc">Production-grade fleet management system built solo during a full-time internship at RDC/HIT. Integrated an ESP32 (LilyGO T-SIM7670E) with LTE, GPS, RFID driver authentication, and LiPo management into a field-deployable device. Backend on Python Flask + SQL Server with 1 Hz MQTT telemetry, polygon geofencing, harsh-driving detection, and a 10-page Leaflet.js/Chart.js dashboard.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/q0lw0jxn3ki5r78ncb135/Internship_Report.pdf?rlkey=zkl2ti5sxkxrubfuot5p2jghj&st=hdvbzwi8&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> Internship Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Analog Electronics</span>
+                </div>
+                <h3 class="project-title">2nd Order Active Low-Pass Filter</h3>
+                <p class="project-desc">Designed a 2nd-order Butterworth active low-pass filter using op-amps and RC components. Achieves greater than 10 dB attenuation at 11.25 kHz with a flat 20 dB passband gain up to 900 Hz. Simulated first, then built and tested on hardware with results matching the simulated Bode plot.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/ol4xlrt98yu4w4d2hsvmt/2nd-Order-Active-Low-Pass-Filter-Circuit.pdf?rlkey=rqrad9itltqiz61qld3xe0jr1&st=u9cr2rea&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Electronic Circuit Design</span>
+                </div>
+                <h3 class="project-title">Audio Power Amplifier</h3>
+                <p class="project-desc">Multi-stage audio amplifier chain covering preamplification, driver stage, and power output for high-fidelity reproduction across the full audible spectrum. Component values and biasing tuned to keep THD within acceptable limits, validated first in simulation then on physical hardware.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/bebit4tgfwg7xhxbcvwi0/Audio-Power-Amplifier.pdf?rlkey=njovujnizm7q3oj6d2qwkyl6a&st=x6vvh80x&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Digital Signal Processing</span>
+                </div>
+                <h3 class="project-title">EEG Signal Cleaning & Real-Time Simulation</h3>
+                <p class="project-desc">Cleaned raw EEG recordings from a Parkinson's patient in MATLAB, removing 50 Hz powerline interference, EMG artifacts, eye-blink transients, and baseline drift using a cascade of notch, high-pass, and low-pass filters. Built an interactive MATLAB App Designer GUI to toggle each filter stage and visualize results in real time.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/6hx2yv3uql3tqn553inqf/Cleaning-and-Real-Time-Simulation-of-EEG-Data.pdf?rlkey=fb5i671717jlwb03cafwjh63a&st=nqs2l1k0&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Linear Control Systems</span>
+                </div>
+                <h3 class="project-title">DC Motor Speed Control (PID)</h3>
+                <p class="project-desc">Closed-loop DC motor speed controller using an optical rotary encoder for feedback and an L298N H-bridge driver. Manually tuned PID gains to minimize overshoot and settling time while staying robust to load disturbances. Simulated in Proteus first, then deployed on Arduino hardware.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/oj6eahtnjuozzz1znib6u/DC_Motor_Speed_Control_Report.pdf?rlkey=3z9q9rs8k067zwlr8r6l9wht5&st=ku5dou0e&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Signals & Systems</span>
+                </div>
+                <h3 class="project-title">5-Band Graphic Equalizer</h3>
+                <p class="project-desc">5-band graphic equalizer using Butterworth bandpass filters centred at standard ISO frequencies from 63 Hz to 16 kHz. Developed a Q-sweep algorithm so the combined response stays flat when all sliders are centred. Full MATLAB GUI with live playback and +/-12 dB sliders, validated against a Simulink model.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/wwl0ls6ccdfrll1af7x5t/Design-Implementation-of-a-5-Band-Graphic-Equalizer-using-MATLAB-Simulink-GUI.pdf?rlkey=uke6ropunivtlelra6f25qp6w&st=74gnbib4&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 07 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Digital Logic Design</span>
+                </div>
+                <h3 class="project-title">4-Bit Arithmetic Logic Unit (ALU)</h3>
+                <p class="project-desc">4-bit ALU built entirely from discrete logic gates, supporting ADD, SUB, AND, OR, XOR, and NOT selected via a function-select input, mirroring the core compute unit inside a processor. Verified functional correctness across all 256 possible input combinations.</p>
+                <p class="project-desc" style="margin-top:8px;">Also built a working hardware version on breadboard using OR, AND, XOR, NOT, MUX, and full-adder ICs. Demonstrates addition, subtraction, 2's and 1's complement, independent increment/decrement on both inputs, bitwise OR/AND/XOR, input loading, and a clock-driven counter.</p>
+                <div style="display:flex; gap:8px; margin:12px 0; flex-wrap:wrap;">
+                    <img src="assets/images/projects/alu-breadboard-1.jpg" alt="4-bit ALU breadboard build" style="width:100px; height:100px; object-fit:cover; border-radius:8px;">
+                    <img src="assets/images/projects/alu-breadboard-2.jpg" alt="4-bit ALU breadboard build" style="width:100px; height:100px; object-fit:cover; border-radius:8px;">
+                    <img src="assets/images/projects/alu-breadboard-3.jpg" alt="4-bit ALU breadboard build" style="width:100px; height:100px; object-fit:cover; border-radius:8px;">
+                </div>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&st=jpwrm9zm&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 08 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Communication Systems</span>
+                </div>
+                <h3 class="project-title">FM Receiver Using TDA7000 IC</h3>
+                <p class="project-desc">FM receiver built around the TDA7000 single-chip IC, covering front-end tuning circuit component selection, local oscillator calculations, and full block-level system design from antenna to audio output. Verified demodulation in MATLAB/Simulink before building and testing the physical circuit.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&st=lp1mgay0&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 09 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Fundamentals of Programming</span>
+                </div>
+                <h3 class="project-title">Monthly Budget Planner (C++)</h3>
+                <p class="project-desc">Command-line budget planning tool in C++ tracking expenses across user-defined categories over custom durations, calculating per-category savings/overspending, and generating personalized recommendations. Uses file handling for persistent storage and pointer-based data structures for category lists.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/mvvrpeys8i9cuqu1wvqx9/Monthly-Budget-Planner.pdf?rlkey=1k5f4lsquwc2izx23tv65y6ux&st=p64uz5eh&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Instrumentation & Measurements</span>
+                </div>
+                <h3 class="project-title">Multi-Range Digital Voltmeter</h3>
+                <p class="project-desc">3-range (2V/4V/5V) digital voltmeter using the Arduino UNO's built-in ADC with an analog multiplexer for automatic range switching. Displays values live on a 16x2 LCD with an automatic over-range alert. Demonstrates sensor interfacing, ADC calibration, and embedded measurement-system design.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/2y9lfqaekvy1fkkml63l4/Multirange-Voltmeter.pdf?rlkey=kk45x9zhd95bxzhdmslyudc4j&st=ui38gt3h&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Object-Oriented Programming</span>
+                </div>
+                <h3 class="project-title">Shopping Cart System (OOP / C++)</h3>
+                <p class="project-desc">Full object-oriented shopping system in C++ covering product browsing, cart management, discount application, and checkout. Class hierarchy of Products, Employees, and Shop demonstrates encapsulation, inheritance, and polymorphism with a clean separation between data models and business logic.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/ln979gckqxhavttvdqufl/Shopping-Cart-System.pdf?rlkey=rs5legijhk6g7vcbr8dtj4h4x&st=hrprrfmc&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Microprocessor Systems</span>
+                </div>
+                <h3 class="project-title">Water Level Indicator (Arduino)</h3>
+                <p class="project-desc">4-state water level indicator (Low/Medium/High/Full) designed and simulated in Proteus using an ATmega16 microcontroller. Sensor inputs drive a bank of status LEDs and a live display, with debounced logic to avoid flickering between adjacent states.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/ogldovruy8snay9bzvm1a/Water-Level-Indicator-Using-Arduino.pdf?rlkey=4y9orz8gx53cryxxpevdns1hn&st=hpk31ent&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Embedded Systems</span>
+                </div>
+                <h3 class="project-title">Smart Parking System</h3>
+                <p class="project-desc">Smart parking occupancy system simulated in Proteus using IR sensors to detect whether each slot is occupied. Microcontroller logic aggregates sensor states in real time and displays live slot-availability data on an LCD.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/q240nylfrevn4voxulk57/Smart_Parking_Report.pdf?rlkey=tamifoiycuebwhwk2z4unfn41&st=zkm6noxh&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Embedded Systems</span>
+                </div>
+                <h3 class="project-title">RFID Door Lock System</h3>
+                <p class="project-desc">Full RFID-based access control system in Proteus ISIS using an Arduino UNO and MFRC522 reader over SPI. Authorized UIDs unlock the door via a servo-driven latch; unauthorized attempts trigger a buzzer alert. All five defined test cases passed during simulation.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/x9k0zl4rmljz8ly9ipyi5/RFID_Door_Lock_Report.pdf?rlkey=z18547025vhfwy3cglfub62ph&st=f9hyx6ok&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Renewable Energy Systems</span>
+                </div>
+                <h3 class="project-title">Dual-Axis Solar Tracker</h3>
+                <p class="project-desc">Dual-axis solar tracking system in Proteus using LDR-based differential light sensing to determine the direction of strongest sunlight. Two servo motors adjust azimuth and elevation in a closed feedback loop to maximize irradiance capture throughout the day.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/ufrcoqswzpvy8kkcivga6/Solar_Tracker_Report_NUST.pdf?rlkey=yrx069pz3dawg8t3avgeq53yp&st=br1bu102&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Embedded Systems</span>
+                </div>
+                <h3 class="project-title">Bluetooth-Controlled Robotic Car</h3>
+                <p class="project-desc">Bluetooth-controlled car built from the ground up around a PIC18F877A, covering circuit simulation, firmware, and hardware assembly. An HC-05/06 module receives movement commands and passes them to the microcontroller, which drives an L293D H-bridge. Simulated in Proteus, then hand-soldered onto a chassis.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/ogamptd1m5ou7n5p9vcye/Bluetooth_Controlled_Car.pdf?rlkey=zfe0u6027w506y0jncb3vblji&st=24u42t0p&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Power Electronics</span>
+                </div>
+                <h3 class="project-title">Custom DC Power Supply</h3>
+                <p class="project-desc">Benchtop-style DC power supply built entirely from discrete components, covering the full power conversion chain from AC mains through step-down, rectification, and regulation. Heatsinked regulation stage housed in a protective enclosure with labeled output terminals for practical bench use.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/wdx4qvvqa7gt23cmw4rmf/Custom_DC_Power_Supply.pdf?rlkey=mu7h4un3mcrlltijyu1dy43mt&st=0c2faa3s&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Computer Vision / Full-Stack</span>
+                </div>
+                <h3 class="project-title">Real-Time Object Detection Dashboard</h3>
+                <p class="project-desc">Real-time object detection system built on YOLOv8 (yolov8n and yolov8m weights), wrapped in an interactive Streamlit dashboard for live video upload, annotated playback, and detection logging. Packaged with Docker Compose for one-command deployment. Built and demoed for NUST Robotics Society's Voltfest 2026.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/90p47sqej50zhw2o44gzb/Object-Detection.zip?rlkey=ybzgymgpzz2xg5te3ho4ppncm&st=ncgs8ul5&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">IoT & Full-Stack</span>
+                </div>
+                <h3 class="project-title">AMI-Based IoT Smart Energy Meter</h3>
+                <p class="project-desc">Advanced Metering Infrastructure style smart energy meter built around an ESP32, simulated in Proteus before hardware-prototype planning. Paired with a full-stack web dashboard for live energy-consumption monitoring, from raw sensor readings to a utility-facing view.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/su5peq6dn6a7oh3084ffy/AKwRIv6NDVJscuOgnZBcA4o?rlkey=ubwwjfj3i1cn1nmw9s15z2jrr&st=8sln4fnc&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Applied Machine Learning</span>
+                </div>
+                <h3 class="project-title">Credit Risk Classification Model</h3>
+                <p class="project-desc">Credit-scoring classification model built during the CodeAlpha internship, comparing Logistic Regression, Decision Trees, and Random Forest on applicant financial-history data. Features engineered from raw records; models evaluated with Precision, Recall, F1-score, and ROC-AUC.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 21 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Applied Machine Learning</span>
+                </div>
+                <h3 class="project-title">Handwritten Character Recognition (CNN)</h3>
+                <p class="project-desc">Convolutional Neural Network for handwritten character recognition trained on MNIST/EMNIST, built during the CodeAlpha internship. Covers the full pipeline: image preprocessing, data augmentation, model architecture design, training, and accuracy evaluation on held-out test characters.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 22 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Applied Machine Learning</span>
+                </div>
+                <h3 class="project-title">Disease Prediction Classifier</h3>
+                <p class="project-desc">Disease-prediction classifier on structured medical data (symptoms, age, lab results) built during the CodeAlpha internship. Compared SVM, Logistic Regression, and Random Forest to identify the model that best separated at-risk patients from healthy ones.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 23 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Backend / AI Engineering</span>
+                </div>
+                <h3 class="project-title">Backend AI Engineering Practicum (FlyRank AI)</h3>
+                <p class="project-desc">Backend and AI engineering practicum at FlyRank AI: built an authentication-protected CRUD API backed by a connected database, containerized the full stack with Docker, and automated a data-scraping/workflow pipeline. Applied prompt-engineering and LLM-tooling fundamentals across 21 assignments and 19 workshops.</p>
+                <div class="project-links">
+                    <!-- TODO: replace # with Dropbox link for "FlyRank AI Practicum" -->
+                    <a href="#" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 24 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Mechanical / CAD Design</span>
+                    <span class="needs-details-badge">Needs Details</span>
+                </div>
+                <h3 class="project-title">CAD Design Collection</h3>
+                <p class="project-desc">A collection of mechanical CAD assemblies and technical drawings produced in Fusion 360 and AutoCAD. Full design names and 3D-printing details are still being finalized.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/3qg93wc9ybyu43en55p3a/AP-lAp8sHOoqOx-jCB45V2Q?rlkey=2sla5plh98uabir1k83k8b8ow&st=y4m7h4b5&dl=0" target="_blank" rel="noopener"><i class="fas fa-folder-open"></i> Open Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 25 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Embedded Systems</span>
+                    <span class="needs-details-badge">Needs Details</span>
+                </div>
+                <h3 class="project-title">ESP32 USB Communication Interface</h3>
+                <p class="project-desc">An ESP32-based project built around a USB communication interface, covering firmware and host-side data linking. Full scope and use case are being finalized.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/e95es49uj5723a2wpqj7a/AFeL0fY2mubWfaJBMenyxGs?rlkey=9dpk5oamcxiaqwio048bjfzb5&st=9urm7dph&dl=0" target="_blank" rel="noopener"><i class="fas fa-folder-open"></i> Open Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 26 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Power Electronics / EV</span>
+                    <span class="needs-details-badge">Needs Details</span>
+                </div>
+                <h3 class="project-title">EV Battery Management System (BMS)</h3>
+                <p class="project-desc">A Battery Management System project for an electric-vehicle application, covering cell configuration, protection features, and cell balancing. Circuit and firmware specifics are being finalized.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/hvj4ffpm0tt7ajwmrw062/ANvcKKu_ysNoFXvfMJ316Us?rlkey=agls0jkaluu9ilg2xnxxo2hhp&st=2uyog8dd&dl=0" target="_blank" rel="noopener"><i class="fas fa-folder-open"></i> Open Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 27 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Power Electronics / EV</span>
+                    <span class="needs-details-badge">Needs Details</span>
+                </div>
+                <h3 class="project-title">EV Charging Prototype</h3>
+                <p class="project-desc">A prototype EV charging hardware build. Charging topology, power rating, and control scheme are being finalized.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/5buywrdohizg5zao5gjbj/APiKHJW1HATQyIewKocYgGE?rlkey=0w3oqkzhdoojwthn1rl22izeg&st=tvn59slj&dl=0" target="_blank" rel="noopener"><i class="fas fa-folder-open"></i> Open Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 28 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Electronic Circuit Design</span>
+                    <span class="needs-details-badge">Needs Details</span>
+                </div>
+                <h3 class="project-title">Relay Module PCB Design</h3>
+                <p class="project-desc">PCB design documentation for a relay module. Switching application and design tooling are being finalized.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fo/kxqcuuodj17zjlus8w3ow/AF-qeZLqEk0TFXm6Y442j1A?rlkey=t0nf00x1355rsrpiksbunz4kv&st=6790rhhl&dl=0" target="_blank" rel="noopener"><i class="fas fa-folder-open"></i> Open Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 29 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">RF & Simulation</span>
+                    <span class="project-tag">Multi-Agent Systems</span>
+                </div>
+                <h3 class="project-title">Autonomous Drone Fleet Simulator</h3>
+                <p class="project-desc">A simulation environment modeling a fleet of autonomous drones operating together, covering coordination logic, flight behavior, and fleet-level system dynamics.</p>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/266cxkquxk2kxkuj49mnc/Autonomous-Drone-Fleet-Simulator.pdf?rlkey=a0j8z0tl164ly22ty80u7xya1&st=fftaemo6&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 30 -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">PCB Design</span>
+                    <span class="project-tag">ESP32</span>
+                    <span class="project-tag">EasyEDA</span>
+                </div>
+                <h3 class="project-title">ESP32 Modular PCB Design (Main + Sensor Board)</h3>
+                <p class="project-desc">Designed a modular two-board system built around the ESP32 microcontroller, split into a Main Board and a Sensor Board to optimize performance and reduce electrical noise. The ESP32 handles processing and wireless connectivity, with a GSM module for remote telemetry. The Sensor Board integrates the MAX30102 (pulse/oximetry), MPU6050 (IMU), and MLX90614 (IR temperature sensor) over I2C. Designed end-to-end in EasyEDA, including schematic capture, PCB layout, and 3D rendering.</p>
+                <div style="display:flex; gap:8px; margin:12px 0; flex-wrap:wrap;">
+                    <img src="assets/images/projects/esp32-pcb-1.jpg" alt="ESP32 modular PCB schematic" style="width:100px; height:100px; object-fit:cover; border-radius:8px;">
+                    <img src="assets/images/projects/esp32-pcb-2.jpg" alt="ESP32 modular PCB 3D render" style="width:100px; height:100px; object-fit:cover; border-radius:8px;">
+                    <img src="assets/images/projects/esp32-pcb-3.jpg" alt="ESP32 modular PCB 3D render" style="width:100px; height:100px; object-fit:cover; border-radius:8px;">
+                </div>
+                <div class="project-links">
+                    <a href="https://www.dropbox.com/scl/fi/j4xnr2jkv1xwg0yvn1ors/ESP32_Modular_PCB_Design.pdf?rlkey=k32qoal0ze6ait5rox5vupbxx&st=r1mbeopg&dl=0" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> View Report</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Built with by Asad Hussain | &copy; 2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="assets/config.js"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(5,5,8,0.9)';
+                navbar.style.boxShadow = '0 4px 30px rgba(0,0,0,0.3)';
+            } else {
+                navbar.style.background = 'rgba(5,5,8,0.7)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
