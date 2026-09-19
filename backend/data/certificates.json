@@ -1,13 +1,58 @@
 [
   {
+    "id": "flyrank-backend-ai",
+    "title": "Backend AI Engineering Internship",
+    "org": "FlyRank AI",
+    "date": "1 Jul 2026 – 7 Sep 2026",
+    "credentialId": "FR-D11-EBC4A-72E6F",
+    "icon": "fa-server",
+    "imageUrl": "certs/flyrank-backend-ai-cert.jpg",
+    "verifyUrl": "https://internship.flyrank.ai/verify",
+    "category": "internship"
+  },
+  {
+    "id": "nepra-internship",
+    "title": "Technical Intern, Technical Department",
+    "org": "National Electric Power Regulatory Authority (NEPRA)",
+    "date": "6 Jul 2026 – 17 Aug 2026",
+    "credentialId": "Ref No: MON-08/2026/40",
+    "icon": "fa-bolt",
+    "imageUrl": "certs/nepra-internship.jpg",
+    "verifyUrl": "",
+    "category": "internship"
+  },
+  {
     "id": "codealpha-ml",
     "title": "Machine Learning Internship",
     "org": "CodeAlpha",
     "date": "20 Jun 2026 – 20 Jul 2026",
     "credentialId": "CA/DF1/160558",
     "icon": "fa-brain",
-    "imageUrl": "assets/images/certs/codealpha-ml.jpg",
-    "verifyUrl": ""
+    "imageUrl": "certs/codealpha-ml.jpg",
+    "verifyUrl": "",
+    "category": "internship"
+  },
+  {
+    "id": "rdc-internship",
+    "title": "Internship — Designing & Testing of Driver Logging Device",
+    "org": "Research & Indigenous Development Centre (RDC), Heavy Industries Taxilla",
+    "date": "24 Jun 2025 – 08 Aug 2025",
+    "credentialId": "RDC Internship Certificate",
+    "icon": "fa-flask",
+    "imageUrl": "certs/rdc-internship.jpg",
+    "verifyUrl": "",
+    "category": "internship"
+  },
+  {
+    "id": "ncra-internship",
+    "title": "Internship — Embedded Systems, IoT & Communication (RDDL)",
+    "org": "National Centre of Robotics and Automation (NCRA), NUST",
+    "date": "15 Jul 2024 – 26 Aug 2024",
+    "credentialId": "NCRA Internship Certificate",
+    "icon": "fa-robot",
+    "imageUrl": "certs/ncra-internship.jpg",
+    "verifyUrl": "",
+    "category": "internship"
   },
   {
     "id": "altium-pcb",
@@ -16,17 +61,7 @@
     "date": "August 2026",
     "credentialId": "cert_lypgb5lw",
     "icon": "fa-microchip",
-    "imageUrl": "assets/images/certs/altium-pcb.jpg",
-    "verifyUrl": ""
-  },
-  {
-    "id": "rdc-internship HIT",
-    "title": "Internship — Designing & Testing of Driver Logging Device",
-    "org": "Research & Indigenous Development Centre (RDC), Heavy Industries Taxilla",
-    "date": "24 Jun 2025 – 08 Aug 2025",
-    "credentialId": "RDC Internship Certificate",
-    "icon": "fa-flask",
-    "imageUrl": "assets/images/certs/rdc-internship.jpg",
+    "imageUrl": "certs/altium-pcb.jpg",
     "verifyUrl": ""
   },
   {
@@ -36,48 +71,28 @@
     "date": "2026",
     "credentialId": "20f627af-99e6-4f7b-ac0c-ce19076f2aac",
     "icon": "fa-graduation-cap",
-    "imageUrl": "assets/images/certs/harvard-cs50x.jpg",
+    "imageUrl": "certs/harvard-cs50x.jpg",
     "verifyUrl": "https://cs50.harvard.edu/certificates/20f627af-99e6-4f7b-ac0c-ce19076f2aac"
   },
   {
-    "id": "microsoft-ai-azure",
-    "title": "Develop AI Apps and Agents on Azure (AI-103T00-A)",
-    "org": "Microsoft / edX",
-    "date": "December 2025",
-    "credentialId": "7dsll5d0044dcxfee957ef52bee307045",
-    "icon": "fa-robot",
-    "imageUrl": "assets/images/certs/microsoft-ai-azure.jpg",
-    "verifyUrl": ""
-  },
-  {
-    "id": "ibm- Cloud Computing",
-    "title": "Cloud Computing Advance Coursera ",
-    "org": "IBM",
-    "date": "August 2026",
+    "id": "ibm-data-analysis-python",
+    "title": "Data Analysis with Python (DA0101EN)",
+    "org": "IBM (issued by Etrain Education)",
+    "date": "April 2024",
     "credentialId": "e5a16f1adc3b42c6bb428a2d631b3337",
     "icon": "fa-chart-line",
-    "imageUrl": "assets/images/certs/IBM Cloud Computing.jpg",
+    "imageUrl": "certs/ibm-data-analysis.jpg",
     "verifyUrl": "https://courses.etrain.skillsnetwork.site/certificates/e5a16f1adc3b42c6bb428a2d631b3337"
   },
   {
     "id": "deloitte-leadership",
     "title": "Effective Leadership — Scored 90%",
     "org": "Deloitte WorldClass",
-    "date": "2026",
+    "date": "August 2026",
     "credentialId": "Deloitte WorldClass Certificate",
     "icon": "fa-users",
-    "imageUrl": "assets/images/certs/deloitte-leadership.jpg",
+    "imageUrl": "certs/deloitte-leadership.jpg",
     "verifyUrl": ""
-  },
-  {
-    "id": "google-agile-pm",
-    "title": "Agile Project Management",
-    "org": "Google / Coursera",
-    "date": "2025",
-    "credentialId": "TZQLM8IHK98K",
-    "icon": "fa-tasks",
-    "imageUrl": "assets/images/certs/google-agile-pm.jpg",
-    "verifyUrl": "https://coursera.org/verify/TZQLM8IHK98K"
   },
   {
     "id": "alison-product-mgmt",
@@ -86,7 +101,7 @@
     "date": "2024",
     "credentialId": "Alison Certificate",
     "icon": "fa-cube",
-    "imageUrl": "assets/images/certs/alison-product-mgmt.jpg",
+    "imageUrl": "certs/alison-product-mgmt.jpg",
     "verifyUrl": "https://alison.com/certificates/007896"
   }
 ]
