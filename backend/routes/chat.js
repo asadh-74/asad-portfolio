@@ -21,24 +21,50 @@ across two tracks, applied machine learning and embedded or RF systems
 engineering. He is comfortable moving between training models and designing
 the circuits and firmware that feed them real world data.
 
-Work experience:
+Work experience and internships (five internships in total, each backed by a
+certificate shown on the site):
 Machine Learning Intern, FlyRank AI, Chicago Illinois, remote, August 2026 to
 present. Builds content opportunity scoring models that flag pages with
 strong search visibility but low click through rates, defines data contracts
 and baseline notebooks for the ML pipeline, and writes case study reports for
 stakeholders.
 
-Intern, IT and Technical Departments, National Electric Power Regulatory
-Authority (NEPRA), Islamabad, July 2026 to August 2026. Studied NEPRA's
-licensing and tariff framework, contributed to a document intelligence portal
-for searching regulatory filings, and studied advanced metering
-infrastructure and power transformer systems.
+Backend AI Engineering Intern, FlyRank AI, remote, 1 July 2026 to 7 September
+2026. Completed the internship program with a verified record of 27
+assignments across API design, prompting, retrieval, and evaluation, built an
+authentication protected CRUD API with a connected database, containerized the
+stack with Docker, and automated a data scraping workflow pipeline. Delivered
+an accepted capstone project, an LLM Usage Metering and Billing Service, and
+independently qualified in the AI Fluency track. The final review was approved
+by FlyRank's Founder and CEO.
+
+Technical Intern, Technical Department, National Electric Power Regulatory
+Authority (NEPRA), Islamabad, 6 July 2026 to 17 August 2026. Studied NEPRA's
+licensing and tariff framework across generation, transmission, distribution,
+and supply, studied advanced metering infrastructure (AMI) including PLC and
+cellular protocols and DLMS/COSEM, analyzed NGC transmission network data
+(233 grid station transformers, 116 operating above 80 percent of rated
+capacity), reviewed NEPRA's State of the Industry Report, and studied power
+transformer construction, ratings, losses, and protection.
+
+Machine Learning Intern, CodeAlpha (virtual internship program), 20 June 2026
+to 20 July 2026. Built a credit scoring classifier, a handwritten character
+recognition CNN on MNIST and EMNIST, and a disease prediction classifier.
 
 Engineering Intern, Research and Indigenous Development Centre (RDC), Heavy
-Industries Taxila, June 2025 to August 2025. Integrated hardware modules
-(LilyGO T-SIM7670E ESP32 and LTE modem, GPS, RFID) with a TP4056 charge
-controller, wrote embedded C and C++ firmware and state machines, implemented
-MQTT telemetry over cellular GPRS, and built an asynchronous Flask backend.
+Industries Taxila, 24 June 2025 to 8 August 2025. Designed and tested a driver
+logging device: integrated hardware modules (LilyGO T-SIM7670E ESP32 and LTE
+modem, GPS, RFID) with a TP4056 charge controller, wrote embedded C and C++
+firmware and state machines, implemented MQTT telemetry over cellular GPRS,
+and built an asynchronous Flask backend.
+
+Research Intern, Robot Design and Development Lab (RDDL), National Centre of
+Robotics and Automation (NCRA), NUST College of Electrical and Mechanical
+Engineering, 15 July 2024 to 26 August 2024 (six weeks). Contributed to
+research and development in embedded systems, IoT, and communication
+technologies, worked extensively with the ESP32 (hardware interfacing,
+programming, automation, system development), and implemented Wi-Fi and
+Bluetooth communication, wireless command handling, and device control.
 
 Final year project, DroneGuard: an anti drone surveillance system built as
 two circuit boards. An RF detection front end covers four frequency bands
