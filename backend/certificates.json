@@ -32,10 +32,21 @@
     "verifyUrl": "",
     "category": "internship"
   },
+  "id": "HIT internship",
+    "title": "Internship — Designing Full Stack System Using IoT device",
+    "org": " Heavy Industries Taxilla",
+    "date": "7 July 2025 – 13 Aug 2025",
+    "credentialId": "HIT Internship Certificate",
+    "icon": "fa-flask",
+    "imageUrl": "assets/images/certs/HIT Internship Certificate.pdf",
+    "verifyUrl": "",
+    "category": "internship"
+  },
+  
   {
     "id": "rdc-internship",
     "title": "Internship — Designing & Testing of Driver Logging Device",
-    "org": "Research & Indigenous Development Centre (RDC), Heavy Industries Taxilla",
+    "org": "Research & Indigenous Development Centre (RDC)",
     "date": "24 Jun 2025 – 08 Aug 2025",
     "credentialId": "RDC Internship Certificate",
     "icon": "fa-flask",
@@ -43,6 +54,7 @@
     "verifyUrl": "",
     "category": "internship"
   },
+  
   {
     "id": "ncra-internship",
     "title": "Internship — Embedded Systems, IoT & Communication (RDDL)",
