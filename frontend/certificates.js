@@ -97,12 +97,14 @@ function openCertModal(cert, cardEl) {
   const org = cert?.org || cardEl.querySelector('.cert-org')?.textContent || '';
   const imageUrl = cert?.imageUrl || cardEl.querySelector('.cert-thumb img')?.getAttribute('src');
   const verifyUrl = cert?.verifyUrl;
+  const documentUrl = cert?.documentUrl || cardEl.getAttribute('data-cert-document');
 
   if (imageUrl) {
     body.innerHTML = `
       <img src="${escapeCertHTML(imageUrl)}" alt="${escapeCertHTML(title)} certificate" class="cert-modal-image">
       <h3>${escapeCertHTML(title)}</h3>
       <p>${escapeCertHTML(org)}</p>
+      ${documentUrl ? `<a href="${escapeCertHTML(documentUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">Open original PDF <i class="fas fa-external-link-alt"></i></a>` : ''}
       ${verifyUrl ? `<a href="${escapeCertHTML(verifyUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">Verify credential <i class="fas fa-external-link-alt"></i></a>` : ''}
     `;
   } else {
@@ -140,6 +142,7 @@ function attachTimelineCertButtons() {
         title: btn.getAttribute('data-cert-title'),
         org: btn.getAttribute('data-cert-org'),
         imageUrl: btn.getAttribute('data-cert-img'),
+        documentUrl: btn.getAttribute('data-cert-document'),
       };
       openCertModal(cert, btn);
     });

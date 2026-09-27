@@ -33,6 +33,18 @@
     "category": "internship"
   },
   {
+    "id": "hit-internship",
+    "title": "Engineering Internship — IoT Driver Logging System",
+    "org": "Heavy Industries Taxila (HIT), Technical Directorate",
+    "date": "7 Jul 2025 – 13 Aug 2025",
+    "credentialId": "HIT Internship Certificate",
+    "icon": "fa-microchip",
+    "imageUrl": "certs/hit-internship.jpg",
+    "documentUrl": "certs/HIT Internship Certificate.pdf",
+    "verifyUrl": "",
+    "category": "internship"
+  },
+  {
     "id": "rdc-internship",
     "title": "Internship — Designing & Testing of Driver Logging Device",
     "org": "Research & Indigenous Development Centre (RDC), Heavy Industries Taxilla",
