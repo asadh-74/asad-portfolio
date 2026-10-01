@@ -50,6 +50,7 @@ function certCardHTML(cert) {
         <div class="cert-title">${escapeCertHTML(cert.title)}</div>
         <div class="cert-org">${escapeCertHTML(cert.org)}</div>
         <div class="cert-date">${escapeCertHTML(cert.date)}</div>
+        ${cert.issueDate ? `<div class="cert-date">Issued: ${escapeCertHTML(cert.issueDate)}</div>` : ''}
         <div class="cert-id">ID: ${escapeCertHTML(cert.credentialId)}</div>
         <div class="cert-view-hint"><i class="fas fa-expand"></i> View certificate</div>
     </div>`;
@@ -104,6 +105,8 @@ function openCertModal(cert, cardEl) {
       <img src="${escapeCertHTML(imageUrl)}" alt="${escapeCertHTML(title)} certificate" class="cert-modal-image">
       <h3>${escapeCertHTML(title)}</h3>
       <p>${escapeCertHTML(org)}</p>
+      <a href="${escapeCertHTML(imageUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">Open full-size certificate <i class="fas fa-external-link-alt"></i></a>
+      <a href="${escapeCertHTML(documentUrl || imageUrl)}" download class="cert-modal-verify">Download certificate <i class="fas fa-download"></i></a>
       ${documentUrl ? `<a href="${escapeCertHTML(documentUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">Open original PDF <i class="fas fa-external-link-alt"></i></a>` : ''}
       ${verifyUrl ? `<a href="${escapeCertHTML(verifyUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">Verify credential <i class="fas fa-external-link-alt"></i></a>` : ''}
     `;
