@@ -1402,3 +1402,28 @@
     border-bottom: 1px solid var(--border);
 }
 .certs-group-title:not(:first-child) { margin-top: 2rem; }
+
+/* Robotics club membership */
+.memberships { scroll-margin-top: 70px; }
+.membership-card {
+    max-width: 1100px; margin: 0 auto; display: grid;
+    grid-template-columns: 1.1fr 1fr; gap: 2rem; align-items: center;
+    padding: 2rem; border: 1px solid var(--border); border-radius: 24px;
+    background: var(--bg-card);
+}
+.membership-preview { display: block; border-radius: 12px; overflow: hidden; }
+.membership-preview img { display: block; width: 100%; height: auto; }
+.membership-preview:focus-visible { outline: 3px solid var(--accent-secondary); outline-offset: 5px; }
+.membership-details { min-width: 0; }
+.membership-details h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.65rem; margin: .8rem 0; }
+.membership-details p { margin-bottom: 1rem; }
+.membership-role { color: var(--accent-secondary); font-weight: 600; }
+.membership-session { font-size: .9rem; color: #a5a5b5; }
+.membership-details .btn-secondary { margin-top: .5rem; text-align: center; }
+@media (min-width: 769px) and (max-width: 1200px) {
+    .nav-links { gap: 1rem; }
+}
+@media (max-width: 768px) {
+    .membership-card { grid-template-columns: 1fr; padding: 1.25rem; gap: 1.5rem; }
+    .membership-details .btn-secondary { width: 100%; }
+}
