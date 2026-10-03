@@ -1,0 +1,21 @@
+name: Deploy to Azure Container Apps
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - run: az extension add --name containerapp --upgrade
+      - name: Deploy backend
+        run: az containerapp up --name "${{ vars.AZURE_BACKEND_APP }}" --resource-group "${{ vars.AZURE_RESOURCE_GROUP }}" --location "${{ vars.AZURE_LOCATION }}" --environment "${{ vars.AZURE_CONTAINER_ENV }}" --source ./backend --target-port 8000 --ingress external --env-vars "ENVIRONMENT=production" "DATABASE_URL=secretref:database-url" --secrets "database-url=${{ secrets.DATABASE_URL }}"
+      - name: Backend URL
+        id: api
+        run: echo "url=https://$(az containerapp show -g '${{ vars.AZURE_RESOURCE_GROUP }}' -n '${{ vars.AZURE_BACKEND_APP }}' --query properties.configuration.ingress.fqdn -o tsv)" >> "$GITHUB_OUTPUT"
+      - name: Deploy frontend
+        run: az containerapp up --name "${{ vars.AZURE_FRONTEND_APP }}" --resource-group "${{ vars.AZURE_RESOURCE_GROUP }}" --location "${{ vars.AZURE_LOCATION }}" --environment "${{ vars.AZURE_CONTAINER_ENV }}" --source ./frontend --target-port 3000 --ingress external --build-env-vars "NEXT_PUBLIC_API_BASE_URL=${{ steps.api.outputs.url }}"
