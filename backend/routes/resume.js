@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const router = express.Router();
-const RESUME_PATH = path.join(__dirname, '..', 'data', 'resume.pdf');
+const RESUME_PATH = path.join(__dirname, '..', '..', 'frontend', 'AsadHussain_CV.pdf');
 
 // GET /api/resume -> forces a download named Asad_Hussain_Resume.pdf,
 // regardless of what the source file on disk is called.
