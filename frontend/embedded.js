@@ -7,23 +7,33 @@
  const escape = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const ext = (href,text,cls='button') => `<a class="${cls}" href="${escape(href)}" target="_blank" rel="noopener">${escape(text)} ↗</a>`;
  function illustration(area) {
-  const grid='<path d="M0 40H400M0 80H400M0 120H400M40 0V200M80 0V200M120 0V200M160 0V200M200 0V200M240 0V200M280 0V200M320 0V200M360 0V200" stroke="#81a17b" opacity=".1"/>';
+  const grid='<path d="M0 40H400M0 80H400M0 120H400M40 0V200M80 0V200M120 0V200M160 0V200M200 0V200M240 0V200M280 0V200M320 0V200M360 0V200" stroke="#78929e" opacity=".1"/>';
   const shapes={
-   embedded:'<g stroke="#a4d58b" stroke-width="1.5"><path d="M45 142h62l31-46h67l36 34h107" stroke-dasharray="5 5"/><circle cx="107" cy="142" r="5" fill="#a4d58b"/><circle cx="241" cy="130" r="5" fill="#a4d58b"/><rect x="142" y="61" width="58" height="66" rx="5" fill="#1e3828"/><path d="M156 51v10m14-10v10m14-10v10m-28 66v10m14-10v10m14-10v10M152 75h38v38h-38zM277 65a30 30 0 0 1 44 0m-38 8a20 20 0 0 1 32 0m-24 8a10 10 0 0 1 16 0"/><circle cx="299" cy="91" r="3" fill="#a4d58b"/></g>',
-   signal:'<g stroke="#94d9c4" stroke-width="2"><path d="M35 112h330" opacity=".2"/><path d="M35 112q12-4 20 0t20 0l8-14 9 28 10-36 10 49 11-69 11 81 11-104 12 120 12-125 12 122 12-99 11 83 11-67 11 42 10-35 10 25 11-16q12 10 20 10h60"/><path d="M35 159h330" stroke-dasharray="3 5" opacity=".3"/></g>',
-   circuits:'<g stroke="#b9d79d" stroke-width="1.5"><rect x="135" y="55" width="122" height="105" rx="7"/><rect x="165" y="80" width="62" height="55" fill="#253922"/><path d="M35 77h50l35 30h45M35 145h55l25-25h50M227 94h43l35-30h55M227 120h49l33 32h51M183 80V35m20 45V35m-20 100v46m20-46v46"/><circle cx="35" cy="77" r="4"/><circle cx="35" cy="145" r="4"/><circle cx="360" cy="64" r="4"/><circle cx="360" cy="152" r="4"/></g>',
-   control:'<g stroke="#bed0a9" stroke-width="1.5"><path d="M40 100h40m70 0h40m70 0h85M303 100v60H110v-44"/><path d="m73 94 7 6-7 6m110-12 7 6-7 6m138-12 7 6-7 6"/><rect x="80" y="72" width="70" height="56" rx="4"/><rect x="190" y="72" width="70" height="56" rx="4"/><path d="M95 112V90h11v22h11V90h16M202 112l10-23 10 16 10-14 16 21"/></g>',
-   software:'<g stroke="#b1bbdf" stroke-width="1.5"><rect x="74" y="47" width="252" height="128" rx="6"/><path d="M74 69h252"/><circle cx="88" cy="59" r="2"/><circle cx="99" cy="59" r="2"/><circle cx="110" cy="59" r="2"/><path d="m125 93-22 20 22 20m43-40 22 20-22 20m-17-50-12 60M218 98h78m-78 15h49m-49 15h64m-64 15h33"/></g>'
+   embedded:'<g stroke="#a8bfc8" stroke-width="1.5"><path d="M45 142h62l31-46h67l36 34h107" stroke-dasharray="5 5"/><circle cx="107" cy="142" r="5" fill="#a8bfc8"/><circle cx="241" cy="130" r="5" fill="#a8bfc8"/><rect x="142" y="61" width="58" height="66" rx="5" fill="#334851"/><path d="M156 51v10m14-10v10m14-10v10m-28 66v10m14-10v10m14-10v10M152 75h38v38h-38zM277 65a30 30 0 0 1 44 0m-38 8a20 20 0 0 1 32 0m-24 8a10 10 0 0 1 16 0"/><circle cx="299" cy="91" r="3" fill="#a8bfc8"/></g>',
+   signal:'<g stroke="#d4a182" stroke-width="2"><path d="M35 112h330" opacity=".2"/><path d="M35 112q12-4 20 0t20 0l8-14 9 28 10-36 10 49 11-69 11 81 11-104 12 120 12-125 12 122 12-99 11 83 11-67 11 42 10-35 10 25 11-16q12 10 20 10h60"/><path d="M35 159h330" stroke-dasharray="3 5" opacity=".3"/></g>',
+   circuits:'<g stroke="#afc2c4" stroke-width="1.5"><rect x="135" y="55" width="122" height="105" rx="7"/><rect x="165" y="80" width="62" height="55" fill="#34454b"/><path d="M35 77h50l35 30h45M35 145h55l25-25h50M227 94h43l35-30h55M227 120h49l33 32h51M183 80V35m20 45V35m-20 100v46m20-46v46"/><circle cx="35" cy="77" r="4"/><circle cx="35" cy="145" r="4"/><circle cx="360" cy="64" r="4"/><circle cx="360" cy="152" r="4"/></g>',
+   control:'<g stroke="#b3c3c1" stroke-width="1.5"><path d="M40 100h40m70 0h40m70 0h85M303 100v60H110v-44"/><path d="m73 94 7 6-7 6m110-12 7 6-7 6m138-12 7 6-7 6"/><rect x="80" y="72" width="70" height="56" rx="4"/><rect x="190" y="72" width="70" height="56" rx="4"/><path d="M95 112V90h11v22h11V90h16M202 112l10-23 10 16 10-14 16 21"/></g>',
+   software:'<g stroke="#afbaca" stroke-width="1.5"><rect x="74" y="47" width="252" height="128" rx="6"/><path d="M74 69h252"/><circle cx="88" cy="59" r="2"/><circle cx="99" cy="59" r="2"/><circle cx="110" cy="59" r="2"/><path d="m125 93-22 20 22 20m43-40 22 20-22 20m-17-50-12 60M218 98h78m-78 15h49m-49 15h64m-64 15h33"/></g>'
   };
   return `<svg viewBox="0 0 400 200" fill="none" aria-hidden="true">${grid}${shapes[area]}</svg>`;
  }
+ const components={
+  firmware:{title:'Firmware & control',description:'Embedded C/C++ turns measurements into decisions, manages device state, and coordinates the hardware.'},
+  sensors:{title:'Sensing & interfaces',description:'Sensors translate physical conditions into data. UART, SPI, I²C, and ADC interfaces connect the measurements to firmware.'},
+  connectivity:{title:'Communication & telemetry',description:'A device becomes part of a system through reliable communication—Wi-Fi, Bluetooth, or cellular links, with telemetry such as MQTT.'},
+  power:{title:'Power & reliability',description:'Regulation, power distribution, and battery management support dependable device operation. The power path is part of the system design.'}
+ };
+ document.querySelectorAll('[data-component]').forEach(b=>b.addEventListener('click',()=>{
+  const id=b.dataset.component,c=components[id];$('.drawing-sheet').dataset.active=id;$('#component-title').textContent=c.title;$('#component-description').textContent=c.description;
+  document.querySelectorAll('[data-component]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.component===id)));
+ }));
  let area='all', query='', expanded=false;
  function readURL(){const p=new URLSearchParams(location.search);area=areaNames[p.get('area')]?p.get('area'):'all';query=p.get('q')||'';expanded=p.get('view')==='all';$('#project-search').value=query;}
  function syncURL(){const u=new URL(location.href);area==='all'?u.searchParams.delete('area'):u.searchParams.set('area',area);query?u.searchParams.set('q',query):u.searchParams.delete('q');expanded?u.searchParams.set('view','all'):u.searchParams.delete('view');history.replaceState(null,'',u);}
  function renderProjects(){
   const matches=projects.filter(p=>(area==='all'||p.area===area)&&[p.title,p.summary,...p.tags].join(' ').toLowerCase().includes(query.toLowerCase().trim()));
-  const visible=expanded||area!=='all'||query?matches:matches.slice(0,8);
-  $('#project-grid').innerHTML=visible.map(p=>`<article class="project-card area-${p.area}" data-project="${p.id}"><div class="project-art">${illustration(p.area)}<span class="art-label">${areaNames[p.area]}</span><span class="art-index">AH / ${String(projects.indexOf(p)+1).padStart(2,'0')}</span></div><div class="project-content"><p class="project-status">${escape(p.status)}</p><h3>${escape(p.title)}</h3><p class="project-summary">${escape(p.summary)}</p><div class="tags">${p.tags.map(t=>`<span>${escape(t)}</span>`).join('')}</div><div class="card-bottom"><button class="project-open" data-project-open="${p.id}">Explore project <span>↗</span></button>${p.links.length?ext(p.links[0].url,'Report','report-link'):'<span class="mono muted" style="font-size:8px">PROJECT NOTES</span>'}</div></div></article>`).join('');
+  const visible=expanded||area!=='all'||query?matches:matches.slice(0,4);
+  $('#project-grid').innerHTML=visible.map(p=>`<article class="project-card area-${p.area}" data-project="${p.id}"><div class="entry-meta"><span class="entry-number">ENTRY ${String(projects.indexOf(p)+1).padStart(2,'0')}</span><span>${areaNames[p.area]}</span></div><div class="project-art">${illustration(p.area)}<span class="art-index">AH / ${String(projects.indexOf(p)+1).padStart(2,'0')}</span></div><div class="project-content"><p class="project-status">${escape(p.status)}</p><h3>${escape(p.title)}</h3><p class="project-summary">${escape(p.summary)}</p><div class="tags">${p.tags.map(t=>`<span>${escape(t)}</span>`).join('')}</div><div class="card-bottom"><button class="project-open" data-project-open="${p.id}">Read the project <span>↗</span></button>${p.links.length?ext(p.links[0].url,'Report','report-link'):'<span class="mono" style="font-size:8px;color:var(--dim)">FIELD NOTES</span>'}</div></div></article>`).join('');
   $('#result-count').textContent=`${visible.length} of ${matches.length} projects${area==='all'?'':` · ${areaNames[area]}`}`;
   $('#show-more').hidden=visible.length===matches.length;$('#empty-state').hidden=matches.length>0;
   document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===area)));
@@ -31,7 +41,7 @@
  document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{area=b.dataset.filter;expanded=false;renderProjects();syncURL();}));
  $('#project-search').addEventListener('input',e=>{query=e.target.value;renderProjects();syncURL();});
  $('#clear-filters').addEventListener('click',()=>{area='all';query='';expanded=false;$('#project-search').value='';renderProjects();syncURL();$('#project-search').focus();});
- $('#show-more').addEventListener('click',()=>{expanded=true;renderProjects();syncURL();document.querySelectorAll('[data-project-open]')[8]?.focus({preventScroll:true});});
+ $('#show-more').addEventListener('click',()=>{expanded=true;renderProjects();syncURL();document.querySelectorAll('[data-project-open]')[4]?.focus({preventScroll:true});});
  addEventListener('popstate',()=>{readURL();renderProjects();});readURL();renderProjects();
  document.addEventListener('click',event=>{
   const b=event.target.closest('[data-project-open]');if(!b)return;
@@ -59,7 +69,7 @@
  menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});
  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menu.focus();}});
  document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeMenu();});
- const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('a[href^="#"]').forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}});},{rootMargin:'-20% 0px -60% 0px'});['home','projects','about','contact'].forEach(id=>observer.observe(document.getElementById(id)));
+ const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('a[href^="#"]').forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}});},{rootMargin:'-20% 0px -60% 0px'});['home','projects','lab','about','credentials','contact'].forEach(id=>observer.observe(document.getElementById(id)));
  $('#copy-email').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('asadh1521@gmail.com');$('#copy-email').textContent='Email copied ✓';$('#contact-status').textContent='Email address copied to clipboard.';}catch{$('#contact-status').textContent='Copy unavailable. Select asadh1521@gmail.com above.';$('#copy-email').textContent='Select the email address above';}});
  const messages=[],log=$('#ai-messages');$('#ai-toggle').addEventListener('click',()=>{$('#ai-panel').showModal();$('#ai-input').focus();});
  function chatMessage(text,role){const p=document.createElement('p');p.className='ai-message ai-message-'+role;p.textContent=text;log.append(p);log.scrollTop=log.scrollHeight;return p;}

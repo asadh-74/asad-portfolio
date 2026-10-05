@@ -2,15 +2,15 @@
 
 Live: https://asad-portfolio-flax-pi.vercel.app/
 
-A responsive portfolio for embedded systems, firmware, PCB design, RF/DSP, and connected devices. The companion software portfolio is https://automation-portfolio-steel.vercel.app/.
+A dark editorial engineering portfolio with an independent visual identity: charcoal surfaces, copper-orange accents, serif headlines, a vertical section index, and an interactive isometric device illustration. Projects are presented as a filterable notebook rather than a card grid. The content covers embedded systems, firmware, PCB design, RF/DSP, and connected devices. The companion software portfolio is https://automation-portfolio-steel.vercel.app/.
 
 ## Frontend
 
-Static HTML, CSS, and JavaScript in `frontend/`, with self-hosted Nimbus fonts. No frontend build step or CDN dependency.
+Static HTML, CSS, and JavaScript in `frontend/`, with self-hosted Nimbus Sans and Nimbus Roman fonts (license in `frontend/fonts/LICENSE.txt`). No frontend build step or CDN dependency.
 
-- `index.html`: home, projects, architecture explorer, about, experience, credentials, and contact.
+- `index.html`: home with a component explorer, project notebook, systems lab, about, experience log, credentials, and contact.
 - `embedded.css`: responsive design, accessible focus states, reduced-motion support.
-- `embedded.js`: category/search filters, shareable URLs, project dialogs, certificate previews, navigation, and optional AI assistant.
+- `embedded.js`: device component selection, category/search filters, shareable URLs, project dialogs, certificate previews, navigation, and optional AI assistant.
 - `portfolio-data.js`: 32 projects and 11 certificates. Preserve original evidence links; label simulations, concepts, and ongoing research accurately.
 - `projects.html`: redirects old archive links to the complete interactive project catalog.
 - `AsadHussain_CV.pdf`: engineering CV; direct view and download links work without the backend.
