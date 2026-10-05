@@ -78,16 +78,6 @@
     "verifyUrl": ""
   },
   {
-    "id": "harvard-cs50x",
-    "title": "CS50 Introduction to Computer Science",
-    "org": "Harvard University",
-    "date": "2026",
-    "credentialId": "20f627af-99e6-4f7b-ac0c-ce19076f2aac",
-    "icon": "fa-graduation-cap",
-    "imageUrl": "certs/harvard-cs50x.jpg",
-    "verifyUrl": "https://cs50.harvard.edu/certificates/20f627af-99e6-4f7b-ac0c-ce19076f2aac"
-  },
-  {
     "id": "ibm-data-analysis-python",
     "title": "Data Analysis with Python (DA0101EN)",
     "org": "IBM (issued by Etrain Education)",

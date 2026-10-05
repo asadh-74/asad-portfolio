@@ -18,7 +18,7 @@ NEPRA technical internship: 6 July–17 August 2026, covering power-sector regul
 FlyRank Backend AI Engineering internship: 1 July–7 September 2026, covering APIs, retrieval, Docker, and an LLM usage metering/billing capstone. Certificate FR-D11-EBC4A-72E6F.
 CodeAlpha ML internship: 20 June–20 July 2026, covering credit classification, handwritten-character CNNs, and an educational disease-classification experiment. Certificate CA/DF1/160558.
 Other portfolio work includes a modular ESP32 PCB, PID motor control, analog filters, EEG signal cleaning, an FM receiver, a four-bit ALU, and an ESP32 energy-meter simulation (hardware planned). CAD, charging and relay-board studies are early-stage designs. Do not present simulations or concepts as deployed products. Medical-data projects are educational, not clinical tools.
-He completed AtomCamp AI training, is Technical Lead of NUST Robotics Society, and has certificates from Altium Education, Harvard CS50x, IBM/Etrain, Deloitte WorldClass, and Alison.
+He completed AtomCamp AI training, is Technical Lead of NUST Robotics Society, and has certificates from Altium Education, IBM/Etrain, Deloitte WorldClass, and Alison.
 Contact: asadh1521@gmail.com. LinkedIn: linkedin.com/in/asad-hussain92. GitHub: github.com/asadh-74. Software portfolio: automation-portfolio-steel.vercel.app. Open to internships, freelance work, and collaboration.
 `.trim();
 
