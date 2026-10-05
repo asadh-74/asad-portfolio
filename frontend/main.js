@@ -1,13 +1,9 @@
-// Preloader
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        document.getElementById('preloader').classList.add('hidden');
-    }, 1800);
-});
+const prefersReducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('preloader')?.classList.add('hidden');
 
 // Particles
 const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < (prefersReducedMotion ? 0 : innerWidth < 768 ? 16 : 35); i++) {
     const p = document.createElement('div');
     p.className = 'particle';
     p.style.left = Math.random() * 100 + '%';
@@ -50,9 +46,10 @@ function typeEffect() {
     }
     setTimeout(typeEffect, typeSpeed);
 }
-typeEffect();
+if (prefersReducedMotion) typingElement.textContent = 'Embedded Solutions'; else typeEffect();
 
 // Scroll Reveal (static elements present at load)
+if (!prefersReducedMotion) document.documentElement.classList.add('motion-ready');
 const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -153,6 +150,8 @@ if (aiToggle && aiPanel) {
         aiOpen = open;
         aiPanel.classList.toggle('open', open);
         aiPanel.setAttribute('aria-hidden', String(!open));
+        aiPanel.inert = !open;
+        if (!open) aiToggle.focus();
         aiToggle.setAttribute('aria-expanded', String(open));
         aiToggleIcon.className = open ? 'fas fa-xmark' : 'fas fa-message';
         if (open) setTimeout(() => aiInput.focus(), 150);
@@ -160,6 +159,7 @@ if (aiToggle && aiPanel) {
 
     aiToggle.addEventListener('click', () => setAiOpen(!aiOpen));
     aiPanelClose.addEventListener('click', () => setAiOpen(false));
+    document.addEventListener('keydown', e => { if(e.key === 'Escape' && aiOpen) setAiOpen(false); });
 
     function addAiMessage(text, role) {
         const el = document.createElement('div');
@@ -186,9 +186,10 @@ if (aiToggle && aiPanel) {
 
             try {
                 const res = await fetch(`${window.API_BASE_URL || ''}/api/chat`, {
+                    signal: AbortSignal.timeout(25000),
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ messages: aiHistory })
+                    body: JSON.stringify({ messages: aiHistory.slice(-9) })
                 });
                 const data = await res.json();
                 if (!res.ok) throw new Error(data.error || 'Something went wrong.');
@@ -200,6 +201,7 @@ if (aiToggle && aiPanel) {
             } catch (err) {
                 thinkingEl.textContent = err.message || 'The assistant is unavailable right now. Please use the contact form instead.';
                 thinkingEl.classList.add('ai-message-error');
+                aiHistory.pop();
             } finally {
                 aiInput.disabled = false;
                 aiSend.disabled = false;

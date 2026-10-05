@@ -8,10 +8,7 @@ async function loadCertificates() {
   if (!grid) return;
 
   try {
-    const res = await fetch(`${window.API_BASE_URL || ''}/api/certificates`);
-    if (!res.ok) throw new Error('Bad response from /api/certificates');
-    const certs = await res.json();
-
+    const certs = JSON.parse(document.getElementById('certificate-data').textContent);
     if (!Array.isArray(certs) || certs.length === 0) return;
 
     window.PORTFOLIO_CERTS = certs;
@@ -89,7 +86,9 @@ function attachCertClickHandlers(certs) {
   });
 }
 
+let certificateReturnFocus = null;
 function openCertModal(cert, cardEl) {
+  certificateReturnFocus = document.activeElement;
   const modal = document.getElementById('cert-modal');
   const body = document.getElementById('cert-modal-body');
   if (!modal || !body) return;
@@ -123,14 +122,16 @@ function openCertModal(cert, cardEl) {
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+  document.getElementById('cert-modal-close').focus();
 }
 
 function closeCertModal() {
   const modal = document.getElementById('cert-modal');
-  if (!modal) return;
+  if (!modal || !modal.classList.contains('open')) return;
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
+  certificateReturnFocus?.focus();
 }
 
 // "View certificate" buttons inside the Experience timeline open the same

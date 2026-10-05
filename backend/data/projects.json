@@ -1,442 +1,105 @@
 [
   {
-    "id": "fleet",
-    "title": "IoT fleet & driver logging",
-    "description": "An ESP32 device, cellular telemetry, and a dashboard that connect the road to the cloud.",
-    "tags": [
-      "ESP32",
-      "LTE / GPS",
-      "MQTT",
-      "Flask"
-    ],
-    "category": "embedded",
-    "status": "Internship project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/q0lw0jxn3ki5r78ncb135/Internship_Report.pdf?rlkey=zkl2ti5sxkxrubfuot5p2jghj&st=hdvbzwi8&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "semantic",
-    "title": "Semantic communication research",
-    "description": "An ongoing final-year project exploring how to communicate useful image information over constrained links.",
-    "tags": [
-      "MATLAB",
-      "Image encoding",
-      "FEC"
-    ],
-    "category": "signal",
-    "status": "Ongoing final-year project",
-    "demoUrl": "",
-    "codeUrl": ""
-  },
-  {
-    "id": "modular",
-    "title": "Modular ESP32 sensor platform",
-    "description": "A main board and sensor board integrating cellular connectivity and I\u00b2C sensing.",
-    "tags": [
-      "EasyEDA",
-      "ESP32",
-      "I\u00b2C",
-      "PCB"
-    ],
-    "category": "circuits",
-    "status": "PCB design",
-    "demoUrl": "https://www.dropbox.com/scl/fi/j4xnr2jkv1xwg0yvn1ors/ESP32_Modular_PCB_Design.pdf?rlkey=k32qoal0ze6ait5rox5vupbxx&st=r1mbeopg&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "motor",
-    "title": "Closed-loop motor control",
-    "description": "PID speed control with encoder feedback, from Proteus simulation to Arduino hardware.",
-    "tags": [
-      "Arduino",
-      "PID",
-      "Encoder"
-    ],
-    "category": "control",
-    "status": "Hardware prototype",
-    "demoUrl": "https://www.dropbox.com/scl/fi/oj6eahtnjuozzz1znib6u/DC_Motor_Speed_Control_Report.pdf?rlkey=3z9q9rs8k067zwlr8r6l9wht5&st=ku5dou0e&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "rf",
-    "title": "DroneGuard RF intelligence",
-    "description": "An RF detection and signal-classification study connecting spectrum analysis with software.",
-    "tags": [
-      "SDR",
-      "GNU Radio",
-      "Signal analysis"
-    ],
-    "category": "signal",
-    "status": "Research prototype",
-    "demoUrl": "",
-    "codeUrl": ""
-  },
-  {
-    "id": "eeg",
-    "title": "EEG signal processing",
-    "description": "A MATLAB workflow for cleaning noisy EEG signals and exploring filters in a real-time simulation.",
-    "tags": [
-      "MATLAB",
-      "DSP",
-      "Filters"
-    ],
-    "category": "signal",
-    "status": "Educational simulation",
-    "demoUrl": "https://www.dropbox.com/scl/fi/6hx2yv3uql3tqn553inqf/Cleaning-and-Real-Time-Simulation-of-EEG-Data.pdf?rlkey=fb5i671717jlwb03cafwjh63a&st=nqs2l1k0&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "meter",
-    "title": "Connected energy meter",
-    "description": "An ESP32 smart-meter simulation exploring energy monitoring and IoT connectivity.",
-    "tags": [
-      "ESP32",
-      "Proteus",
-      "AMI"
-    ],
-    "category": "embedded",
-    "status": "Simulation \u00b7 hardware planned",
-    "demoUrl": "https://www.dropbox.com/scl/fo/su5peq6dn6a7oh3084ffy/AKwRIv6NDVJscuOgnZBcA4o?rlkey=ubwwjfj3i1cn1nmw9s15z2jrr&st=8sln4fnc&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "battery",
-    "title": "EV battery management research",
-    "description": "Ongoing work on battery-management circuitry and range-estimation methods.",
-    "tags": [
-      "BMS",
-      "Battery systems",
-      "Research"
-    ],
-    "category": "circuits",
-    "status": "Ongoing research",
-    "demoUrl": "https://www.dropbox.com/scl/fo/hvj4ffpm0tt7ajwmrw062/ANvcKKu_ysNoFXvfMJ316Us?rlkey=agls0jkaluu9ilg2xnxxo2hhp&st=2uyog8dd&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "lowpass",
-    "title": "Butterworth low-pass filter",
-    "description": "From a simulated frequency response to an op-amp circuit built and tested on the bench.",
-    "tags": [
-      "Analog",
-      "Op-amps",
-      "Hardware testing"
-    ],
-    "category": "circuits",
-    "status": "Built & tested",
-    "demoUrl": "https://www.dropbox.com/scl/fi/ol4xlrt98yu4w4d2hsvmt/2nd-Order-Active-Low-Pass-Filter-Circuit.pdf?rlkey=rqrad9itltqiz61qld3xe0jr1&st=u9cr2rea&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "amplifier",
-    "title": "Audio power amplifier",
-    "description": "A practical exploration of analog amplification, biasing, and circuit performance.",
-    "tags": [
-      "Analog",
-      "Amplification"
-    ],
-    "category": "circuits",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/bebit4tgfwg7xhxbcvwi0/Audio-Power-Amplifier.pdf?rlkey=njovujnizm7q3oj6d2qwkyl6a&st=x6vvh80x&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "equalizer",
-    "title": "Five-band graphic equalizer",
-    "description": "An interactive MATLAB and Simulink system for shaping audio across five frequency bands.",
-    "tags": [
-      "MATLAB",
-      "Simulink",
-      "Audio DSP"
-    ],
-    "category": "signal",
-    "status": "Simulation",
-    "demoUrl": "https://www.dropbox.com/scl/fi/wwl0ls6ccdfrll1af7x5t/Design-Implementation-of-a-5-Band-Graphic-Equalizer-using-MATLAB-Simulink-GUI.pdf?rlkey=uke6ropunivtlelra6f25qp6w&st=74gnbib4&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "alu",
-    "title": "Four-bit arithmetic logic unit",
-    "description": "A digital logic design that implements arithmetic and logical operations with discrete components.",
-    "tags": [
-      "Digital logic",
-      "Combinational circuits"
-    ],
-    "category": "control",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&st=jpwrm9zm&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "fm",
-    "title": "FM radio receiver",
-    "description": "An analog receiver built around the TDA7000, exploring tuning and audio recovery.",
+    "title": "DroneGuard: RF Detection & Signal Analysis",
+    "description": "A research prototype exploring RF detection, spectrum visualization, and drone-related signal classification using SDR, GNU Radio, and MATLAB. This is separate from my ongoing final-year project in semantic communication.",
     "tags": [
       "RF",
-      "TDA7000",
-      "Analog"
+      "Machine Learning",
+      "Embedded"
     ],
     "category": "signal",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&st=lp1mgay0&dl=0",
-    "codeUrl": ""
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "mailto:asadh1521@gmail.com?subject=Question%20about%20DroneGuard%3A%20Anti%20Drone%20Surveillance%20System"
   },
   {
-    "id": "budget",
-    "title": "C++ budget planner",
-    "description": "A command-line application for organizing income, expenses, and monthly budgets.",
+    "title": "IoT Fleet Management & GPS Tracking System",
+    "description": "Production-grade fleet management system built solo during a full-time internship.\n                        Integrated an ESP32 with LTE, GPS, and RFID authentication, backed by a Flask + SQL\n                        Server pipeline with real-time MQTT telemetry, polygon geofencing, and a live\n                        Leaflet.js/Chart.js dashboard.",
     "tags": [
-      "C++",
-      "Software"
+      "IoT",
+      "Full-Stack",
+      "Internship"
+    ],
+    "category": "embedded",
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "https://www.dropbox.com/scl/fi/q0lw0jxn3ki5r78ncb135/Internship_Report.pdf?rlkey=zkl2ti5sxkxrubfuot5p2jghj&st=hdvbzwi8&dl=0"
+  },
+  {
+    "title": "Real-Time Object Detection Dashboard",
+    "description": "Real-time object detection system built on YOLOv8, wrapped in an interactive\n                        Streamlit dashboard for live video upload and detection logging. Packaged with Docker\n                        Compose for one-command deployment. Demoed at NUST Robotics Society's Voltfest 2026.",
+    "tags": [
+      "Computer Vision",
+      "Docker",
+      "Full-Stack"
     ],
     "category": "software",
-    "status": "Software project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/mvvrpeys8i9cuqu1wvqx9/Monthly-Budget-Planner.pdf?rlkey=1k5f4lsquwc2izx23tv65y6ux&st=p64uz5eh&dl=0",
-    "codeUrl": ""
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "https://www.dropbox.com/scl/fi/90p47sqej50zhw2o44gzb/Object-Detection.zip?rlkey=ybzgymgpzz2xg5te3ho4ppncm&st=ncgs8ul5&dl=0"
   },
   {
-    "id": "voltmeter",
-    "title": "Multi-range digital voltmeter",
-    "description": "ADC-based voltage measurement with range selection and a digital display.",
+    "title": "EEG Signal Cleaning & Analysis",
+    "description": "Cleaned raw EEG recordings from a Parkinson's patient using a cascade of notch,\n                        high-pass, and low-pass filters. Built an interactive MATLAB App Designer GUI to\n                        toggle each filter stage and visualize the cleaned signal in real time.",
     "tags": [
-      "Arduino",
-      "ADC",
-      "Instrumentation"
+      "Signal Processing",
+      "MATLAB",
+      "Medical"
     ],
-    "category": "embedded",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/2y9lfqaekvy1fkkml63l4/Multirange-Voltmeter.pdf?rlkey=kk45x9zhd95bxzhdmslyudc4j&st=ui38gt3h&dl=0",
-    "codeUrl": ""
+    "category": "signal",
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "https://www.dropbox.com/scl/fi/6hx2yv3uql3tqn553inqf/Cleaning-and-Real-Time-Simulation-of-EEG-Data.pdf?rlkey=fb5i671717jlwb03cafwjh63a&st=nqs2l1k0&dl=0"
   },
   {
-    "id": "cart",
-    "title": "Object-oriented shopping cart",
-    "description": "A C++ application exploring classes, state, and shopping-cart operations.",
+    "title": "4-bit ALU Design",
+    "description": "Arithmetic Logic Unit designed from discrete logic gates, supporting arithmetic\n                        and logical operations selected via a function-select input, mirroring the core\n                        compute unit inside a processor. Verified across all 256 input combinations.",
     "tags": [
-      "C++",
-      "OOP"
-    ],
-    "category": "software",
-    "status": "Software project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/ln979gckqxhavttvdqufl/Shopping-Cart-System.pdf?rlkey=rs5legijhk6g7vcbr8dtj4h4x&st=hrprrfmc&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "water",
-    "title": "Water level indicator",
-    "description": "A microcontroller project for sensing water level and presenting its state.",
-    "tags": [
-      "Microcontrollers",
-      "Sensors",
-      "Proteus"
-    ],
-    "category": "embedded",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/ogldovruy8snay9bzvm1a/Water-Level-Indicator-Using-Arduino.pdf?rlkey=4y9orz8gx53cryxxpevdns1hn&st=hpk31ent&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "parking",
-    "title": "Smart parking system",
-    "description": "A Proteus simulation of sensor-based parking detection and availability indication.",
-    "tags": [
-      "Proteus",
-      "Sensors"
-    ],
-    "category": "embedded",
-    "status": "Simulation",
-    "demoUrl": "https://www.dropbox.com/scl/fi/q240nylfrevn4voxulk57/Smart_Parking_Report.pdf?rlkey=tamifoiycuebwhwk2z4unfn41&st=zkm6noxh&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "rfid",
-    "title": "RFID access control",
-    "description": "An Arduino and MFRC522 simulation exploring SPI-based identification and access logic.",
-    "tags": [
-      "Arduino",
-      "RFID",
-      "SPI"
-    ],
-    "category": "embedded",
-    "status": "Simulation",
-    "demoUrl": "https://www.dropbox.com/scl/fi/x9k0zl4rmljz8ly9ipyi5/RFID_Door_Lock_Report.pdf?rlkey=z18547025vhfwy3cglfub62ph&st=f9hyx6ok&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "solar",
-    "title": "Dual-axis solar tracker",
-    "description": "A simulated tracking system using light sensors and servo positioning.",
-    "tags": [
-      "Proteus",
-      "LDR",
-      "Servo control"
+      "Digital Design",
+      "Logic Gates"
     ],
     "category": "control",
-    "status": "Simulation",
-    "demoUrl": "https://www.dropbox.com/scl/fi/ufrcoqswzpvy8kkcivga6/Solar_Tracker_Report_NUST.pdf?rlkey=yrx069pz3dawg8t3avgeq53yp&st=br1bu102&dl=0",
-    "codeUrl": ""
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&st=jpwrm9zm&dl=0"
   },
   {
-    "id": "bluetooth",
-    "title": "Bluetooth-controlled car",
-    "description": "Wireless commands translated into motor control through an HC-05 and motor driver.",
+    "title": "FM Receiver Using TDA7000 IC",
+    "description": "FM receiver built around the TDA7000 single-chip IC, covering front-end tuning,\n                        local oscillator calculations, and full block-level system design. Verified\n                        demodulation in MATLAB/Simulink before building and testing the physical circuit.",
     "tags": [
-      "Bluetooth",
-      "HC-05",
-      "Motor control"
+      "RF",
+      "Analog",
+      "PCB"
     ],
-    "category": "embedded",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/ogamptd1m5ou7n5p9vcye/Bluetooth_Controlled_Car.pdf?rlkey=zfe0u6027w506y0jncb3vblji&st=24u42t0p&dl=0",
-    "codeUrl": ""
+    "category": "signal",
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&st=lp1mgay0&dl=0"
   },
   {
-    "id": "supply",
-    "title": "Custom DC power supply",
-    "description": "A circuit design project exploring power conversion and regulated DC output.",
+    "title": "Credit Risk Classification Model",
+    "description": "Credit-scoring classification model comparing Logistic Regression, Decision Trees,\n                        and Random Forest on applicant financial-history data, evaluated with Precision,\n                        Recall, F1-score, and ROC-AUC.",
     "tags": [
-      "Power electronics",
-      "Circuit design"
-    ],
-    "category": "circuits",
-    "status": "Academic project",
-    "demoUrl": "https://www.dropbox.com/scl/fi/wdx4qvvqa7gt23cmw4rmf/Custom_DC_Power_Supply.pdf?rlkey=mu7h4un3mcrlltijyu1dy43mt&st=0c2faa3s&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "vision",
-    "title": "Real-time object detection",
-    "description": "A YOLOv8 dashboard that brings computer vision into an interactive Streamlit application.",
-    "tags": [
-      "YOLOv8",
-      "Streamlit",
-      "Docker"
-    ],
-    "category": "software",
-    "status": "Software prototype",
-    "demoUrl": "https://www.dropbox.com/scl/fi/90p47sqej50zhw2o44gzb/Object-Detection.zip?rlkey=ybzgymgpzz2xg5te3ho4ppncm&st=ncgs8ul5&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "credit",
-    "title": "Credit risk classification",
-    "description": "A machine learning classification project completed during the CodeAlpha internship.",
-    "tags": [
+      "ML",
       "Python",
-      "Classification",
       "Scikit-learn"
     ],
     "category": "software",
-    "status": "Internship project",
-    "demoUrl": "https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "digits",
-    "title": "Handwritten character recognition",
-    "description": "A convolutional neural network project for recognizing handwritten characters.",
-    "tags": [
-      "Python",
-      "CNN",
-      "MNIST / EMNIST"
-    ],
-    "category": "software",
-    "status": "Internship project",
-    "demoUrl": "https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "disease",
-    "title": "Disease classification study",
-    "description": "An educational machine learning experiment using health-related tabular data.",
-    "tags": [
-      "Python",
-      "Classification"
-    ],
-    "category": "software",
-    "status": "Educational project",
-    "demoUrl": "https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "flyrank",
-    "title": "Backend AI engineering",
-    "description": "API development, retrieval workflows, containerization, and an LLM usage-metering capstone.",
-    "tags": [
-      "APIs",
-      "Docker",
-      "Python"
-    ],
-    "category": "software",
-    "status": "Internship project",
+    "codeUrl": "",
     "demoUrl": "",
-    "codeUrl": ""
+    "reportUrl": "https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0"
   },
   {
-    "id": "cad",
-    "title": "Mechanical CAD studies",
-    "description": "A collection of mechanical design studies; detailed documentation is being prepared.",
+    "title": "AMI-Based IoT Smart Energy Meter",
+    "description": "An ESP32 smart energy-meter simulation in Proteus, exploring sensing, energy accumulation, and an IoT monitoring workflow. Hardware prototyping is planned.",
     "tags": [
-      "CAD",
-      "Design studies"
+      "IoT",
+      "Full-Stack",
+      "Energy"
     ],
-    "category": "circuits",
-    "status": "Documentation in progress",
-    "demoUrl": "https://www.dropbox.com/scl/fo/3qg93wc9ybyu43en55p3a/AP-lAp8sHOoqOx-jCB45V2Q?rlkey=2sla5plh98uabir1k83k8b8ow&st=y4m7h4b5&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "usb",
-    "title": "ESP32 USB interface PCB",
-    "description": "A PCB design study connecting the ESP32 to a USB interface in Altium Designer.",
-    "tags": [
-      "ESP32",
-      "Altium",
-      "PCB"
-    ],
-    "category": "circuits",
-    "status": "Design study",
-    "demoUrl": "https://www.dropbox.com/scl/fo/e95es49uj5723a2wpqj7a/AFeL0fY2mubWfaJBMenyxGs?rlkey=9dpk5oamcxiaqwio048bjfzb5&st=9urm7dph&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "charging",
-    "title": "EV charging circuit concept",
-    "description": "An early-stage exploration of charging circuits and power-stage design.",
-    "tags": [
-      "Power electronics",
-      "EV systems"
-    ],
-    "category": "circuits",
-    "status": "Concept",
-    "demoUrl": "https://www.dropbox.com/scl/fo/5buywrdohizg5zao5gjbj/APiKHJW1HATQyIewKocYgGE?rlkey=0w3oqkzhdoojwthn1rl22izeg&st=tvn59slj&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "relay",
-    "title": "Relay control PCB",
-    "description": "A board-design study for switching loads through a relay interface.",
-    "tags": [
-      "PCB",
-      "Relays"
-    ],
-    "category": "circuits",
-    "status": "Design study",
-    "demoUrl": "https://www.dropbox.com/scl/fo/kxqcuuodj17zjlus8w3ow/AF-qeZLqEk0TFXm6Y442j1A?rlkey=t0nf00x1355rsrpiksbunz4kv&st=6790rhhl&dl=0",
-    "codeUrl": ""
-  },
-  {
-    "id": "drone",
-    "title": "Autonomous drone fleet simulator",
-    "description": "A software simulation for exploring coordinated drone behavior and fleet management.",
-    "tags": [
-      "Simulation",
-      "Control",
-      "Python"
-    ],
-    "category": "control",
-    "status": "Simulation",
-    "demoUrl": "https://www.dropbox.com/scl/fi/266cxkquxk2kxkuj49mnc/Autonomous-Drone-Fleet-Simulator.pdf?rlkey=a0j8z0tl164ly22ty80u7xya1&st=fftaemo6&dl=0",
-    "codeUrl": ""
+    "category": "embedded",
+    "codeUrl": "",
+    "demoUrl": "",
+    "reportUrl": "https://www.dropbox.com/scl/fo/su5peq6dn6a7oh3084ffy/AKwRIv6NDVJscuOgnZBcA4o?rlkey=ubwwjfj3i1cn1nmw9s15z2jrr&st=8sln4fnc&dl=0"
   }
 ]

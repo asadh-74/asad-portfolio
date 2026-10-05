@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://asad-portfolio-flax-pi.vercel.app/sitemap.xml

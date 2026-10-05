@@ -1,32 +1,29 @@
-# Asad Hussain — Embedded Systems Portfolio
+# Asad Hussain — Electrical & Embedded Engineering Portfolio
 
 Live: https://asad-portfolio-flax-pi.vercel.app/
 
-A dark editorial engineering portfolio with an independent visual identity: charcoal surfaces, copper-orange accents, serif headlines, a vertical section index, and an interactive isometric device illustration. Projects are presented as a filterable notebook rather than a card grid. The content covers embedded systems, firmware, PCB design, RF/DSP, and connected devices. The companion software portfolio is https://automation-portfolio-steel.vercel.app/.
+The original purple-and-cyan portfolio design is restored from commit `99a1c38c2796bf58a4dd0ef859b175901446ab8c`, preserving its portrait hero, horizontal navigation, experience timeline, skills, project cards, certificates, memberships, testimonials, and contact section.
 
-## Frontend
+## Focused enhancements
 
-Static HTML, CSS, and JavaScript in `frontend/`, with self-hosted Nimbus Sans and Nimbus Roman fonts (license in `frontend/fonts/LICENSE.txt`). No frontend build step or CDN dependency.
+- Responsive mobile navigation with keyboard and Escape support.
+- Search and discipline filters for the 8 featured projects and the original 30-project archive. Filter state is reflected in the URL.
+- Original report links remain in place. Placeholder report links now invite an email enquiry.
+- All 11 certificates are available without an API round trip. The original lightbox gains focus containment and focus restoration, while retaining full-size, download, PDF, and verification links.
+- Consistent engineering CV links and a repaired `/api/resume` endpoint.
+- The original Inter, Space Grotesk, and Font Awesome assets are served locally from `frontend/vendor/`, with their licenses.
+- No artificial preloader delay; reduced-motion support and readable content when JavaScript is disabled.
+- Corrected internship dates and outdated project/final-year-project descriptions. Project concepts and simulations are not counted as completed builds.
 
-- `index.html`: home with a component explorer, project notebook, systems lab, about, experience log, credentials, and contact.
-- `embedded.css`: responsive design, accessible focus states, reduced-motion support.
-- `embedded.js`: device component selection, category/search filters, shareable URLs, project dialogs, certificate previews, navigation, and optional AI assistant.
-- `portfolio-data.js`: 32 projects and 11 certificates. Preserve original evidence links; label simulations, concepts, and ongoing research accurately.
-- `projects.html`: redirects old archive links to the complete interactive project catalog.
-- `AsadHussain_CV.pdf`: engineering CV; direct view and download links work without the backend.
-- `certs/`: original certificate images and available PDFs. FlyRank and CodeAlpha copies also appear in Automation-Portfolio.
+The independent redesigns have been reverted in a new commit; Git history remains available.
 
-Local frontend preview:
+## Local preview
 
 ```sh
 python3 -m http.server 8000 --directory frontend
 ```
 
-Open http://localhost:8000. The optional assistant requires the backend; its unavailable state directs visitors to email.
-
-## Backend and deployment
-
-The existing Express backend is deployed through `vercel.json`. Static requests map to `frontend/`; `/api/*` maps to `backend/server.js`. Existing contact, project, certificate, resume, and chat routes remain available.
+Open http://localhost:8000. No frontend build step is required. The optional assistant requires the backend.
 
 ```sh
 cd backend
@@ -34,8 +31,17 @@ npm ci
 npm start
 ```
 
-The assistant uses server-side `GEMINI_API_KEY` and optional `GEMINI_MODEL`; no secret is sent to the frontend. Without configuration it returns a clear unavailable response. Its portfolio facts are in `backend/routes/chat.js` (also mirrored in the legacy `backend/chat.js`). Responses are informational; reports and original certificates remain primary references. The contact section uses email links and does not claim to submit or store a message.
+`vercel.json` preserves the original deployment: static requests resolve to `frontend/`, and `/api/*` requests reach `backend/server.js`. Existing API routes remain available. The assistant uses server-side `GEMINI_API_KEY` and optional `GEMINI_MODEL`. No secrets are included in the frontend.
 
-Project API data lives in `backend/data/projects.json`; certificate API data lives in `backend/data/certificates.json`. Keep these aligned with `frontend/portfolio-data.js`. `backend/certificates.json` is a legacy mirror. The frontend catalog is static and does not depend on API availability.
+## Editing
 
-Vercel deploys from the repository's main branch. Keep the existing root Vercel configuration. Validate desktop/mobile layouts, dialogs, filters, all local assets, and PDF links before pushing.
+- `frontend/index.html`: homepage content and embedded certificate metadata.
+- `frontend/projects.html`: complete project archive and original report links.
+- `frontend/style.css`: original visual design.
+- `frontend/enhancements.css`, `enhancements.js`: targeted responsive and accessibility improvements.
+- `frontend/projects.js`: browser filtering; it does not replace curated cards with API results.
+- `frontend/certificates.js`: original certificate gallery/lightbox behavior.
+- `backend/data/projects.json`: featured project API data; keep it aligned with the homepage.
+- `backend/data/certificates.json`: certificate API records; keep them aligned with the homepage metadata. `backend/certificates.json` is a legacy mirror.
+
+Validate both pages at desktop and mobile sizes, filters, certificates, CV links, and the assistant's unavailable state before deployment.

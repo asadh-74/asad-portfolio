@@ -1,67 +1,15 @@
-// Fetches project cards from the backend and renders them into #projects-grid.
-// Falls back to whatever static cards are already in the HTML if the API
-// is unreachable (e.g. viewing index.html directly with no backend running).
-
-async function loadProjects() {
-  const grid = document.getElementById('projects-grid');
-  if (!grid) return;
-
-  try {
-    const res = await fetch(`${window.API_BASE_URL || ''}/api/projects`);
-    if (!res.ok) throw new Error('Bad response from /api/projects');
-    const projects = await res.json();
-
-    if (!Array.isArray(projects) || projects.length === 0) return;
-
-    grid.innerHTML = projects.map(projectCardHTML).join('');
-    observeReveals(grid.querySelectorAll('.reveal'));
-  } catch (err) {
-    console.warn('Could not load projects from API, keeping static fallback cards.', err);
-  }
-}
-
-function projectCardHTML(project) {
-  const tags = (project.tags || [])
-    .map((t) => `<span class="project-tag">${escapeHTML(t)}</span>`)
-    .join('');
-
-  const codeLink = project.codeUrl
-    ? `<a href="${escapeHTML(project.codeUrl)}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>`
-    : `<a href="#contact"><i class="fab fa-github"></i> Ask for code</a>`;
-
-  const demoLink = project.demoUrl
-    ? `<a href="${escapeHTML(project.demoUrl)}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Demo</a>`
-    : '';
-
-  return `
-    <div class="project-card reveal">
-        <div class="project-image"><i class="fas ${escapeHTML(project.icon || 'fa-code')}"></i></div>
-        <div class="project-content">
-            <div class="project-tags">${tags}</div>
-            <h3 class="project-title">${escapeHTML(project.title)}</h3>
-            <p class="project-desc">${escapeHTML(project.description)}</p>
-            <div class="project-links">${codeLink}${demoLink}</div>
-        </div>
-    </div>`;
-}
-
-function escapeHTML(str) {
-  const div = document.createElement('div');
-  div.textContent = String(str ?? '');
-  return div.innerHTML;
-}
-
-// Re-attach the scroll-reveal IntersectionObserver to newly injected cards.
-function observeReveals(elements) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('active');
-      });
-    },
-    { threshold: 0.1 }
-  );
-  elements.forEach((el) => observer.observe(el));
-}
-
-document.addEventListener('DOMContentLoaded', loadProjects);
+// Keep the original, report-linked cards as the source of truth.
+// Filtering works offline and never replaces the page with stale API entries.
+(() => {
+ const grid=document.querySelector('[data-project-grid]');if(!grid)return;
+ const cards=[...grid.querySelectorAll('.project-card')],search=document.getElementById('project-search');
+ const buttons=[...document.querySelectorAll('[data-filter]')],count=document.getElementById('project-results-count'),empty=document.getElementById('project-empty');
+ let area='all',query='';
+ function render(){let visible=0;cards.forEach(card=>{const matches=(area==='all'||card.dataset.area===area)&&card.textContent.toLowerCase().includes(query.toLowerCase().trim());card.hidden=!matches;if(matches){visible++;card.classList.add('active');}});count.textContent=`${visible} of ${cards.length} projects`;empty.hidden=visible>0;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===area)));}
+ function readURL(){const p=new URLSearchParams(location.search);area=buttons.some(b=>b.dataset.filter===p.get('area'))?p.get('area'):'all';query=p.get('q')||'';search.value=query;render();}
+ function updateURL(){const u=new URL(location.href);area==='all'?u.searchParams.delete('area'):u.searchParams.set('area',area);query?u.searchParams.set('q',query):u.searchParams.delete('q');history.replaceState(null,'',u);}
+ buttons.forEach(b=>b.addEventListener('click',()=>{area=b.dataset.filter;render();updateURL();}));
+ search.addEventListener('input',()=>{query=search.value;render();updateURL();});
+ document.getElementById('reset-projects').addEventListener('click',()=>{area='all';query='';search.value='';render();updateURL();search.focus();});
+ addEventListener('popstate',readURL);readURL();
+})();

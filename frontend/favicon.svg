@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="4" fill="#101416"/><path d="M10 14V9h5m34 0h5v5M10 50v5h5m34 0h5v-5" stroke="#f28c66" stroke-width="2"/><path d="m18 43 9-24 9 24m-15-8h12m7-16v24m0-12h9m0-12v24" stroke="#edeae3" stroke-width="2.5" fill="none"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#050508"/>
+  <text x="50" y="66" font-family="Arial, sans-serif" font-weight="700" font-size="46" fill="url(#g)" text-anchor="middle">AH</text>
+</svg>
