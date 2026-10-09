@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RDC &amp; HIT Fleet Tracking Case Study | Asad Hussain</title>
+  <meta name="description" content="Asad Hussain's RDC and HIT internship project: ESP32 driver logging, GPS, RFID, MQTT, Flask, SQL Server and fleet monitoring. Read the technical report and explore the hardware.">
+  <meta name="theme-color" content="#050508">
+  <link rel="canonical" href="https://asad-portfolio-flax-pi.vercel.app/rdc-hit.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/fonts.css"><link rel="stylesheet" href="vendor/fontawesome.css">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="enhancements.css"><link rel="stylesheet" href="rdc-hit.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="bg-orb orb-1" aria-hidden="true"></div><div class="bg-orb orb-2" aria-hidden="true"></div>
+  <nav id="navbar" aria-label="Main navigation">
+    <a class="nav-logo" href="index.html" aria-label="Asad Hussain home">AH.</a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="navigation-links" aria-label="Open navigation"><i class="fas fa-bars" aria-hidden="true"></i><span>Menu</span></button>
+    <ul class="nav-links" id="navigation-links">
+      <li><a class="nav-link" href="index.html#about">About</a></li><li><a class="nav-link" href="index.html#experience">Experience</a></li>
+      <li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="index.html#certs">Certificates</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+    </ul><a class="nav-cta" href="index.html#contact">Hire Me</a>
+  </nav>
+  <main id="main" class="case-main">
+    <a class="case-back" href="index.html#projects"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to projects</a>
+    <header class="case-hero">
+      <div>
+        <span class="section-label">Embedded systems / Internship project / 2025</span>
+        <h1>GPS fleet &amp;<br><span>driver tracking.</span></h1>
+        <p class="case-lead">Connecting the device in the vehicle to the people managing the fleet.</p>
+        <p>As lead developer within a team, I worked across hardware integration, telemetry processing and the operator dashboard during my RDC and HIT internships.</p>
+        <div class="case-actions"><a class="btn-primary" href="reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Read internship report <span aria-hidden="true">↗</span></a><a class="case-text-link" href="#system">Explore the system <span aria-hidden="true">↓</span></a></div>
+        <ul class="case-tags" aria-label="Project technologies"><li>ESP32</li><li>GPS + RFID</li><li>MQTT</li><li>Flask</li><li>SQL Server</li></ul>
+      </div>
+      <figure class="case-photo"><img src="assets/rdc-hit/prototype-bench.png" width="614" height="873" alt="Bench integration of the fleet tracking hardware with GPS antenna, RFID reader and development boards"><figcaption><span class="case-dot" aria-hidden="true"></span> Original prototype · Bench integration</figcaption></figure>
+    </header>
+    <dl class="case-facts"><div><dt>My role</dt><dd>Lead developer within a team</dd></div><div><dt>RDC · College of E&amp;ME</dt><dd>24 Jun – 8 Aug 2025</dd></div><div><dt>HIT · Technical Directorate</dt><dd>7 Jul – 13 Aug 2025</dd></div></dl>
+    <section class="case-section case-intro" aria-labelledby="challenge-heading"><div><span class="section-label">The challenge</span><h2 id="challenge-heading">Bring driver identity,<br>journeys and fleet records together.</h2></div><div><p>Vehicle location alone does not explain who drove, which journey a point belongs to, or which records an operator needs next. The project linked driver identification and trip logging with a shared fleet management interface.</p><p>The device workflow includes local trip files for interrupted connectivity, while the backend separates live positions from historical journeys.</p></div></section>
+    <section id="system" class="case-section" aria-labelledby="system-heading"><span class="section-label">System design</span><h2 id="system-heading">A complete path from sensor to dashboard.</h2>
+      <div class="case-steps"><article><span>01</span><h3>Capture</h3><p>GPS position and speed, RFID driver identity and device feedback.</p></article><article><span>02</span><h3>Transmit</h3><p>Cellular MQTT paths for live telemetry, trip batches and replies.</p></article><article><span>03</span><h3>Process</h3><p>Python services for validation, persistence and event analysis.</p></article><article><span>04</span><h3>Operate</h3><p>Fleet records, map views, maintenance and configurable zones.</p></article></div>
+      <figure class="case-diagram"><img src="assets/rdc-hit/architecture.svg" width="1100" height="740" loading="lazy" alt="GPS and RFID connect to an ESP32 with SD storage. Cellular MQTT connects the device to an ingestion service, SQL Server and the operator portal."><figcaption>Functional architecture based on the project source and device workflow. <a class="case-text-link" href="assets/rdc-hit/architecture.svg" target="_blank" rel="noopener noreferrer">Open full-size diagram ↗</a></figcaption></figure>
+    </section>
+    <section class="case-section case-build" aria-labelledby="build-heading"><figure class="case-detail"><img src="assets/rdc-hit/prototype-detail.png" width="631" height="907" loading="lazy" alt="Close view of the ESP32 and GPS boards wired on the prototype breadboard"><figcaption>Hardware development and module integration.</figcaption></figure><div><span class="section-label">My contribution</span><h2 id="build-heading">Embedded engineering meets application development.</h2><ul class="case-contributions"><li><strong>Device integration</strong><p>Connected the embedded platform with GPS, RFID, cellular communication and the trip logging workflow.</p></li><li><strong>Telemetry and persistence</strong><p>Built processing paths for live data and completed trips, supported by SQL Server records.</p></li><li><strong>Operator tools</strong><p>Developed fleet management views, tracking interfaces, maintenance functions and geofence configuration.</p></li><li><strong>Event analysis</strong><p>Implemented polygon checks and rule-based speed and harsh-driving detection.</p></li></ul></div></section>
+    <section class="case-section case-report" aria-labelledby="report-heading"><div><span class="section-label">Technical documentation</span><h2 id="report-heading">The implementation,<br>with evidence behind it.</h2><p>The revised 14-page report covers objectives, architecture, hardware, operation, data design, dashboard evidence, software checks and an acceptance plan. It distinguishes implemented features from performance targets that still need measurement.</p><p class="case-report-meta">PDF · 14 pages · Revised 9 October 2026</p></div><div class="case-download"><i class="far fa-file-pdf" aria-hidden="true"></i><h3>RDC &amp; HIT<br>Internship Report</h3><a class="btn-primary" href="reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf" download>Download PDF <i class="fas fa-arrow-down" aria-hidden="true"></i></a><a class="case-text-link" href="index.html#certs">View internship certificates <span aria-hidden="true">↗</span></a></div></section>
+    <div class="case-end"><p>Have an embedded or IoT project in mind?</p><a href="index.html#contact">Let’s talk <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="case-footer"><a href="index.html">Asad Hussain</a><span>Embedded systems · IoT · Software</span><a href="projects.html">More projects <span aria-hidden="true">↗</span></a></footer>
+  <script src="enhancements.js"></script>
+</body></html>

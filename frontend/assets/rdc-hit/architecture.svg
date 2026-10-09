@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740">
+<rect width="1100" height="740" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#536271"/></marker></defs>
+<rect x="25" y="25" width="250" height="110" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="150.0" y="59" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">GPS receiver</text>
+<text x="150.0" y="89" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Position and speed</text>
+<rect x="425" y="25" width="250" height="110" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="550.0" y="59" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">RFID reader</text>
+<text x="550.0" y="89" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Driver identity</text>
+<rect x="825" y="25" width="250" height="110" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="950.0" y="59" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">Local storage</text>
+<text x="950.0" y="89" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Trip CSV on SD card</text>
+<rect x="350" y="200" width="400" height="110" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="550.0" y="234" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">ESP32 device</text>
+<text x="550.0" y="264" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Trip state and audio feedback</text>
+<polyline points="150,135 150,255 350,255" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="350.0,255.0 338.0,250.0 338.0,260.0" fill="#536271"/>
+<polyline points="550,135 550,200" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="550.0,200.0 555.0,188.0 545.0,188.0" fill="#536271"/>
+<polyline points="750,255 950,255 950,135" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="950.0,135.0 945.0,147.0 955.0,147.0" fill="#536271"/>
+<rect x="350" y="365" width="400" height="110" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="550.0" y="399" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">MQTT broker</text>
+<text x="550.0" y="429" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Cellular telemetry and replies</text>
+<polyline points="550,310 550,365" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="550.0,365.0 555.0,353.0 545.0,353.0" fill="#536271"/>
+<rect x="25" y="550" width="310" height="140" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="180.0" y="584" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">Ingestion service</text>
+<text x="180.0" y="614" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">server.py</text>
+<text x="180.0" y="640" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Validation and analytics</text>
+<rect x="395" y="550" width="310" height="140" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="550.0" y="584" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">SQL Server</text>
+<text x="550.0" y="614" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Live and historical data</text>
+<text x="550.0" y="640" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Fleet and event records</text>
+<rect x="765" y="550" width="310" height="140" rx="8" fill="#eef3f7" stroke="#acbac6" stroke-width="2"/>
+<text x="920.0" y="584" text-anchor="middle" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#162534">Operator portal</text>
+<text x="920.0" y="614" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">app.py and templates</text>
+<text x="920.0" y="640" text-anchor="middle" font-family="DejaVu Sans" font-size="18" fill="#3d4c59">Management and maps</text>
+<polyline points="550,475 550,510 180,510 180,550" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="180.0,550.0 185.0,538.0 175.0,538.0" fill="#536271"/>
+<polyline points="335,620 395,620" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="395.0,620.0 383.0,615.0 383.0,625.0" fill="#536271"/>
+<polyline points="705,620 765,620" fill="none" stroke="#536271" stroke-width="2.5"/>
+<polygon points="765.0,620.0 753.0,615.0 753.0,625.0" fill="#536271"/>
+</svg>

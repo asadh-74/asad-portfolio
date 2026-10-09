@@ -202,18 +202,19 @@
                 <div class="timeline-content">
                     <div class="timeline-date">Jun 2025 – Aug 2025</div>
                     <div class="timeline-title">Engineering Intern</div>
-                    <div class="timeline-company">Research &amp; Indigenous Development Centre (RDC), Heavy Industries Taxila</div>
+                    <div class="timeline-company">Research &amp; Indigenous Development Centre (RDC), College of E&amp;ME, NUST</div>
                     <div class="timeline-desc">
                         <ul>
-                            <li>Designed and tested a driver logging device, integrating core hardware modules including the LilyGO T-SIM7670E ESP32 and LTE modem, a GPS module, and an RFID reader with a TP4056 LiPo charge controller</li>
-                            <li>Programmed low level control logic and state machines in C and C++ for one hertz GPS capture, RFID authentication, and buzzer based audio feedback</li>
-                            <li>Implemented MQTT telemetry over cellular GPRS with QoS level 1, enabling reliable real time updates with fifty millisecond server side callback processing</li>
-                            <li>Built an asynchronous Flask backend using multithreading to process analytics without blocking incoming MQTT streams</li>
+                            <li>Led device integration within a team, connecting an ESP32 platform with cellular communication, GPS, RFID, local trip storage and audio feedback.</li>
+                            <li>Developed the driver logging workflow for RFID login and logout, GPS capture, local CSV records and device status feedback.</li>
+                            <li>Implemented MQTT paths for live telemetry, trip batches, notifications and device confirmations.</li>
+                            <li>Built Python processing services and a Flask/SQL Server dashboard for fleet records, tracking, geofencing and driving-event analysis.</li>
                         </ul>
                     </div>
                     <button type="button" class="timeline-cert" data-cert-open="rdc-internship" data-cert-img="certs/rdc-internship.jpg" data-cert-title="Internship — Designing &amp; Testing of Driver Logging Device" data-cert-org="Research &amp; Indigenous Development Centre (RDC)">
                         <i class="fas fa-certificate"></i> View certificate
                     </button>
+                    <a class="timeline-cert" href="rdc-hit.html"><i class="fas fa-file-lines" aria-hidden="true"></i> Project and internship report</a>
                 </div>
             </div>
             <div class="timeline-item reveal">
@@ -231,6 +232,7 @@
                     <button type="button" class="timeline-cert" data-cert-open="hit-internship" data-cert-img="certs/hit-internship.png" data-cert-document="certs/HIT Internship Certificate.pdf" data-cert-title="Engineering Internship — IoT Driver Logging System" data-cert-org="Heavy Industries Taxila (HIT), Technical Directorate">
                         <i class="fas fa-certificate"></i> View HIT certificate
                     </button>
+                    <a class="timeline-cert" href="rdc-hit.html"><i class="fas fa-file-lines" aria-hidden="true"></i> Project and internship report</a>
                 </div>
             </div>
             <div class="timeline-item reveal">
@@ -390,7 +392,7 @@
                 </div>
             </div>
             <div class="project-card reveal" data-area="embedded">
-                <div class="project-image"><i class="fas fa-truck"></i></div>
+                <div class="project-image"><img src="assets/rdc-hit/prototype-detail.png" alt="ESP32 and GPS hardware prototype for the RDC and HIT fleet tracking project" width="631" height="907" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 32%"></div>
                 <div class="project-content">
                     <div class="project-tags">
                         <span class="project-tag">IoT</span>
@@ -398,15 +400,8 @@
                         <span class="project-tag">Internship</span>
                     </div>
                     <h3 class="project-title">IoT Fleet Management &amp; GPS Tracking System</h3>
-                    <p class="project-desc">
-                        Production-grade fleet management system built solo during a full-time internship.
-                        Integrated an ESP32 with LTE, GPS, and RFID authentication, backed by a Flask + SQL
-                        Server pipeline with real-time MQTT telemetry, polygon geofencing, and a live
-                        Leaflet.js/Chart.js dashboard.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://www.dropbox.com/scl/fi/q0lw0jxn3ki5r78ncb135/Internship_Report.pdf?rlkey=zkl2ti5sxkxrubfuot5p2jghj&amp;st=hdvbzwi8&amp;dl=0" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-lines"></i> View Report</a>
-                    </div>
+                    <p class="project-desc">Led development within a team on an ESP32 fleet and driver logging system across RDC and HIT internships. Integrated GPS, RFID and cellular MQTT telemetry with Flask, SQL Server, geofencing, driving-event analysis and an operator dashboard.</p>
+<div class="project-links"><a href="rdc-hit.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Explore case study</a><a href="reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Internship report</a></div>
                 </div>
             </div>
             <div class="project-card reveal" data-area="software">
@@ -678,5 +673,6 @@
     <script src="projects.js"></script>
     <script src="certificates.js"></script>
     <script src="main.js"></script>
-<script type="application/json" id="certificate-data">[{"id": "flyrank-backend-ai", "title": "Backend AI Engineering Internship", "org": "FlyRank AI", "date": "1 Jul 2026 – 7 Sep 2026", "credentialId": "FR-D11-EBC4A-72E6F", "icon": "fa-server", "imageUrl": "certs/flyrank-backend-ai-cert.jpg", "verifyUrl": "https://internship.flyrank.ai/verify", "category": "internship"}, {"id": "nepra-internship", "title": "Technical Intern, Technical Department", "org": "National Electric Power Regulatory Authority (NEPRA)", "date": "6 Jul 2026 – 17 Aug 2026", "credentialId": "Ref No: MON-08/2026/40", "icon": "fa-bolt", "imageUrl": "certs/nepra-internship.jpg?v=20260918", "verifyUrl": "", "category": "internship", "issueDate": "18 September 2026"}, {"id": "codealpha-ml", "title": "Machine Learning Internship", "org": "CodeAlpha", "date": "20 Jun 2026 – 20 Jul 2026", "credentialId": "CA/DF1/160558", "icon": "fa-brain", "imageUrl": "certs/codealpha-ml.jpg", "verifyUrl": "", "category": "internship"}, {"id": "hit-internship", "title": "Engineering Internship — IoT Driver Logging System", "org": "Heavy Industries Taxila (HIT), Technical Directorate", "date": "7 Jul 2025 – 13 Aug 2025", "credentialId": "HIT Internship Certificate", "icon": "fa-microchip", "imageUrl": "certs/hit-internship.png", "documentUrl": "certs/HIT Internship Certificate.pdf", "verifyUrl": "", "category": "internship"}, {"id": "rdc-internship", "title": "Internship — Designing & Testing of Driver Logging Device", "org": "Research & Indigenous Development Centre (RDC), Heavy Industries Taxilla", "date": "24 Jun 2025 – 08 Aug 2025", "credentialId": "RDC Internship Certificate", "icon": "fa-flask", "imageUrl": "certs/rdc-internship.jpg", "verifyUrl": "", "category": "internship"}, {"id": "ncra-internship", "title": "Internship — Embedded Systems, IoT & Communication (RDDL)", "org": "National Centre of Robotics and Automation (NCRA), NUST", "date": "15 Jul 2024 – 26 Aug 2024", "credentialId": "NCRA Internship Certificate", "icon": "fa-robot", "imageUrl": "certs/ncra-internship.jpg", "verifyUrl": "", "category": "internship"}, {"id": "altium-pcb", "title": "PCB Basic Design Course", "org": "Altium Education", "date": "August 2026", "credentialId": "cert_lypgb5lw", "icon": "fa-microchip", "imageUrl": "certs/altium-pcb.jpg", "verifyUrl": ""}, {"id": "ibm-data-analysis-python", "title": "Data Analysis with Python (DA0101EN)", "org": "IBM (issued by Etrain Education)", "date": "April 2024", "credentialId": "e5a16f1adc3b42c6bb428a2d631b3337", "icon": "fa-chart-line", "imageUrl": "certs/ibm-data-analysis.jpg", "verifyUrl": "https://courses.etrain.skillsnetwork.site/certificates/e5a16f1adc3b42c6bb428a2d631b3337"}, {"id": "deloitte-leadership", "title": "Effective Leadership — Scored 90%", "org": "Deloitte WorldClass", "date": "August 2026", "credentialId": "Deloitte WorldClass Certificate", "icon": "fa-users", "imageUrl": "certs/deloitte-leadership.jpg", "verifyUrl": ""}, {"id": "alison-product-mgmt", "title": "Digital Product Management", "org": "Alison", "date": "2024", "credentialId": "Alison Certificate", "icon": "fa-cube", "imageUrl": "certs/alison-product-mgmt.jpg", "verifyUrl": "https://alison.com/certificates/007896"}]</script><script src="enhancements.js"></script></body>
+<script type="application/json" id="certificate-data">[{"id": "flyrank-backend-ai", "title": "Backend AI Engineering Internship", "org": "FlyRank AI", "date": "1 Jul 2026 – 7 Sep 2026", "credentialId": "FR-D11-EBC4A-72E6F", "icon": "fa-server", "imageUrl": "certs/flyrank-backend-ai-cert.jpg", "verifyUrl": "https://internship.flyrank.ai/verify", "category": "internship"}, {"id": "nepra-internship", "title": "Technical Intern, Technical Department", "org": "National Electric Power Regulatory Authority (NEPRA)", "date": "6 Jul 2026 – 17 Aug 2026", "credentialId": "Ref No: MON-08/2026/40", "icon": "fa-bolt", "imageUrl": "certs/nepra-internship.jpg?v=20260918", "verifyUrl": "", "category": "internship", "issueDate": "18 September 2026"}, {"id": "codealpha-ml", "title": "Machine Learning Internship", "org": "CodeAlpha", "date": "20 Jun 2026 – 20 Jul 2026", "credentialId": "CA/DF1/160558", "icon": "fa-brain", "imageUrl": "certs/codealpha-ml.jpg", "verifyUrl": "", "category": "internship"}, {"id": "hit-internship", "title": "Engineering Internship — IoT Driver Logging System", "org": "Heavy Industries Taxila (HIT), Technical Directorate", "date": "7 Jul 2025 – 13 Aug 2025", "credentialId": "HIT Internship Certificate", "icon": "fa-microchip", "imageUrl": "certs/hit-internship.png", "documentUrl": "certs/HIT Internship Certificate.pdf", "verifyUrl": "", "category": "internship"}, {"id": "rdc-internship", "title": "Internship — Designing & Testing of Driver Logging Device", "org": "Research & Indigenous Development Centre (RDC), College of E&ME, NUST", "date": "24 Jun 2025 – 08 Aug 2025", "credentialId": "RDC Internship Certificate", "icon": "fa-flask", "imageUrl": "certs/rdc-internship.jpg", "verifyUrl": "", "category": "internship"}, {"id": "ncra-internship", "title": "Internship — Embedded Systems, IoT & Communication (RDDL)", "org": "National Centre of Robotics and Automation (NCRA), NUST", "date": "15 Jul 2024 – 26 Aug 2024", "credentialId": "NCRA Internship Certificate", "icon": "fa-robot", "imageUrl": "certs/ncra-internship.jpg", "verifyUrl": "", "category": "internship"}, {"id": "altium-pcb", "title": "PCB Basic Design Course", "org": "Altium Education", "date": "August 2026", "credentialId": "cert_lypgb5lw", "icon": "fa-microchip", "imageUrl": "certs/altium-pcb.jpg", "verifyUrl": ""}, {"id": "ibm-data-analysis-python", "title": "Data Analysis with Python (DA0101EN)", "org": "IBM (issued by Etrain Education)", "date": "April 2024", "credentialId": "e5a16f1adc3b42c6bb428a2d631b3337", "icon": "fa-chart-line", "imageUrl": "certs/ibm-data-analysis.jpg", "verifyUrl": "https://courses.etrain.skillsnetwork.site/certificates/e5a16f1adc3b42c6bb428a2d631b3337"}, {"id": "deloitte-leadership", "title": "Effective Leadership — Scored 90%", "org": "Deloitte WorldClass", "date": "August 2026", "credentialId": "Deloitte WorldClass Certificate", "icon": "fa-users", "imageUrl": "certs/deloitte-leadership.jpg", "verifyUrl": ""}, {"id": "alison-product-mgmt", "title": "Digital Product Management", "org": "Alison", "date": "2024", "credentialId": "Alison Certificate", "icon": "fa-cube", "imageUrl": "certs/alison-product-mgmt.jpg", "verifyUrl": "https://alison.com/certificates/007896"}]</script><script src="enhancements.js"></script></body>
 </html>
+

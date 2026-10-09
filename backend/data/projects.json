@@ -14,7 +14,7 @@
   },
   {
     "title": "IoT Fleet Management & GPS Tracking System",
-    "description": "Production-grade fleet management system built solo during a full-time internship.\n                        Integrated an ESP32 with LTE, GPS, and RFID authentication, backed by a Flask + SQL\n                        Server pipeline with real-time MQTT telemetry, polygon geofencing, and a live\n                        Leaflet.js/Chart.js dashboard.",
+    "description": "Led development within a team on an ESP32 fleet and driver logging system across RDC and HIT internships. Integrated GPS, RFID and cellular MQTT telemetry with Flask, SQL Server, geofencing, driving-event analysis and an operator dashboard.",
     "tags": [
       "IoT",
       "Full-Stack",
@@ -22,8 +22,8 @@
     ],
     "category": "embedded",
     "codeUrl": "",
-    "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fi/q0lw0jxn3ki5r78ncb135/Internship_Report.pdf?rlkey=zkl2ti5sxkxrubfuot5p2jghj&st=hdvbzwi8&dl=0"
+    "demoUrl": "rdc-hit.html",
+    "reportUrl": "reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf"
   },
   {
     "title": "Real-Time Object Detection Dashboard",

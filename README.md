@@ -8,7 +8,7 @@ The original purple-and-cyan portfolio design is restored from commit `99a1c38c2
 
 - Responsive mobile navigation with keyboard and Escape support.
 - Search and discipline filters for the 8 featured projects and the original 30-project archive. Filter state is reflected in the URL.
-- Original report links remain in place. Placeholder report links now invite an email enquiry.
+- The RDC/HIT fleet project has a dedicated case study with original prototype photographs and a locally hosted professional internship report. Other original report links remain in place. Placeholder links invite an email enquiry.
 - All 10 certificates are available without an API round trip. The original lightbox gains focus containment and focus restoration, while retaining full-size, download, PDF, and verification links.
 - Consistent engineering CV links and a repaired `/api/resume` endpoint.
 - The original Inter, Space Grotesk, and Font Awesome assets are served locally from `frontend/vendor/`, with their licenses.
@@ -45,3 +45,7 @@ npm start
 - `backend/data/certificates.json`: certificate API records; keep them aligned with the homepage metadata. `backend/certificates.json` is a legacy mirror.
 
 Validate both pages at desktop and mobile sizes, filters, certificates, CV links, and the assistant's unavailable state before deployment.
+
+## RDC and HIT report
+
+`frontend/rdc-hit.html` documents the fleet project and links to the revised PDF in `frontend/reports/`. The report separates source evidence, isolated software checks and planned system acceptance tests. Original prototype photos are in `frontend/assets/rdc-hit/`. No raw application source, credentials, infrastructure addresses or operational route data are included in this addition.
