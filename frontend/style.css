@@ -1427,3 +1427,14 @@
     .membership-card { grid-template-columns: 1fr; padding: 1.25rem; gap: 1.5rem; }
     .membership-details .btn-secondary { width: 100%; }
 }
+
+/* Atomcamp AI Bootcamp and certificate placeholder */
+.professional-development{padding-top:2rem}
+.bootcamp-certificate-placeholder{aspect-ratio:1.38;min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;padding:2rem;text-align:center;background:linear-gradient(145deg,#f7f8f9,#e3e9f1);border:8px solid #fff;color:#1b2740;box-shadow:0 10px 28px #0003}
+.bootcamp-cert-mark{font-size:2rem;color:#7355d9}
+.bootcamp-cert-overline{font-size:.72rem;letter-spacing:.12em;color:#6a6780;font-weight:700}
+.bootcamp-certificate-placeholder strong{font-family:'Space Grotesk',sans-serif;font-size:1.3rem}
+.bootcamp-certificate-placeholder small{font-size:.85rem;color:#667085}
+.bootcamp-cert-status{margin-top:.5rem;padding:.5rem .9rem;border:1px dashed #9aa5b5;border-radius:20px;font-size:.8rem;color:#565f70}
+.certificate-placeholder-link{display:inline-flex;align-items:center;justify-content:center;cursor:default;opacity:.82}
+@media(max-width:768px){.bootcamp-certificate-placeholder{min-height:210px;aspect-ratio:auto}}
