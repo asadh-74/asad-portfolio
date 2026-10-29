@@ -1,0 +1,253 @@
+[
+  {
+    "title": "DC Motor Speed Control",
+    "slug": "dc-motor-speed-control",
+    "label": "Proteus simulation",
+    "images": [
+      {
+        "src": "assets/projects/dc-motor-speed-control-0.webp",
+        "source": "DC-Motor-Speed-Control",
+        "page": 12
+      }
+    ]
+  },
+  {
+    "title": "EEG Signal Cleaning",
+    "slug": "eeg-signal-cleaning",
+    "label": "MATLAB results",
+    "images": [
+      {
+        "src": "assets/projects/eeg-signal-cleaning-0.webp",
+        "source": "EEG-Signal-Processing",
+        "page": 6
+      },
+      {
+        "src": "assets/projects/eeg-signal-cleaning-1.webp",
+        "source": "EEG-Signal-Processing",
+        "page": 8
+      }
+    ]
+  },
+  {
+    "title": "ESP32 Modular PCB Design",
+    "slug": "esp32-modular-pcb-design",
+    "label": "PCB render",
+    "images": [
+      {
+        "src": "assets/projects/esp32-modular-pcb-design-0.webp",
+        "source": "ESP32-Modular-PCB-Design",
+        "page": 2
+      },
+      {
+        "src": "assets/projects/esp32-modular-pcb-design-1.webp",
+        "source": "ESP32-Modular-PCB-Design",
+        "page": 1
+      },
+      {
+        "src": "assets/projects/esp32-modular-pcb-design-2.webp",
+        "source": "ESP32-Modular-PCB-Design",
+        "page": 2
+      }
+    ]
+  },
+  {
+    "title": "FM Receiver",
+    "slug": "fm-receiver",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/fm-receiver-0.webp",
+        "source": "FM-Receiver",
+        "page": 5
+      },
+      {
+        "src": "assets/projects/fm-receiver-1.webp",
+        "source": "FM-Receiver",
+        "page": 5
+      },
+      {
+        "src": "assets/projects/fm-receiver-2.webp",
+        "source": "FM-Receiver",
+        "page": 4
+      },
+      {
+        "src": "assets/projects/fm-receiver-3.webp",
+        "source": "FM-Receiver",
+        "page": 11
+      }
+    ]
+  },
+  {
+    "title": "5-Band Graphic Equalizer",
+    "slug": "5-band-graphic-equalizer",
+    "label": "MATLAB / Simulink",
+    "images": [
+      {
+        "src": "assets/projects/5-band-graphic-equalizer-0.webp",
+        "source": "Five-Band-Graphic-Equalizer",
+        "page": 5
+      },
+      {
+        "src": "assets/projects/5-band-graphic-equalizer-1.webp",
+        "source": "Five-Band-Graphic-Equalizer",
+        "page": 5
+      },
+      {
+        "src": "assets/projects/5-band-graphic-equalizer-2.webp",
+        "source": "Five-Band-Graphic-Equalizer",
+        "page": 6
+      }
+    ]
+  },
+  {
+    "title": "4-Bit Arithmetic",
+    "slug": "4-bit-arithmetic",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/4-bit-arithmetic-0.webp",
+        "source": "Four-Bit-ALU",
+        "page": 4
+      },
+      {
+        "src": "assets/projects/4-bit-arithmetic-1.webp",
+        "source": "Four-Bit-ALU",
+        "page": 3
+      },
+      {
+        "src": "assets/projects/4-bit-arithmetic-2.webp",
+        "source": "Four-Bit-ALU",
+        "page": 9
+      },
+      {
+        "src": "assets/projects/4-bit-arithmetic-3.webp",
+        "source": "Four-Bit-ALU",
+        "page": 13
+      }
+    ]
+  },
+  {
+    "title": "CAD Design Collection",
+    "slug": "cad-design-collection",
+    "label": "CAD drawing",
+    "images": [
+      {
+        "src": "assets/projects/cad-design-collection-0.webp",
+        "source": "House-Electrical-Plan",
+        "page": 2
+      },
+      {
+        "src": "assets/projects/cad-design-collection-1.webp",
+        "source": "House-Electrical-Plan",
+        "page": 4
+      }
+    ]
+  },
+  {
+    "title": "Multi-Range Digital Voltmeter",
+    "slug": "multi-range-digital-voltmeter",
+    "label": "Proteus simulation",
+    "images": [
+      {
+        "src": "assets/projects/multi-range-digital-voltmeter-0.webp",
+        "source": "Multirange-Voltmeter",
+        "page": 9
+      }
+    ]
+  },
+  {
+    "title": "RFID Door Lock",
+    "slug": "rfid-door-lock",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/rfid-door-lock-0.webp",
+        "source": "RFID-Door-Lock",
+        "page": 5
+      },
+      {
+        "src": "assets/projects/rfid-door-lock-1.webp",
+        "source": "RFID-Door-Lock",
+        "page": 6
+      }
+    ]
+  },
+  {
+    "title": "2nd Order Active",
+    "slug": "2nd-order-active",
+    "label": "Circuit simulation",
+    "images": [
+      {
+        "src": "assets/projects/2nd-order-active-0.webp",
+        "source": "Second-Order-Active-Low-Pass-Filter",
+        "page": 11
+      },
+      {
+        "src": "assets/projects/2nd-order-active-1.webp",
+        "source": "Second-Order-Active-Low-Pass-Filter",
+        "page": 11
+      },
+      {
+        "src": "assets/projects/2nd-order-active-2.webp",
+        "source": "Second-Order-Active-Low-Pass-Filter",
+        "page": 4
+      }
+    ]
+  },
+  {
+    "title": "Smart Parking",
+    "slug": "smart-parking",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/smart-parking-0.webp",
+        "source": "Smart-Parking-System",
+        "page": 4
+      },
+      {
+        "src": "assets/projects/smart-parking-1.webp",
+        "source": "Smart-Parking-System",
+        "page": 5
+      },
+      {
+        "src": "assets/projects/smart-parking-2.webp",
+        "source": "Smart-Parking-System",
+        "page": 8
+      }
+    ]
+  },
+  {
+    "title": "Dual-Axis Solar",
+    "slug": "dual-axis-solar",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/dual-axis-solar-0.webp",
+        "source": "Solar-Tracking-System",
+        "page": 6
+      },
+      {
+        "src": "assets/projects/dual-axis-solar-1.webp",
+        "source": "Solar-Tracking-System",
+        "page": 7
+      }
+    ]
+  },
+  {
+    "title": "IoT Fleet Management",
+    "slug": "hit-fleet",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/rdc-hit/prototype-detail.png",
+        "source": "HIT internship report",
+        "page": null
+      },
+      {
+        "src": "assets/rdc-hit/prototype-bench.png",
+        "source": "HIT internship report",
+        "page": null
+      }
+    ]
+  }
+]
