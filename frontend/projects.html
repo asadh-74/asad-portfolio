@@ -54,7 +54,7 @@
             margin-left: 6px;
         }
     </style>
-<link href="enhancements.css" rel="stylesheet"/><link href="https://asad-portfolio-flax-pi.vercel.app/projects.html" rel="canonical"/><link href="project-media.css" rel="stylesheet"/><link rel="stylesheet" href="lab-showcase.css"></head>
+<link href="enhancements.css" rel="stylesheet"/><link href="https://asad-portfolio-flax-pi.vercel.app/projects.html" rel="canonical"/><link href="project-media.css" rel="stylesheet"/><link rel="stylesheet" href="lab-showcase.css"><link rel="stylesheet" href="engineering-review.css"></head>
 <body>
 <div class="bg-orb orb-1"></div>
 <div class="bg-orb orb-2"></div>
@@ -80,19 +80,70 @@
 <h1 class="section-title">Project Portfolio.</h1>
 <p class="section-subtitle">33 project entries across embedded systems, RF &amp; communications, signal processing, full-stack development, IoT, power electronics, and applied machine learning.</p><p class="section-subtitle">Reports document project work; repository availability does not imply a reproducible build or current hardware validation. Some engineering archives require GitHub access. EV charging and BMS share one archive; related ESP32 entries share a design archive.</p>
 </div>
-<section class="lab-showcase" aria-labelledby="lab-heading"><div class="lab-intro"><p class="lab-eyebrow">Hardware notebook</p><h2 id="lab-heading">From the bench to the board.</h2><p>Bench photographs and PCB renders. Explore the setup and design views alongside the documented projects below.</p></div><div class="lab-grid"><article class="lab-card"><a class="lab-cover" href="hardware-notebook.html#bench"><img src="assets/lab/bench-circuit.jpg" alt="Breadboard circuit with oscilloscope probes, discrete components and potentiometer" loading="lazy" width="1152" height="1536"><span>Bench photography</span></a><div><h3>Electronics Bench Testing</h3><p>Breadboard assembly, measurement instruments and a captured oscilloscope waveform.</p><a href="hardware-notebook.html#bench">Explore 3 photographs →</a></div></article><article class="lab-card"><a class="lab-cover" href="hardware-notebook.html#pcb"><img src="assets/lab/pcb-perspective.jpg" alt="Perspective 3D render of a blue PCB with connectors and modules" loading="lazy" width="1536" height="1319"><span>3D PCB render</span></a><div><h3>PCB Design Views</h3><p>Top and perspective views of the board layout. These are renders, not photographs of fabricated hardware.</p><a href="hardware-notebook.html#pcb">Explore 2 design views →</a></div></article></div></section><div aria-label="Explore projects" class="project-controls"><div aria-label="Filter projects" class="project-filters" role="group"><button aria-pressed="true" data-filter="all" type="button">All projects</button><button aria-pressed="false" data-filter="embedded" type="button">Embedded &amp; IoT</button><button aria-pressed="false" data-filter="hardware" type="button">Hardware &amp; DSP</button><button aria-pressed="false" data-filter="automation" type="button">Automation</button><button aria-pressed="false" data-filter="software" type="button">Software</button><button aria-pressed="false" data-filter="ai" type="button">AI &amp; Vision</button></div><label class="project-search"><span class="sr-only">Search projects</span><i aria-hidden="true" class="fas fa-search"></i><input autocomplete="off" id="project-search" placeholder="Search projects or technologies…" type="search"/></label><p aria-live="polite" id="project-results-count" role="status"></p></div><div class="full-projects-grid" data-project-grid="" id="full-projects-grid"><div class="project-card" data-area="ai"><div class="project-content"><div class="project-tags"><span class="project-tag">Software portfolio</span></div><h3 class="project-title">PCB Defect Detection</h3><p class="project-desc">Six-class bare-PCB inspection with tiled inference, annotated exports and documented evaluation. See the repository for reproducible setup and limitations.</p><div class="project-links"><a href="https://github.com/asadh-74/PCB-Defect-Detection" rel="noopener noreferrer" target="_blank">GitHub &amp; setup</a></div></div></div><div class="project-card" data-area="automation"><div class="project-content"><div class="project-tags"><span class="project-tag">Software portfolio</span></div><h3 class="project-title">AutoFlow Business Automation</h3><p class="project-desc">Customer and lead operations, workflow traces, CSV utilities and a human-reviewed lead assistant. External n8n integrations require configuration.</p><div class="project-links"><a href="https://github.com/asadh-74/AutoFlow" rel="noopener noreferrer" target="_blank">GitHub &amp; setup</a></div></div></div><div class="project-card" data-area="ai"><div class="project-content"><div class="project-tags"><span class="project-tag">Software portfolio</span></div><h3 class="project-title">AI Data Analyst</h3><p class="project-desc">CSV quality checks, real statistics, charts and scheduled snapshot reports. Optional Gemini explanations are clearly separated from computed-statistics mode.</p><div class="project-links"><a href="https://github.com/asadh-74/Ai-data-Analyst" rel="noopener noreferrer" target="_blank">GitHub &amp; setup</a></div></div></div>
-<!-- 01 -->
-<div class="project-card" data-area="embedded"><a aria-label="View images: IoT Fleet Management &amp; GPS Tracking System" class="project-evidence" href="project-gallery.html#hit-fleet"><img alt="IoT Fleet Management &amp; GPS Tracking System — hardware prototype" decoding="async" loading="lazy" src="assets/rdc-hit/prototype-detail.png"/><span>Hardware prototype</span></a>
+<section class="lab-showcase" aria-labelledby="lab-heading"><div class="lab-intro"><p class="lab-eyebrow">Hardware notebook</p><h2 id="lab-heading">From the bench to the board.</h2><p>Bench photographs and PCB renders. Explore the setup and design views alongside the documented projects below.</p></div><div class="lab-grid"><article class="lab-card"><a class="lab-cover" href="hardware-notebook.html#bench"><img src="assets/lab/bench-circuit.jpg" alt="Breadboard circuit with oscilloscope probes, discrete components and potentiometer" loading="lazy" width="1152" height="1536"><span>Bench photography</span></a><div><h3>Electronics Bench Testing</h3><p>Breadboard assembly, measurement instruments and a captured oscilloscope waveform.</p><a href="hardware-notebook.html#bench">Explore 3 photographs →</a></div></article><article class="lab-card"><a class="lab-cover" href="hardware-notebook.html#pcb"><img src="assets/lab/pcb-perspective.jpg" alt="Perspective 3D render of a blue PCB with connectors and modules" loading="lazy" width="1536" height="1319"><span>3D PCB render</span></a><div><h3>PCB Design Views</h3><p>Top and perspective views of the board layout. These are renders, not photographs of fabricated hardware.</p><a href="hardware-notebook.html#pcb">Explore 2 design views →</a></div></article></div></section><div aria-label="Explore projects" class="project-controls"><div aria-label="Filter projects" class="project-filters" role="group"><button aria-pressed="true" data-filter="all" type="button">All projects</button><button aria-pressed="false" data-filter="embedded" type="button">Embedded &amp; IoT</button><button aria-pressed="false" data-filter="hardware" type="button">Hardware &amp; DSP</button><button aria-pressed="false" data-filter="automation" type="button">Automation</button><button aria-pressed="false" data-filter="software" type="button">Software</button><button aria-pressed="false" data-filter="ai" type="button">AI &amp; Vision</button></div><label class="project-search"><span class="sr-only">Search projects</span><i aria-hidden="true" class="fas fa-search"></i><input autocomplete="off" id="project-search" placeholder="Search projects or technologies…" type="search"/></label><p aria-live="polite" id="project-results-count" role="status"></p></div><div class="full-projects-grid" data-project-grid="" id="full-projects-grid"><div class="project-card active" data-area="embedded"><a aria-label="View images: IoT Fleet Management &amp; GPS Tracking System" class="project-evidence" href="project-gallery.html#hit-fleet"><img alt="IoT Fleet Management &amp; GPS Tracking System — hardware prototype" decoding="async" loading="lazy" src="assets/rdc-hit/prototype-detail.png"/><span>Hardware prototype</span></a>
 <div class="project-content">
 <div class="project-tags">
 <span class="project-tag">IoT &amp; Full-Stack</span>
 <span class="project-tag">Internship Project</span>
 </div>
-<h3 class="project-title">IoT Fleet Management &amp; GPS Tracking System</h3>
-<p class="project-desc">Led development within a team on an ESP32 fleet and driver logging system across RDC and HIT internships. Integrated GPS, RFID and cellular MQTT telemetry with Flask, SQL Server, geofencing, driving-event analysis and an operator dashboard.</p>
-<div class="project-links"><a href="https://github.com/asadh-74/HIT-Fleet-Tracking-Internship" rel="noopener noreferrer" target="_blank">GitHub archive (access required)</a><a href="rdc-hit.html"><i aria-hidden="true" class="fas fa-arrow-right"></i> Explore case study</a><a href="reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fas fa-file-pdf"></i> Internship report</a></div>
+<h3 class="project-title">IoT Fleet Management &amp; GPS Tracking System</h3><p class="project-desc"><strong>My contribution:</strong> Integrated GPS, RFID and cellular MQTT on ESP32; built telemetry processing and Flask/SQL Server operator tools within the internship team.</p><p class="project-desc"><strong>Status:</strong> Documented internship prototype</p><p class="project-desc"><strong>Evidence & limits:</strong> The report and original bench photos document device integration and the sensor-to-dashboard workflow. Fleet-scale reliability, latency and GPS accuracy are not established here.</p>
+
+<div class="project-links"><a href="rdc-hit.html">Read case study →</a><a href="https://github.com/asadh-74/HIT-Fleet-Tracking-Internship" rel="noopener noreferrer" target="_blank">GitHub archive (access required)</a><a href="rdc-hit.html"><i aria-hidden="true" class="fas fa-arrow-right"></i> Explore case study</a><a href="reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fas fa-file-pdf"></i> Internship report</a></div>
+</div>
+</div><div class="project-card active" data-area="embedded"><a aria-label="View images: DC Motor Speed Control (PID)" class="project-evidence" href="project-gallery.html#dc-motor-speed-control"><img alt="DC Motor Speed Control (PID) — proteus simulation" decoding="async" loading="lazy" src="assets/projects/dc-motor-speed-control-0.webp"/><span>Proteus simulation</span></a>
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Linear Control Systems</span>
+</div>
+<h3 class="project-title">DC Motor Speed Control (PID)</h3><p class="project-desc"><strong>My contribution:</strong> Implemented encoder feedback, an L298N drive interface and manually tuned PID control in the documented coursework project.</p><p class="project-desc"><strong>Status:</strong> Documented simulation and hardware build</p><p class="project-desc"><strong>Evidence & limits:</strong> The project report describes the Proteus model and Arduino implementation. A reproducible measured overshoot, settling-time and load-disturbance dataset is not provided.</p>
+
+<div class="project-links"><a href="embedded-case-studies.html#motor">Read case study →</a>
+<a href="https://github.com/asadh-74/DC-Motor-Speed-Control" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fi/oj6eahtnjuozzz1znib6u/DC_Motor_Speed_Control_Report.pdf?rlkey=3z9q9rs8k067zwlr8r6l9wht5&amp;st=ku5dou0e&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
 </div>
 </div>
+</div><div class="project-card active" data-area="embedded"><a aria-label="View images: 4-Bit Arithmetic Logic Unit (ALU)" class="project-evidence" href="project-gallery.html#4-bit-arithmetic"><img alt="4-Bit Arithmetic Logic Unit (ALU) — hardware prototype" decoding="async" loading="lazy" src="assets/projects/4-bit-arithmetic-0.webp"/><span>Hardware prototype</span></a>
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Digital Logic Design</span>
+</div>
+<h3 class="project-title">4-Bit Arithmetic Logic Unit (ALU)</h3><p class="project-desc"><strong>My contribution:</strong> Designed arithmetic and logic operations with function selection and assembled the documented discrete-logic breadboard implementation.</p><p class="project-desc"><strong>Status:</strong> Documented digital logic build</p><p class="project-desc"><strong>Evidence & limits:</strong> The report and project images show the ALU implementation. An independently reproduced exhaustive truth-table test log is not included.</p>
+
+
+<div class="project-links"><a href="embedded-case-studies.html#alu">Read case study →</a>
+<a href="https://github.com/asadh-74/Four-Bit-ALU" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&amp;st=jpwrm9zm&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
+</div>
+</div>
+</div><div class="project-card active" data-area="hardware"><a aria-label="View images: FM Receiver Using TDA7000 IC" class="project-evidence" href="project-gallery.html#fm-receiver"><img alt="FM Receiver Using TDA7000 IC — hardware prototype" decoding="async" loading="lazy" src="assets/projects/fm-receiver-0.webp"/><span>Hardware prototype</span></a>
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Communication Systems</span>
+</div>
+<h3 class="project-title">FM Receiver Using TDA7000 IC</h3><p class="project-desc"><strong>My contribution:</strong> Worked through receiver block design, tuning-component selection, demodulation simulation and the documented physical circuit.</p><p class="project-desc"><strong>Status:</strong> Documented receiver project</p><p class="project-desc"><strong>Evidence & limits:</strong> The report covers simulation and the receiver build. Calibrated sensitivity, selectivity and signal-to-noise measurements are not published.</p>
+
+<div class="project-links"><a href="embedded-case-studies.html#fm">Read case study →</a>
+<a href="https://github.com/asadh-74/FM-Receiver" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&amp;st=lp1mgay0&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
+</div>
+</div>
+</div><div class="project-card active" data-area="hardware"><a aria-label="View images: ESP32 Modular PCB Design (Main + Sensor Board)" class="project-evidence" href="project-gallery.html#esp32-modular-pcb-design"><img alt="ESP32 Modular PCB Design (Main + Sensor Board) — pcb render" decoding="async" loading="lazy" src="assets/projects/esp32-modular-pcb-design-0.webp"/><span>PCB render</span></a>
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">PCB Design</span>
+<span class="project-tag">ESP32</span>
+<span class="project-tag">EasyEDA</span>
+</div>
+<h3 class="project-title">ESP32 Modular PCB Design (Main + Sensor Board)</h3><p class="project-desc"><strong>My contribution:</strong> Created EasyEDA schematics, board layouts and 3D views for separate ESP32 main and I2C sensor boards.</p><p class="project-desc"><strong>Status:</strong> PCB design archive; hardware validation pending</p><p class="project-desc"><strong>Evidence & limits:</strong> The available design views document board layout and component placement. Fabrication, board bring-up, noise reduction and sensor accuracy have not been verified.</p>
+
+<div class="project-links"><a href="embedded-case-studies.html#pcb">Read case study →</a>
+<a href="https://github.com/asadh-74/ESP32-Modular-PCB-Design" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fi/j4xnr2jkv1xwg0yvn1ors/ESP32_Modular_PCB_Design.pdf?rlkey=k32qoal0ze6ait5rox5vupbxx&amp;st=r1mbeopg&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
+</div>
+</div>
+</div><div class="project-card" data-area="ai"><div class="project-content"><div class="project-tags"><span class="project-tag">Software portfolio</span></div><h3 class="project-title">PCB Defect Detection</h3><p class="project-desc">Six-class bare-PCB inspection with tiled inference, annotated exports and documented evaluation. See the repository for reproducible setup and limitations.</p><div class="project-links"><a href="https://github.com/asadh-74/PCB-Defect-Detection" rel="noopener noreferrer" target="_blank">GitHub &amp; setup</a></div></div></div><div class="project-card" data-area="automation"><div class="project-content"><div class="project-tags"><span class="project-tag">Software portfolio</span></div><h3 class="project-title">AutoFlow Business Automation</h3><p class="project-desc">Customer and lead operations, workflow traces, CSV utilities and a human-reviewed lead assistant. External n8n integrations require configuration.</p><div class="project-links"><a href="https://github.com/asadh-74/AutoFlow" rel="noopener noreferrer" target="_blank">GitHub &amp; setup</a></div></div></div><div class="project-card" data-area="ai"><div class="project-content"><div class="project-tags"><span class="project-tag">Software portfolio</span></div><h3 class="project-title">AI Data Analyst</h3><p class="project-desc">CSV quality checks, real statistics, charts and scheduled snapshot reports. Optional Gemini explanations are clearly separated from computed-statistics mode.</p><div class="project-links"><a href="https://github.com/asadh-74/Ai-data-Analyst" rel="noopener noreferrer" target="_blank">GitHub &amp; setup</a></div></div></div>
+<!-- 01 -->
+
 <!-- 02 -->
 <div class="project-card" data-area="hardware"><a aria-label="View images: 2nd Order Active Low-Pass Filter" class="project-evidence" href="project-gallery.html#2nd-order-active"><img alt="2nd Order Active Low-Pass Filter — circuit simulation" decoding="async" loading="lazy" src="assets/projects/2nd-order-active-0.webp"/><span>Circuit simulation</span></a>
 <div class="project-content">
@@ -136,19 +187,7 @@
 </div>
 </div>
 <!-- 05 -->
-<div class="project-card" data-area="embedded"><a aria-label="View images: DC Motor Speed Control (PID)" class="project-evidence" href="project-gallery.html#dc-motor-speed-control"><img alt="DC Motor Speed Control (PID) — proteus simulation" decoding="async" loading="lazy" src="assets/projects/dc-motor-speed-control-0.webp"/><span>Proteus simulation</span></a>
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Linear Control Systems</span>
-</div>
-<h3 class="project-title">DC Motor Speed Control (PID)</h3>
-<p class="project-desc">Closed-loop DC motor speed controller using an optical rotary encoder for feedback and an L298N H-bridge driver. Manually tuned PID gains to minimize overshoot and settling time while staying robust to load disturbances. Simulated in Proteus first, then deployed on Arduino hardware.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/DC-Motor-Speed-Control" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fi/oj6eahtnjuozzz1znib6u/DC_Motor_Speed_Control_Report.pdf?rlkey=3z9q9rs8k067zwlr8r6l9wht5&amp;st=ku5dou0e&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
-</div>
-</div>
-</div>
+
 <!-- 06 -->
 <div class="project-card" data-area="hardware"><a aria-label="View images: 5-Band Graphic Equalizer" class="project-evidence" href="project-gallery.html#5-band-graphic-equalizer"><img alt="5-Band Graphic Equalizer — matlab / simulink" decoding="async" loading="lazy" src="assets/projects/5-band-graphic-equalizer-0.webp"/><span>MATLAB / Simulink</span></a>
 <div class="project-content">
@@ -164,34 +203,9 @@
 </div>
 </div>
 <!-- 07 -->
-<div class="project-card" data-area="embedded"><a aria-label="View images: 4-Bit Arithmetic Logic Unit (ALU)" class="project-evidence" href="project-gallery.html#4-bit-arithmetic"><img alt="4-Bit Arithmetic Logic Unit (ALU) — hardware prototype" decoding="async" loading="lazy" src="assets/projects/4-bit-arithmetic-0.webp"/><span>Hardware prototype</span></a>
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Digital Logic Design</span>
-</div>
-<h3 class="project-title">4-Bit Arithmetic Logic Unit (ALU)</h3>
-<p class="project-desc">4-bit ALU built entirely from discrete logic gates, supporting ADD, SUB, AND, OR, XOR, and NOT selected via a function-select input, mirroring the core compute unit inside a processor. The report documents functionality; an independently reproduced truth-table test log is not included.</p>
-<p class="project-desc" style="margin-top:8px;">Also built a working hardware version on breadboard using OR, AND, XOR, NOT, MUX, and full-adder ICs. Demonstrates addition, subtraction, 2's and 1's complement, independent increment/decrement on both inputs, bitwise OR/AND/XOR, input loading, and a clock-driven counter.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/Four-Bit-ALU" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&amp;st=jpwrm9zm&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
-</div>
-</div>
-</div>
+
 <!-- 08 -->
-<div class="project-card" data-area="hardware"><a aria-label="View images: FM Receiver Using TDA7000 IC" class="project-evidence" href="project-gallery.html#fm-receiver"><img alt="FM Receiver Using TDA7000 IC — hardware prototype" decoding="async" loading="lazy" src="assets/projects/fm-receiver-0.webp"/><span>Hardware prototype</span></a>
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Communication Systems</span>
-</div>
-<h3 class="project-title">FM Receiver Using TDA7000 IC</h3>
-<p class="project-desc">FM receiver built around the TDA7000 single-chip IC, covering front-end tuning circuit component selection, local oscillator calculations, and full block-level system design from antenna to audio output. Verified demodulation in MATLAB/Simulink before building and testing the physical circuit.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/FM-Receiver" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&amp;st=lp1mgay0&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
-</div>
-</div>
-</div>
+
 <!-- 09 -->
 <div class="project-card" data-area="software">
 <div class="project-content">
@@ -402,80 +416,15 @@
 </div>
 </div>
 <!-- 24 -->
-<div class="project-card" data-area="hardware"><a aria-label="View images: CAD Design Collection" class="project-evidence" href="project-gallery.html#cad-design-collection"><img alt="CAD Design Collection — cad drawing" decoding="async" loading="lazy" src="assets/projects/cad-design-collection-0.webp"/><span>CAD drawing</span></a>
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Mechanical / CAD Design</span>
-<span class="needs-details-badge">Needs Details</span>
-</div>
-<h3 class="project-title">CAD Design Collection</h3>
-<p class="project-desc">A collection of mechanical CAD assemblies and technical drawings produced in Fusion 360 and AutoCAD. Full design names and 3D-printing details are still being finalized.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/House-Electrical-Plan" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fo/3qg93wc9ybyu43en55p3a/AP-lAp8sHOoqOx-jCB45V2Q?rlkey=2sla5plh98uabir1k83k8b8ow&amp;st=y4m7h4b5&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
-</div>
-</div>
-</div>
+
 <!-- 25 -->
-<div class="project-card" data-area="hardware">
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Embedded Systems</span>
-<span class="needs-details-badge">Needs Details</span>
-</div>
-<h3 class="project-title">ESP32 USB Communication Interface</h3>
-<p class="project-desc">Altium schematic and layout archive for an ESP32 USB board. Firmware, host integration and manufacturing validation are not established by the available design files.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/ESP32-Modular-PCB-Design" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fo/e95es49uj5723a2wpqj7a/AFeL0fY2mubWfaJBMenyxGs?rlkey=9dpk5oamcxiaqwio048bjfzb5&amp;st=9urm7dph&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
-</div>
-</div>
-</div>
+
 <!-- 26 -->
-<div class="project-card" data-area="hardware">
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Power Electronics / EV</span>
-<span class="needs-details-badge">Needs Details</span>
-</div>
-<h3 class="project-title">EV Battery Management System (BMS)</h3>
-<p class="project-desc">A Battery Management System project for an electric-vehicle application, covering cell configuration, protection features, and cell balancing. Circuit and firmware specifics are being finalized.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/EV-Charging-Prototype" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fo/hvj4ffpm0tt7ajwmrw062/ANvcKKu_ysNoFXvfMJ316Us?rlkey=agls0jkaluu9ilg2xnxxo2hhp&amp;st=2uyog8dd&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
-</div>
-</div>
-</div>
+
 <!-- 27 -->
-<div class="project-card" data-area="hardware"><a aria-label="View images: EV Charging Prototype" class="project-evidence" href="project-gallery.html#ev-charging-prototype"><img alt="EV Charging Prototype — pcb render" decoding="async" loading="lazy" src="assets/projects/ev-charging-prototype-0.webp"/><span>PCB render</span></a>
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Power Electronics / EV</span>
-<span class="needs-details-badge">Needs Details</span>
-</div>
-<h3 class="project-title">EV Charging Prototype</h3>
-<p class="project-desc">A prototype EV charging hardware build. Charging topology, power rating, and control scheme are being finalized.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/EV-Charging-Prototype" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fo/5buywrdohizg5zao5gjbj/APiKHJW1HATQyIewKocYgGE?rlkey=0w3oqkzhdoojwthn1rl22izeg&amp;st=tvn59slj&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
-</div>
-</div>
-</div>
+
 <!-- 28 -->
-<div class="project-card" data-area="hardware"><a aria-label="View images: Relay Module PCB Design" class="project-evidence" href="project-gallery.html#relay-module-pcb-design"><img alt="Relay Module PCB Design — pcb render" decoding="async" loading="lazy" src="assets/projects/relay-module-pcb-design-0.webp"/><span>PCB render</span></a>
-<div class="project-content">
-<div class="project-tags">
-<span class="project-tag">Electronic Circuit Design</span>
-<span class="needs-details-badge">Needs Details</span>
-</div>
-<h3 class="project-title">Relay Module PCB Design</h3>
-<p class="project-desc">PCB design documentation for a relay module. Switching application and design tooling are being finalized.</p>
-<div class="project-links">
-<a href="https://github.com/asadh-74/Relay-Module-PCB" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fo/kxqcuuodj17zjlus8w3ow/AF-qeZLqEk0TFXm6Y442j1A?rlkey=t0nf00x1355rsrpiksbunz4kv&amp;st=6790rhhl&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
-</div>
-</div>
-</div>
+
 <!-- 29 -->
 <div class="project-card" data-area="embedded"><a aria-label="View images: Autonomous Drone Fleet Simulator" class="project-evidence" href="project-gallery.html#autonomous-drone-fleet-simulator"><img alt="Autonomous Drone Fleet Simulator — simulation screenshot" decoding="async" loading="lazy" src="assets/projects/autonomous-drone-fleet-simulator-0.webp"/><span>Simulation screenshot</span></a>
 <div class="project-content">
@@ -492,23 +441,74 @@
 </div>
 </div>
 <!-- 30 -->
-<div class="project-card" data-area="hardware"><a aria-label="View images: ESP32 Modular PCB Design (Main + Sensor Board)" class="project-evidence" href="project-gallery.html#esp32-modular-pcb-design"><img alt="ESP32 Modular PCB Design (Main + Sensor Board) — pcb render" decoding="async" loading="lazy" src="assets/projects/esp32-modular-pcb-design-0.webp"/><span>PCB render</span></a>
+
+</div>
+<div class="project-empty" hidden="" id="project-empty"><h3>No matching projects</h3><p>Try another keyword or explore a different area.</p><button class="btn-secondary" id="reset-projects" type="button">Reset filters</button></div><section class="work-status" id="in-progress"><h2>Design archives & incomplete documentation</h2><p>These entries are retained for context. They are not presented as completed, validated systems.</p><div class="status-grid"><div class="project-card" data-area="hardware"><a aria-label="View images: CAD Design Collection" class="project-evidence" href="project-gallery.html#cad-design-collection"><img alt="CAD Design Collection — cad drawing" decoding="async" loading="lazy" src="assets/projects/cad-design-collection-0.webp"/><span>CAD drawing</span></a>
 <div class="project-content">
 <div class="project-tags">
-<span class="project-tag">PCB Design</span>
-<span class="project-tag">ESP32</span>
-<span class="project-tag">EasyEDA</span>
+<span class="project-tag">Mechanical / CAD Design</span>
+<span class="needs-details-badge">Needs Details</span>
 </div>
-<h3 class="project-title">ESP32 Modular PCB Design (Main + Sensor Board)</h3>
-<p class="project-desc">Designed a modular two-board system built around the ESP32 microcontroller, split into a Main Board and a Sensor Board to optimize performance and reduce electrical noise. The ESP32 handles processing and wireless connectivity, with a GSM module for remote telemetry. The Sensor Board integrates the MAX30102 (pulse/oximetry), MPU6050 (IMU), and MLX90614 (IR temperature sensor) over I2C. Designed end-to-end in EasyEDA, including schematic capture, PCB layout, and 3D rendering.</p>
+<h3 class="project-title">CAD Design Collection</h3>
+<p class="project-desc">A collection of mechanical CAD assemblies and technical drawings produced in Fusion 360 and AutoCAD. Full design names and 3D-printing details are still being finalized.</p>
+<div class="project-links">
+<a href="https://github.com/asadh-74/House-Electrical-Plan" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fo/3qg93wc9ybyu43en55p3a/AP-lAp8sHOoqOx-jCB45V2Q?rlkey=2sla5plh98uabir1k83k8b8ow&amp;st=y4m7h4b5&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
+</div>
+</div>
+</div><div class="project-card" data-area="hardware">
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Embedded Systems</span>
+<span class="needs-details-badge">Needs Details</span>
+</div>
+<h3 class="project-title">ESP32 USB Communication Interface</h3>
+<p class="project-desc">Altium schematic and layout archive for an ESP32 USB board. Firmware, host integration and manufacturing validation are not established by the available design files.</p>
 <div class="project-links">
 <a href="https://github.com/asadh-74/ESP32-Modular-PCB-Design" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
-<a href="https://www.dropbox.com/scl/fi/j4xnr2jkv1xwg0yvn1ors/ESP32_Modular_PCB_Design.pdf?rlkey=k32qoal0ze6ait5rox5vupbxx&amp;st=r1mbeopg&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-file-lines"></i> View Report</a>
+<a href="https://www.dropbox.com/scl/fo/e95es49uj5723a2wpqj7a/AFeL0fY2mubWfaJBMenyxGs?rlkey=9dpk5oamcxiaqwio048bjfzb5&amp;st=9urm7dph&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
 </div>
 </div>
+</div><div class="project-card" data-area="hardware">
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Power Electronics / EV</span>
+<span class="needs-details-badge">Needs Details</span>
+</div>
+<h3 class="project-title">EV Battery Management System (BMS)</h3>
+<p class="project-desc">A Battery Management System project for an electric-vehicle application, covering cell configuration, protection features, and cell balancing. Circuit and firmware specifics are being finalized.</p>
+<div class="project-links">
+<a href="https://github.com/asadh-74/EV-Charging-Prototype" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fo/hvj4ffpm0tt7ajwmrw062/ANvcKKu_ysNoFXvfMJ316Us?rlkey=agls0jkaluu9ilg2xnxxo2hhp&amp;st=2uyog8dd&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
 </div>
 </div>
-<div class="project-empty" hidden="" id="project-empty"><h3>No matching projects</h3><p>Try another keyword or explore a different area.</p><button class="btn-secondary" id="reset-projects" type="button">Reset filters</button></div><footer>
+</div><div class="project-card" data-area="hardware"><a aria-label="View images: EV Charging Prototype" class="project-evidence" href="project-gallery.html#ev-charging-prototype"><img alt="EV Charging Prototype — pcb render" decoding="async" loading="lazy" src="assets/projects/ev-charging-prototype-0.webp"/><span>PCB render</span></a>
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Power Electronics / EV</span>
+<span class="needs-details-badge">Needs Details</span>
+</div>
+<h3 class="project-title">EV Charging Prototype</h3>
+<p class="project-desc">A prototype EV charging hardware build. Charging topology, power rating, and control scheme are being finalized.</p>
+<div class="project-links">
+<a href="https://github.com/asadh-74/EV-Charging-Prototype" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fo/5buywrdohizg5zao5gjbj/APiKHJW1HATQyIewKocYgGE?rlkey=0w3oqkzhdoojwthn1rl22izeg&amp;st=tvn59slj&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
+</div>
+</div>
+</div><div class="project-card" data-area="hardware"><a aria-label="View images: Relay Module PCB Design" class="project-evidence" href="project-gallery.html#relay-module-pcb-design"><img alt="Relay Module PCB Design — pcb render" decoding="async" loading="lazy" src="assets/projects/relay-module-pcb-design-0.webp"/><span>PCB render</span></a>
+<div class="project-content">
+<div class="project-tags">
+<span class="project-tag">Electronic Circuit Design</span>
+<span class="needs-details-badge">Needs Details</span>
+</div>
+<h3 class="project-title">Relay Module PCB Design</h3>
+<p class="project-desc">PCB design documentation for a relay module. Switching application and design tooling are being finalized.</p>
+<div class="project-links">
+<a href="https://github.com/asadh-74/Relay-Module-PCB" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fab fa-github"></i> GitHub archive (access required)</a>
+<a href="https://www.dropbox.com/scl/fo/kxqcuuodj17zjlus8w3ow/AF-qeZLqEk0TFXm6Y442j1A?rlkey=t0nf00x1355rsrpiksbunz4kv&amp;st=6790rhhl&amp;dl=0" rel="noopener noreferrer" target="_blank"><i class="fas fa-folder-open"></i> Open Folder</a>
+</div>
+</div>
+</div></div></section><footer>
 <p>Built with by Asad Hussain | © 2026 All Rights Reserved</p>
 </footer>
 <script src="config.js"></script>
