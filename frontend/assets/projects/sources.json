@@ -234,6 +234,145 @@
     ]
   },
   {
+    "title": "Audio Power Amplifier",
+    "slug": "audio-power-amplifier",
+    "label": "Circuit simulation",
+    "images": [
+      {
+        "src": "assets/projects/audio-power-amplifier-0.webp",
+        "source": "Audio Power Amplifier report",
+        "page": 7
+      },
+      {
+        "src": "assets/projects/audio-power-amplifier-1.webp",
+        "source": "Audio Power Amplifier report",
+        "page": 8
+      },
+      {
+        "src": "assets/projects/audio-power-amplifier-2.webp",
+        "source": "Audio Power Amplifier report",
+        "page": 5
+      }
+    ]
+  },
+  {
+    "title": "Bluetooth-Controlled Robotic Car",
+    "slug": "bluetooth-controlled-robotic-car",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/bluetooth-controlled-robotic-car-0.webp",
+        "source": "Bluetooth-Controlled Robotic Car report",
+        "page": 1
+      },
+      {
+        "src": "assets/projects/bluetooth-controlled-robotic-car-1.webp",
+        "source": "Bluetooth-Controlled Robotic Car report",
+        "page": 1
+      }
+    ]
+  },
+  {
+    "title": "Custom DC Power Supply",
+    "slug": "custom-dc-power-supply",
+    "label": "Hardware prototype",
+    "images": [
+      {
+        "src": "assets/projects/custom-dc-power-supply-0.webp",
+        "source": "Custom DC Power Supply report",
+        "page": 2
+      },
+      {
+        "src": "assets/projects/custom-dc-power-supply-1.webp",
+        "source": "Custom DC Power Supply report",
+        "page": 1
+      },
+      {
+        "src": "assets/projects/custom-dc-power-supply-2.webp",
+        "source": "Custom DC Power Supply report",
+        "page": 1
+      }
+    ]
+  },
+  {
+    "title": "Water Level Indicator",
+    "slug": "water-level-indicator",
+    "label": "Proteus simulation",
+    "images": [
+      {
+        "src": "assets/projects/water-level-indicator-0.webp",
+        "source": "Water Level Indicator report",
+        "page": 4
+      }
+    ]
+  },
+  {
+    "title": "EV Charging Prototype",
+    "slug": "ev-charging-prototype",
+    "label": "PCB render",
+    "images": [
+      {
+        "src": "assets/projects/ev-charging-prototype-0.webp",
+        "source": "EV Charging Prototype report",
+        "page": 10
+      },
+      {
+        "src": "assets/projects/ev-charging-prototype-1.webp",
+        "source": "EV Charging Prototype report",
+        "page": 1
+      },
+      {
+        "src": "assets/projects/ev-charging-prototype-2.webp",
+        "source": "EV Charging Prototype report",
+        "page": 9
+      }
+    ]
+  },
+  {
+    "title": "Relay Module PCB Design",
+    "slug": "relay-module-pcb-design",
+    "label": "PCB render",
+    "images": [
+      {
+        "src": "assets/projects/relay-module-pcb-design-0.webp",
+        "source": "Relay Module PCB Design report",
+        "page": 4
+      },
+      {
+        "src": "assets/projects/relay-module-pcb-design-1.webp",
+        "source": "Relay Module PCB Design report",
+        "page": 3
+      },
+      {
+        "src": "assets/projects/relay-module-pcb-design-2.webp",
+        "source": "Relay Module PCB Design report",
+        "page": 3
+      }
+    ]
+  },
+  {
+    "title": "Autonomous Drone Fleet Simulator",
+    "slug": "autonomous-drone-fleet-simulator",
+    "label": "Simulation screenshot",
+    "images": [
+      {
+        "src": "assets/projects/autonomous-drone-fleet-simulator-0.webp",
+        "source": "Autonomous Drone Fleet Simulator report",
+        "page": 13
+      },
+      {
+        "src": "assets/projects/autonomous-drone-fleet-simulator-1.webp",
+        "source": "Autonomous Drone Fleet Simulator report",
+        "page": 10
+      },
+      {
+        "src": "assets/projects/autonomous-drone-fleet-simulator-2.webp",
+        "source": "Autonomous Drone Fleet Simulator report",
+        "page": 8
+      }
+    ]
+  },
+  {
     "title": "IoT Fleet Management",
     "slug": "hit-fleet",
     "label": "Hardware prototype",
