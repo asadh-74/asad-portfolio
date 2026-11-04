@@ -48,8 +48,8 @@ function certCardHTML(cert) {
         <div class="cert-org">${escapeCertHTML(cert.org)}</div>
         <div class="cert-date">${escapeCertHTML(cert.date)}</div>
         ${cert.issueDate ? `<div class="cert-date">Issued: ${escapeCertHTML(cert.issueDate)}</div>` : ''}
-        <div class="cert-id">ID: ${escapeCertHTML(cert.credentialId)}</div>
-        <div class="cert-view-hint"><i class="fas fa-expand"></i> View certificate</div>
+        ${cert.credentialId ? `<div class="cert-id">ID: ${escapeCertHTML(cert.credentialId)}</div>` : ''}
+        <div class="cert-view-hint"><i class="fas fa-expand"></i> ${cert.imageUrl ? 'View certificate' : 'View credential details'}</div>
     </div>`;
 }
 
