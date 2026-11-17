@@ -9,7 +9,7 @@ The original purple-and-cyan portfolio design is restored from commit `99a1c38c2
 - Responsive mobile navigation with keyboard and Escape support.
 - Search and discipline filters for the 8 featured projects and the original 30-project archive. Filter state is reflected in the URL.
 - The RDC/HIT fleet project has a dedicated case study with original prototype photographs and a locally hosted professional internship report. Other original report links remain in place. Placeholder links invite an email enquiry.
-- All 10 certificates are available without an API round trip. The original lightbox gains focus containment and focus restoration, while retaining full-size, download, PDF, and verification links.
+- All 14 credentials are available without an API round trip, including the Atomcamp AI Bootcamp certificate. The original lightbox gains focus containment and focus restoration, while retaining full-size, download, PDF, and verification links.
 - Consistent engineering CV links and a repaired `/api/resume` endpoint.
 - The original Inter, Space Grotesk, and Font Awesome assets are served locally from `frontend/vendor/`, with their licenses.
 - No artificial preloader delay; reduced-motion support and readable content when JavaScript is disabled.
