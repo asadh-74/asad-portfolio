@@ -3,3 +3,35 @@
 .hero-specialty{display:block;font-size:clamp(1.25rem,3vw,2.2rem);line-height:1.25;margin-top:.4em;color:var(--text-primary,#f5f5fa)}
 .pid-steps{list-style:none;padding:0}.pid-schematic img{height:auto;aspect-ratio:auto;object-fit:contain}.evidence-facts{margin:1.2rem 0}.cert-modal-verify{white-space:normal;overflow-wrap:anywhere;min-height:44px}.project-card[hidden],.project-empty[hidden]{display:none!important}
 @media(max-width:700px){.hero-buttons{grid-template-columns:minmax(0,1fr)}.project-filters{flex-wrap:wrap;overflow:visible}.cert-modal-close{min-width:44px;min-height:44px}.cert-modal-image{max-width:100%}}
+
+/* Readable type and a wider homepage without changing browser zoom. */
+:root { --text-muted: #b6b7c6; }
+body { font-size: 1.0625rem; }
+.hero-grid { max-width: 1440px; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); }
+.hero h1 { font-size: clamp(3.25rem, 5.5vw, 5.5rem); }
+.hero-specialty { font-size: clamp(1.5rem, 2.7vw, 2.75rem); }
+.hero-badge, .floating-card span { font-size: .9375rem; }
+.floating-card strong { font-size: 1.0625rem; }
+.hero-typing { font-size: 1.25rem; }
+.hero-desc { max-width: 56ch; font-size: clamp(1.125rem, 1.45vw, 1.375rem); line-height: 1.65; }
+.hero-buttons { flex-wrap: wrap; gap: .75rem; }
+.hero-buttons a { min-height: 48px; padding: .8rem 1.125rem; font-size: 1rem; }
+#navbar .nav-links a, #navbar .nav-cta, #navbar .menu-toggle { font-size: 1rem; }
+#navbar .nav-links { gap: clamp(.65rem, 1.1vw, 1.25rem); }
+#navbar .nav-links a:not(.btn-secondary) { color: var(--text-muted); }
+#navbar .nav-links a:hover, #navbar .nav-links a:focus-visible { color: var(--text); }
+.section-subtitle, .about-text p, .timeline-desc, .project-desc, .case-section p, .case-section li { font-size: 1.0625rem; line-height: 1.65; }
+.project-title, .timeline-title { font-size: 1.35rem; }
+.project-links a, .project-filters button, #project-results-count, .cert-org, .cert-date, .cert-view-hint, .cert-modal-verify { font-size: .9375rem; }
+.cert-title { font-size: 1.125rem; }
+.cert-id, .status-badge { font-size: .875rem; }
+@media (max-width: 1000px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  #navbar .nav-links.menu-open { gap: 0; }
+  #navbar .nav-links a { min-height: 44px; }
+}
+@media (max-width: 700px) {
+  .hero h1 { font-size: clamp(2.5rem, 9vw, 3.5rem); }
+  .hero-specialty { font-size: clamp(1.4rem, 5vw, 1.85rem); }
+  .hero-typing { min-height: 2.5rem; }
+}
