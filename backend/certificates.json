@@ -2,12 +2,12 @@
   {
     "id": "atomcamp-ai-bootcamp",
     "title": "Artificial Intelligence Bootcamp",
-    "org": "atomcamp · NSTP Islamabad",
-    "date": "June 2026 – October 2026",
-    "credentialId": "",
+    "org": "atomcamp",
+    "date": "November 2026",
+    "credentialId": "6a96596f-f59f-41d1-b73b-78c81bd4b714",
     "icon": "fa-brain",
     "imageUrl": "certs/atomcamp-ai-bootcamp.jpg",
-    "verifyUrl": "",
+    "verifyUrl": "https://credsverse.com/credentials/6a96596f-f59f-41d1-b73b-78c81bd4b714?preview=1",
     "category": "professional-development"
   },
   {
@@ -29,6 +29,16 @@
     "verifyUrl": "https://www.coursera.org/account/accomplishments/specialization/DSV2K9K0D6PJ"
   },
   {
+    "id": "deloitte-leadership",
+    "title": "Deloitte WorldClass Course on Effective Leadership",
+    "org": "Deloitte",
+    "date": "August 2026",
+    "credentialId": "",
+    "icon": "fa-users",
+    "imageUrl": "certs/deloitte-leadership.jpg",
+    "verifyUrl": ""
+  },
+  {
     "id": "mathworks-signal-onramp",
     "title": "Signal Processing Onramp",
     "org": "MathWorks",
@@ -38,43 +48,23 @@
     "verifyUrl": "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=ca813149-f606-4032-8b67-d0c3bbde9d8c&"
   },
   {
+    "id": "codealpha-ml",
+    "title": "Machine Learning Virtual Internship Program",
+    "org": "CodeAlpha",
+    "date": "July 2026",
+    "credentialId": "CA/DF1/160558",
+    "icon": "fa-brain",
+    "imageUrl": "certs/codealpha-ml.jpg",
+    "verifyUrl": ""
+  },
+  {
     "id": "altium-pcb",
     "title": "PCB Basic Design Course",
-    "org": "Altium Education",
-    "date": "August 2026",
+    "org": "Altium Designer",
+    "date": "July 2026",
     "credentialId": "cert_lypgb5lw",
     "icon": "fa-microchip",
     "imageUrl": "certs/altium-pcb.jpg",
     "verifyUrl": ""
-  },
-  {
-    "id": "ibm-data-analysis-python",
-    "title": "Data Analysis with Python (DA0101EN)",
-    "org": "IBM (issued by Etrain Education)",
-    "date": "April 2024",
-    "credentialId": "e5a16f1adc3b42c6bb428a2d631b3337",
-    "icon": "fa-chart-line",
-    "imageUrl": "certs/ibm-data-analysis.jpg",
-    "verifyUrl": "https://courses.etrain.skillsnetwork.site/certificates/e5a16f1adc3b42c6bb428a2d631b3337"
-  },
-  {
-    "id": "deloitte-leadership",
-    "title": "Effective Leadership — Scored 90%",
-    "org": "Deloitte WorldClass",
-    "date": "August 2026",
-    "credentialId": "Deloitte WorldClass Certificate",
-    "icon": "fa-users",
-    "imageUrl": "certs/deloitte-leadership.jpg",
-    "verifyUrl": ""
-  },
-  {
-    "id": "alison-product-mgmt",
-    "title": "Digital Product Management",
-    "org": "Alison",
-    "date": "2024",
-    "credentialId": "Alison Certificate",
-    "icon": "fa-cube",
-    "imageUrl": "certs/alison-product-mgmt.jpg",
-    "verifyUrl": "https://alison.com/certificates/007896"
   }
 ]

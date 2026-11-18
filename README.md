@@ -9,7 +9,7 @@ The original purple-and-cyan portfolio design is restored from commit `99a1c38c2
 - Responsive mobile navigation with keyboard and Escape support.
 - Six featured projects on the homepage and 28 documented projects in the searchable archive. Archive filters are reflected in the URL.
 - The RDC/HIT fleet project has a dedicated case study with original prototype photographs and a locally hosted professional internship report. Other original report links remain in place. Placeholder links invite an email enquiry.
-- The gallery includes professional credentials with certificate images or issuer details where available. The original lightbox gains focus containment and focus restoration, while retaining full-size, download, PDF, and verification links.
+- The gallery mirrors the seven credentials listed in LinkedIn’s Licenses & Certifications section, with images or issuer details where available. The original lightbox gains focus containment and focus restoration, while retaining full-size, download, PDF, and verification links.
 - Consistent engineering CV links and a repaired `/api/resume` endpoint.
 - The original Inter, Space Grotesk, and Font Awesome assets are served locally from `frontend/vendor/`, with their licenses.
 - No artificial preloader delay; reduced-motion support and readable content when JavaScript is disabled.
