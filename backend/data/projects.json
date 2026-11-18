@@ -1,105 +1,71 @@
 [
   {
-    "title": "DroneGuard: RF Detection & Signal Analysis",
-    "description": "A research prototype exploring RF detection, spectrum visualization, and drone-related signal classification using SDR, GNU Radio, and MATLAB. This is separate from my ongoing final-year project in semantic communication.",
-    "tags": [
-      "RF",
-      "Machine Learning",
-      "Embedded"
-    ],
-    "category": "signal",
-    "codeUrl": "",
-    "demoUrl": "",
-    "reportUrl": "mailto:asadh1521@gmail.com?subject=Question%20about%20DroneGuard%3A%20Anti%20Drone%20Surveillance%20System"
-  },
-  {
     "title": "IoT Fleet Management & GPS Tracking System",
-    "description": "Led development within a team on an ESP32 fleet and driver logging system across RDC and HIT internships. Integrated GPS, RFID and cellular MQTT telemetry with Flask, SQL Server, geofencing, driving-event analysis and an operator dashboard.",
+    "description": "Integrated GPS, RFID and cellular MQTT on ESP32; built telemetry processing and Flask/SQL Server operator tools within the internship team.",
     "tags": [
-      "IoT",
-      "Full-Stack",
-      "Internship"
+      "IoT & Full-Stack",
+      "Internship Project"
     ],
     "category": "embedded",
-    "codeUrl": "",
+    "codeUrl": "https://github.com/asadh-74/HIT-Fleet-Tracking-Internship",
     "demoUrl": "rdc-hit.html",
     "reportUrl": "reports/Asad-Hussain-RDC-HIT-Internship-Report.pdf"
   },
   {
-    "title": "Real-Time Object Detection Dashboard",
-    "description": "Real-time object detection system built on YOLOv8, wrapped in an interactive\n                        Streamlit dashboard for live video upload and detection logging. Packaged with Docker\n                        Compose for one-command deployment. Demoed at NUST Robotics Society's Voltfest 2026.",
+    "title": "DC Motor Speed Control (PID)",
+    "description": "Implemented encoder feedback, an L298N drive interface and manually tuned PID control in the documented coursework project.",
     "tags": [
-      "Computer Vision",
-      "Docker",
-      "Full-Stack"
+      "Linear Control Systems"
     ],
-    "category": "software",
-    "codeUrl": "",
+    "category": "embedded",
+    "codeUrl": "https://github.com/asadh-74/DC-Motor-Speed-Control",
     "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fi/90p47sqej50zhw2o44gzb/Object-Detection.zip?rlkey=ybzgymgpzz2xg5te3ho4ppncm&st=ncgs8ul5&dl=0"
+    "reportUrl": ""
   },
   {
-    "title": "EEG Signal Cleaning & Analysis",
-    "description": "Cleaned raw EEG recordings from a Parkinson's patient using a cascade of notch,\n                        high-pass, and low-pass filters. Built an interactive MATLAB App Designer GUI to\n                        toggle each filter stage and visualize the cleaned signal in real time.",
+    "title": "ESP32 Modular PCB Design (Main + Sensor Board)",
+    "description": "Created EasyEDA schematics, board layouts and 3D views for separate ESP32 main and I2C sensor boards.",
     "tags": [
-      "Signal Processing",
-      "MATLAB",
-      "Medical"
+      "PCB Design",
+      "ESP32",
+      "EasyEDA"
     ],
-    "category": "signal",
-    "codeUrl": "",
+    "category": "hardware",
+    "codeUrl": "https://github.com/asadh-74/ESP32-Modular-PCB-Design",
     "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fi/6hx2yv3uql3tqn553inqf/Cleaning-and-Real-Time-Simulation-of-EEG-Data.pdf?rlkey=fb5i671717jlwb03cafwjh63a&st=nqs2l1k0&dl=0"
+    "reportUrl": ""
   },
   {
-    "title": "4-bit ALU Design",
-    "description": "Arithmetic Logic Unit designed from discrete logic gates, supporting arithmetic\n                        and logical operations selected via a function-select input, mirroring the core\n                        compute unit inside a processor. Verified across all 256 input combinations.",
+    "title": "4-Bit Arithmetic Logic Unit (ALU)",
+    "description": "Designed arithmetic and logic operations with function selection and assembled the documented discrete-logic breadboard implementation.",
     "tags": [
-      "Digital Design",
-      "Logic Gates"
+      "Digital Logic Design"
     ],
-    "category": "control",
-    "codeUrl": "",
+    "category": "embedded",
+    "codeUrl": "https://github.com/asadh-74/Four-Bit-ALU",
     "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fi/e2llyojqd6vcdsjl7dn77/Design-a-4-bit-Arithmetic-Logic-Unit-ALU.pdf?rlkey=5kte4qj4xz3pca5t44q63cyzq&st=jpwrm9zm&dl=0"
+    "reportUrl": ""
   },
   {
     "title": "FM Receiver Using TDA7000 IC",
-    "description": "FM receiver built around the TDA7000 single-chip IC, covering front-end tuning,\n                        local oscillator calculations, and full block-level system design. Verified\n                        demodulation in MATLAB/Simulink before building and testing the physical circuit.",
+    "description": "Worked through receiver block design, tuning-component selection, demodulation simulation and the documented physical circuit.",
     "tags": [
-      "RF",
-      "Analog",
-      "PCB"
+      "Communication Systems"
     ],
-    "category": "signal",
-    "codeUrl": "",
+    "category": "hardware",
+    "codeUrl": "https://github.com/asadh-74/FM-Receiver",
     "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fi/skltocjxb8qv162f3js3p/FM_Receiver_Complete.pdf?rlkey=d5sgfft22gz1lj4pqc7yn2s8q&st=lp1mgay0&dl=0"
+    "reportUrl": ""
   },
   {
-    "title": "Credit Risk Classification Model",
-    "description": "Credit-scoring classification model comparing Logistic Regression, Decision Trees,\n                        and Random Forest on applicant financial-history data, evaluated with Precision,\n                        Recall, F1-score, and ROC-AUC.",
+    "title": "Dual-Axis Solar Tracker",
+    "description": "Dual-axis solar tracking system in Proteus using LDR-based differential light sensing to determine the direction of strongest sunlight. Two servo motors adjust azimuth and elevation in a…",
     "tags": [
-      "ML",
-      "Python",
-      "Scikit-learn"
-    ],
-    "category": "software",
-    "codeUrl": "",
-    "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fo/yvfjam9937yfipvivkwqb/ALSeyCSaPXcaRWa4bYflzRc?rlkey=8rdyatiyliyohyner2r0cxu8n&st=x8d8csue&dl=0"
-  },
-  {
-    "title": "AMI-Based IoT Smart Energy Meter",
-    "description": "An ESP32 smart energy-meter simulation in Proteus, exploring sensing, energy accumulation, and an IoT monitoring workflow. Hardware prototyping is planned.",
-    "tags": [
-      "IoT",
-      "Full-Stack",
-      "Energy"
+      "Renewable Energy Systems"
     ],
     "category": "embedded",
-    "codeUrl": "",
+    "codeUrl": "https://github.com/asadh-74/Solar-Tracking-System",
     "demoUrl": "",
-    "reportUrl": "https://www.dropbox.com/scl/fo/su5peq6dn6a7oh3084ffy/AKwRIv6NDVJscuOgnZBcA4o?rlkey=ubwwjfj3i1cn1nmw9s15z2jrr&st=8sln4fnc&dl=0"
+    "reportUrl": ""
   }
 ]

@@ -112,10 +112,12 @@ function openCertModal(cert, cardEl) {
   } else {
     // No image uploaded for this certificate yet.
     body.innerHTML = `
-      <div class="cert-modal-placeholder"><i class="fas fa-certificate"></i></div>
+      <div class="cert-modal-placeholder" aria-hidden="true"><i class="fas fa-certificate"></i></div>
       <h3>${escapeCertHTML(title)}</h3>
       <p>${escapeCertHTML(org)}</p>
-      ${verifyUrl ? `<a href="${escapeCertHTML(verifyUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">Verify credential <i class="fas fa-external-link-alt"></i></a>` : '<p class="cert-modal-note">Certificate image not uploaded yet.</p>'}
+      ${cert?.date ? `<p>${escapeCertHTML(cert.date)}</p>` : ''}
+      ${cert?.credentialId ? `<p>Credential ID: ${escapeCertHTML(cert.credentialId)}</p>` : ''}
+      ${verifyUrl ? `<a href="${escapeCertHTML(verifyUrl)}" target="_blank" rel="noopener" class="cert-modal-verify">View issuer credential page <i class="fas fa-external-link-alt"></i></a>` : '<p class="cert-modal-note">No certificate image or issuer link is available.</p>'}
     `;
   }
 

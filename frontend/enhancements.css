@@ -8,3 +8,8 @@
 /* Contain the rotating ring's rectangular bounds without changing its circular look. */
 .hero{overflow:clip}
 @media(max-width:768px){.fc-1{left:auto;right:-12px}.fc-2{left:-12px;right:auto}}
+
+/* Keep the full certificate visible in gallery thumbnails. */
+.cert-thumb img, .cert-card:hover .cert-thumb img, .cert-card:focus-visible .cert-thumb img { object-fit: contain; object-position: center; transform: none; filter: none; }
+.cert-thumb::after { content: none; }
+.membership-text-only { grid-template-columns: 1fr; }
